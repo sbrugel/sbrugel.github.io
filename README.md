@@ -11,3 +11,8 @@ Either since these are WIP or I'm just uncertain on whether to add them. Because
 - HellfireMiles (mostly functioning with a few incomplete parts and bugs)
 - Pokedex Webscraper (personal project to be made open-source, title TBA)
 
+### discord bots
+The source code for my Discord bots that may be released as open-source, obviously with tokens etc. redacted
+- Coastway Will Server Bot (includes things like message starring [still a WIP] and ability to run a guess the station game)
+- SimSig Game Updates (webscraper that posts game updates at 00:00 each day)
+- Train Sim TV Bot (from 2019, a bot for a defunct server that posts stream schedule updates - currently only via Discord but may be made remote eventually)
