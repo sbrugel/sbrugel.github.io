@@ -5,6 +5,12 @@
         <link href='https://fonts.googleapis.com/css?family=Encode Sans Condensed' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="styles.css">
         <title>sbrugel.com</title>
+		<script>
+			$().ready(function() {
+				var images = ["https://github.com/sbrugel/sbrugel.github.io/blob/main/img/main1.JPG?raw=true", "https://github.com/sbrugel/sbrugel.github.io/blob/main/img/main2.JPG?raw=true", "https://github.com/sbrugel/sbrugel.github.io/blob/main/img/main3.JPG?raw=true", "https://github.com/sbrugel/sbrugel.github.io/blob/main/img/main4.JPG?raw=true"];
+				$('html').css({'background-image': 'url(' + images[Math.floor(Math.random() * images.length)] + ')', 'background-repeat': 'repeat', 'background-color': 'center', 'background-attachment': 'fixed', 'background-size': '800px 450px'});
+			});
+		</script>
     </head>
     <body>
 		<div class="center-screen">
