@@ -16,11 +16,24 @@ body {
 .bigtext {
 	font-size: 2.5vw;
 }
+@media (max-width: 600px) {
+	.bigtext {
+		font-size: 7vw;
+	}
+}
 p {
-	color:white;
+	color: white;
 	padding-left: 20px;
 	padding-right: 20px;
 	font-size: 1vw;
+	line-height: normal;
+}
+@media (max-width: 600px) {
+	p {
+		font-size: 4vw;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
 
 /* a */
