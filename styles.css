@@ -1,0 +1,30 @@
+html { 
+  background: url("img/main.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body { 
+	min-width: 525px;
+	font-size: 12pt;
+	font-family: 'Encode Sans Condensed';
+	font-size: 22px;
+	background-size: 800px 450px;
+	line-height: 14pt;
+}
+p {
+	color:white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+a {
+	color: rgba(20, 195, 201, 255);
+}
+.center-screen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 90vh;
+}
