@@ -4,18 +4,21 @@
         <meta charset="utf-8">
         <link href='https://fonts.googleapis.com/css?family=Encode Sans Condensed' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script	src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <title>sbrugel.com</title>
 		<script>
 			$().ready(function() {
-				var images = ["https://github.com/sbrugel/sbrugel.github.io/blob/main/img/main1.JPG?raw=true", "https://github.com/sbrugel/sbrugel.github.io/blob/main/img/main2.JPG?raw=true", "https://github.com/sbrugel/sbrugel.github.io/blob/main/img/main3.JPG?raw=true", "https://github.com/sbrugel/sbrugel.github.io/blob/main/img/main4.JPG?raw=true"];
-				$('html').css({'background-image': 'url(' + images[Math.floor(Math.random() * images.length)] + ')', 'background-repeat': 'repeat', 'background-color': 'center', 'background-attachment': 'fixed', 'background-size': '800px 450px'});
+				var images = ["https://github.com/sbrugel/sbrugel.github.io/blob/main/img/main1.JPG?raw=true", "https://github.com/sbrugel/sbrugel.github.io/blob/main/img/main2.JPG?raw=true", "https://github.com/sbrugel/sbrugel.github.io/blob/main/img/main3.jpg?raw=true", "https://github.com/sbrugel/sbrugel.github.io/blob/main/img/main4.jpg?raw=true"];
+				$('html').css({'background-image': 'url(' + images[Math.floor(Math.random() * images.length)] + ')', '-webkit-background-size': 'cover;', '-moz-background-size': 'cover;', '-o-background-size': 'cover;', 'background-size': 'cover;'});
 			});
 		</script>
     </head>
     <body>
 		<div class="center-screen">
-			<p>Content coming soon</p>
+			<p>Content coming soon. I promise.</p>
 		</div>
-		<p><a href="https://www.cynxs-stuff.com/">Original Website</a> (will be retired when migration finishes)</p>
+		<p>In the meantime, check out the <a href="https://www.cynxs-stuff.com/">current website</a> (will be retired when migration finishes)</p>
     </body>
 </html>
