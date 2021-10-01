@@ -17,6 +17,7 @@ body {
 	font-size: 2vw;
 }
 .smalltext {
+	text-align: center;
 	font-size: 0.8vw;
 }
 @media (max-width: 600px) {
