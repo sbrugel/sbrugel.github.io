@@ -16,9 +16,15 @@ body {
 .bigtext {
 	font-size: 2vw;
 }
+.smalltext {
+	font-size: 0.8vw;
+}
 @media (max-width: 600px) {
 	.bigtext {
 		font-size: 12vw;
+	}
+	.smalltext {
+		font-size: 4.8vw;
 	}
 }
 p {
