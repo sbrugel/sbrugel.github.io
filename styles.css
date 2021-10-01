@@ -38,7 +38,10 @@ p {
 
 /* a */
 a {
-	color: rgba(20, 195, 201, 255);
+	color: #c7dcff;
+}
+a:hover {
+	color: #8c9cb8;
 }
 
 /* div */
