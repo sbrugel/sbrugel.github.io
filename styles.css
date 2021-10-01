@@ -16,9 +16,16 @@ body {
 .bigtext {
 	font-size: 2vw;
 }
+.smalltext {
+	text-align: center;
+	font-size: 0.8vw;
+}
 @media (max-width: 600px) {
 	.bigtext {
 		font-size: 12vw;
+	}
+	.smalltext {
+		font-size: 4.8vw;
 	}
 }
 p {
@@ -56,7 +63,6 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	padding: 3px;
 	border-radius: 25px;
 	border: 5px solid #00bcf5;
 	background-color: rgba(255, 255, 255, 0);
