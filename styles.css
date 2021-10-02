@@ -8,13 +8,21 @@ html {
 body { 
 	min-width: 525px;
 	font-family: 'Encode Sans Condensed';
-	background-size: 800px 450px;
+	background-color: #001840;
 	line-height: 14pt;
 }
 
 /* p */
+p {
+	color: #ffffff;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 1.2vw;
+	line-height: normal;
+}
 .bigtext {
 	font-size: 2vw;
+	text-align: center;
 }
 .smalltext {
 	text-align: center;
@@ -22,24 +30,32 @@ body {
 }
 @media (max-width: 600px) {
 	.bigtext {
-		font-size: 12vw;
+		font-size: 8vw;
 	}
 	.smalltext {
-		font-size: 4.8vw;
+		font-size: 2vw;
 	}
 }
-p {
-	color: white;
-	padding-left: 20px;
-	padding-right: 20px;
-	font-size: 1vw;
-	line-height: normal;
+.centertext {
+	text-align: center;
 }
 @media (max-width: 600px) {
 	p {
 		font-size: 6vw;
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+}
+
+/* li */
+li {
+	color: #ffffff;
+	font-size: 1.2vw;
+	line-height: normal;
+}
+@media (max-width: 600px) {
+	li {
+		font-size: 6vw;
 	}
 }
 
@@ -63,7 +79,25 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	border-radius: 25px;
-	border: 5px solid #00bcf5;
-	background-color: rgba(255, 255, 255, 0);
+	border-radius: 50px;
+	border: 10px solid transparent;
+	background-color: rgba(0, 7, 49, 0.5);
+	margin-left: 35vw;
+	margin-right: 35vw;
+}
+.content-div {
+	
+	border-radius: 50px;
+	border: 10px solid transparent;
+	background-color: rgb(0, 7, 49, 0.5);
+	margin-left: 2vw;
+	margin-right: 2vw;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+@media (max-width: 600px) {
+	.nav-div {
+		margin-left: 6vw;
+		margin-right: 6vw;
+	}
 }
