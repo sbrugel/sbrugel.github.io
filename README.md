@@ -2,17 +2,6 @@ Hi, I make software for a hobby. Most of my experience is in C#, but I have made
 
 Always looking for ways to improve my code.
 
-## Website progress
-Tasks to do:
-- [ ] About Me page
-- [ ] TS page
-- [ ] Projects page
-- [ ] Navigation (added to each page via jQuery)
-- [ ] Ensure all pages work for mobile users. Webkit is fun, for those who aren't aware of it. /s
-- [ ] Footer for each page (show authorship/last updated/page source)
-- [ ] Find a way to make tables work on mobile
-- [ ] Contact page?
-
 ### To be added
 - SimSig Simulation Picker (already done)
 - AP Preload Name Shortener (already done)
