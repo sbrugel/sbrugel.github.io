@@ -4,13 +4,13 @@ Always looking for ways to improve my code.
 
 ## Website progress
 Tasks to do:
-- [ ] About Me page
+- [x] About Me page
 - [ ] TS page
 - [ ] Projects page
-- [ ] Navigation (added to each page via jQuery)
-- [ ] Ensure all pages work for mobile users. Webkit is fun, for those who aren't aware of it. /s
-- [ ] Footer for each page (show authorship/last updated/page source)
-- [ ] Find a way to make tables work on mobile
+- [ ] Add URLs to navigation
+- [X] Ensure all pages work for mobile users. Webkit is fun, for those who aren't aware of it. /s
+- [X] Footer for each page (show authorship/last updated/page source)
+- [X] Find a way to make tables work on mobile
 - [ ] Contact page?
 
 ### To be added
