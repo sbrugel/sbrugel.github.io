@@ -31,7 +31,7 @@ p {
 .centertext {
 	text-align: center;
 }
-@media (max-width: 600px) {
+@media (max-width: 600px) { /* for mobile devices */
 	p {
 		font-size: 6vw;
 		padding-left: 10px;
