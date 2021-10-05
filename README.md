@@ -5,6 +5,7 @@ Always looking for ways to improve my code.
 ### To be added
 - SimSig Simulation Picker (already done)
 - AP Preload Name Shortener (already done)
+- TS Background Changer (already done)
 
 ### WIP
 These will probably be added to my repos as open-source releases. Maybe.
@@ -14,6 +15,7 @@ Either since these are WIP or I'm just uncertain on whether to add them. Because
 - Duff Gen Maker (just a fun console line program to be converted to HTML/JS)
 - HellfireMiles (mostly functioning with a few incomplete parts and bugs)
 - Pokedex Webscraper (personal project to be made open-source, title TBA)
+- TS XML Parser (just returns description of a scenario file, something I messed around with but may release)
 
 ### Discord bots
 The source code for my Discord bots that may be released as open-source, obviously with tokens etc. redacted
