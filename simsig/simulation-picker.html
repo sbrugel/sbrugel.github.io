@@ -1,0 +1,143 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script	src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Encode Sans Condensed' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>Simsig Simulation Picker</title>
+</head>
+
+<body>
+    <h1>SimSig Simulation Picker</h1>
+    <p>This program will pick a random SimSig simulation for you to run, with the name of the simulation, and all parameters, such as ARS, TORR, and Adverse Weather, randomly chosen
+        as appropiate. You can change the options prior to running the simulation itself as much as you like, this page only suggests the options for you.</p>
+    <div class="buttonbox">
+        <button class="button" onclick="run();">Generate</button>
+    </div>
+    <p id="selection"></p>
+
+    <div id="accordion" style="padding:10px;">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Settings
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                <p id="blacktext">Select the simulations you would like enabled in the rotation. Any simulation that is not checked will not be picked at random. All simulations are enabled by default; you can disable simulations you either do not own or do not want included in the rotation. (Ctrl+F to find a sim if you need to.)</p>
+                <button class="button" onclick="toggleAll(false);">Disable All</button>
+                <button class="button" onclick="toggleAll(true);">Enable All</button>
+                <button class="button" onclick="enableFreeOnly();">Enable Free Sims Only</button>
+                <form>
+                    <div class="container">
+                        <input type="checkbox" id="0" name="settings"  ><p id="blacktext">Birmingham New St</p>
+                        <input type="checkbox" id="1" name="settings"  ><p id="blacktext">Cardiff</p>
+                        <input type="checkbox" id="2" name="settings"  ><p id="blacktext">Cardiff Vale of Glamorgan</p>
+                        <input type="checkbox" id="3" name="settings"  ><p id="blacktext">Cardiff Valleys</p>
+                        <input type="checkbox" id="4" name="settings"  ><p id="blacktext">Cathcart</p>
+                        <input type="checkbox" id="5" name="settings"  ><p id="blacktext">Central Scotland</p>
+                        <input type="checkbox" id="6" name="settings"  ><p id="blacktext">Cheshire Lines</p>
+                        <input type="checkbox" id="7" name="settings"  ><p id="blacktext">Chester</p>
+                        <input type="checkbox" id="8" name="settings"  ><p id="blacktext">Coventry</p>
+                        <input type="checkbox" id="9" name="settings"  ><p id="blacktext">Cowlairs</p>
+                        <input type="checkbox" id="10" name="settings"  ><p id="blacktext">East Coastway</p>
+                        <input type="checkbox" id="11" name="settings"  ><p id="blacktext">Edge Hill</p>
+                        <input type="checkbox" id="12" name="settings"  ><p id="blacktext">Edinburgh</p>
+                        <input type="checkbox" id="13" name="settings"  ><p id="blacktext">Feltham</p>
+                        <input type="checkbox" id="14" name="settings"  ><p id="blacktext">Fenchurch</p>
+                        <input type="checkbox" id="15" name="settings"  ><p id="blacktext">Hereford</p>
+                        <input type="checkbox" id="16" name="settings"  ><p id="blacktext">Horsham</p>
+                        <input type="checkbox" id="17" name="settings"  ><p id="blacktext">Huddersfield</p>
+                        <input type="checkbox" id="18" name="settings"  ><p id="blacktext">Hunts Cross</p>
+                        <input type="checkbox" id="19" name="settings"  ><p id="blacktext">Huyton & St Helens</p>
+                        <input type="checkbox" id="20" name="settings"  ><p id="blacktext">Leamington Spa</p>
+                        <input type="checkbox" id="21" name="settings"  ><p id="blacktext">Leeds Ardsley</p>
+                        <input type="checkbox" id="22" name="settings"  ><p id="blacktext">Leeds East/West</p>
+                        <input type="checkbox" id="23" name="settings"  ><p id="blacktext">Leeds Northwest</p>
+                        <input type="checkbox" id="24" name="settings"  ><p id="blacktext">London Bridge</p>
+                        <input type="checkbox" id="25" name="settings"  ><p id="blacktext">London Bridge ASC Mini Sim</p>
+                        <input type="checkbox" id="26" name="settings"  ><p id="blacktext">LTS</p>
+                        <input type="checkbox" id="27" name="settings"  ><p id="blacktext">Maidstone East</p>
+                        <input type="checkbox" id="28" name="settings"  ><p id="blacktext">Manchester East</p>
+                        <input type="checkbox" id="29" name="settings"  ><p id="blacktext">Manchester North</p>
+                        <input type="checkbox" id="30" name="settings"  ><p id="blacktext">Manchester Piccadilly</p>
+                        <input type="checkbox" id="31" name="settings"  ><p id="blacktext">Manchester South</p>
+                        <input type="checkbox" id="32" name="settings"  ><p id="blacktext">Marylebone</p>
+                        <input type="checkbox" id="33" name="settings"  ><p id="blacktext">Motherwell</p>
+                        <input type="checkbox" id="34" name="settings"  ><p id="blacktext">Newport</p>
+                        <input type="checkbox" id="35" name="settings"  ><p id="blacktext">North East Scotland</p>
+                        <input type="checkbox" id="36" name="settings"  ><p id="blacktext">Oxford</p>
+                        <input type="checkbox" id="37" name="settings"  ><p id="blacktext">Paisley</p>
+                        <input type="checkbox" id="38" name="settings"  ><p id="blacktext">Peak District</p>
+                        <input type="checkbox" id="39" name="settings"  ><p id="blacktext">Penzance</p>
+                        <input type="checkbox" id="40" name="settings"  ><p id="blacktext">Plymouth</p>
+                        <input type="checkbox" id="41" name="settings"  ><p id="blacktext">Port Talbot</p>
+                        <input type="checkbox" id="42" name="settings"  ><p id="blacktext">Portsmouth</p>
+                        <input type="checkbox" id="43" name="settings"  ><p id="blacktext">Rugby South</p>
+                        <input type="checkbox" id="44" name="settings"  ><p id="blacktext">Rugby Centre</p>
+                        <input type="checkbox" id="45" name="settings"  ><p id="blacktext">Rugby North</p>
+                        <input type="checkbox" id="46" name="settings"  ><p id="blacktext">Salisbury</p>
+                        <input type="checkbox" id="47" name="settings"  ><p id="blacktext">Sandhills</p>
+                        <input type="checkbox" id="48" name="settings"  ><p id="blacktext">Sheffield</p>
+                        <input type="checkbox" id="49" name="settings"  ><p id="blacktext">Shrewsbury</p>
+                        <input type="checkbox" id="50" name="settings"  ><p id="blacktext">Staffordshire</p>
+                        <input type="checkbox" id="51" name="settings"  ><p id="blacktext">Stockport</p>
+                        <input type="checkbox" id="52" name="settings"  ><p id="blacktext">Three Bridges</p>
+                        <input type="checkbox" id="53" name="settings"  ><p id="blacktext">Tyneside</p>
+                        <input type="checkbox" id="54" name="settings"  ><p id="blacktext">Victoria Central</p>
+                        <input type="checkbox" id="55" name="settings"  ><p id="blacktext">Victoria South East</p>
+                        <input type="checkbox" id="56" name="settings"  ><p id="blacktext">Warrington</p>
+                        <input type="checkbox" id="57" name="settings"  ><p id="blacktext">Watford</p>
+                        <input type="checkbox" id="58" name="settings"  ><p id="blacktext">Wembley Mainline</p>
+                        <input type="checkbox" id="59" name="settings"  ><p id="blacktext">West Anglia</p>
+                        <input type="checkbox" id="60" name="settings"  ><p id="blacktext">West Hampstead</p>
+                        <input type="checkbox" id="61" name="settings"  ><p id="blacktext">West Yorkshire</p>
+                        <input type="checkbox" id="62" name="settings"  ><p id="blacktext">Wigan Wallgate</p>
+                        <input type="checkbox" id="63" name="settings"  ><p id="blacktext">Wimbledon</p>
+                        <input type="checkbox" id="64" name="settings"  ><p id="blacktext">Wolverhampton</p>
+                        <input type="checkbox" id="65" name="settings"  ><p id="blacktext">York North/South</p>
+                        <input type="checkbox" id="66" name="settings"  ><p id="blacktext">Aston</p>
+                        <input type="checkbox" id="67" name="settings"  ><p id="blacktext">Brighton</p>
+                        <input type="checkbox" id="68" name="settings"  ><p id="blacktext">Carlisle</p>
+                        <input type="checkbox" id="69" name="settings"  ><p id="blacktext">Chicago L</p>
+                        <input type="checkbox" id="70" name="settings"  ><p id="blacktext">Derby</p>
+                        <input type="checkbox" id="71" name="settings"  ><p id="blacktext">Exeter</p>
+                        <input type="checkbox" id="72" name="settings"  ><p id="blacktext">Kings Cross</p>
+                        <input type="checkbox" id="73" name="settings"  ><p id="blacktext">Lancing</p>
+                        <input type="checkbox" id="74" name="settings"  ><p id="blacktext">Liverpool Lime St</p>
+                        <input type="checkbox" id="75" name="settings"  ><p id="blacktext">London Liverpool St</p>
+                        <input type="checkbox" id="76" name="settings"  ><p id="blacktext">Llangollen</p>
+                        <input type="checkbox" id="77" name="settings"  ><p id="blacktext">LUL Victoria Line</p>
+                        <input type="checkbox" id="78" name="settings"  ><p id="blacktext">North East Wales</p>
+                        <input type="checkbox" id="79" name="settings"  ><p id="blacktext">North Wales Coastal</p>
+                        <input type="checkbox" id="80" name="settings"  ><p id="blacktext">Oxted</p>
+                        <input type="checkbox" id="81" name="settings"  ><p id="blacktext">Peterborough</p>
+                        <input type="checkbox" id="82" name="settings"  ><p id="blacktext">Royston</p>
+                        <input type="checkbox" id="83" name="settings"  ><p id="blacktext">Saltley</p>
+                        <input type="checkbox" id="84" name="settings"  ><p id="blacktext">Stafford</p>
+                        <input type="checkbox" id="85" name="settings"  ><p id="blacktext">Swindon</p>
+                        <input type="checkbox" id="86" name="settings"  ><p id="blacktext">Waterloo</p>
+                        <input type="checkbox" id="87" name="settings"  ><p id="blacktext">Wembley Sub</p>
+                        <input type="checkbox" id="88" name="settings"  ><p id="blacktext">Westbury</p>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    <h6>This was developed by Simon Brugel, utilizing Bootstrap, a free and open-source CSS framework licensed by MIT. You can find more of my projects and developments at <a href="https://www.sbrugel.com">https://www.sbrugel.com</a></h6>
+    
+</body>
+
+<script src="script.js"></script>
+</html>

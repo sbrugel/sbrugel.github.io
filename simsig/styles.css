@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    padding: 10px;
+}
+h1 {
+    color: white;
+    font-family: 'Encode Sans Condensed';
+    text-align: center;
+    font-size: 28 18pt;
+}
+p {
+    color: white;
+    font-family: 'Encode Sans Condensed';
+    text-align: center;
+    font-size: 16pt;
+}
+h6 {
+    color: white;
+    font-family: 'Encode Sans Condensed';
+    text-align: center;
+    font-size: 10pt;
+}
+.buttonbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border: 3px solid black; 
+}
+.button {
+    width: 100px;
+    height: 50px;
+}
+#selection {
+    color: white;
+    font-family: 'Encode Sans Condensed';
+    text-align: left;
+    font-size: 16pt;
+    padding-left:10px;
+}
+#blacktext {
+    color: black;
+    font-family: 'Encode Sans Condensed';
+    text-align: left;
+    font-size: 16pt;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . ."
+      ". . . . . . . . . . . .";
+}
+input {
+    width: 100%;
+}
+  
