@@ -8,6 +8,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="js/moment-with-locales.js"></script>
 		<script src="pageload.js"></script>
 		<title>sbrugel.com | About Me</title>
     </head>
@@ -15,7 +16,7 @@
 		<div id="nav"></div>
 		<div class="content-div">
 			<p class="bigtext"><i><b><u>About Me</u></b></i></p>
-			<p class="centertext"><b>Hi there! I'm Simon Brugel (18, he/him). I'm a student at the University of Delaware (c. of 2025), pursuing a BSc in Computer Science (with a focus in Artifical Intelligence & Robotics).</b></p>
+			<p class="centertext" id="firstline"><b>There should be something better than this here. Maybe it's because scripts are disabled on your browser...?</b></p>
 			<p>My biggest hobbies are computer-centric. I'm an avid gamer, with my main favorite genres being strategy, simulation, and sandbox. Of course, I enjoy other things, too! They are listed below.</p>
             <hr>
             <p>As you have probably seen, I also enjoy developing projects. My main programming/markdown
@@ -46,8 +47,29 @@
                 <li>Learning German.</li>
                 <li>Video editing.</li>
                 <li>Driving my car, especially to places I have never been to before.</li>
+                <li>Listening to all sorts of music. D&B (Pendulum FTW!) and rock are my favorite genres, though there are definitely outliers to my music tastes! <a href="" id="song"></a></li>
             </ul>
 		</div>
 		<div id="footer"></div>
     </body>
+    <script>
+        $().ready(function() {
+            let songURLs = ['https://www.youtube.com/watch?v=p_HnxvdeK0U', 'https://www.youtube.com/watch?v=k-Xv0sKBMA8', 'https://www.youtube.com/watch?v=bwX_zWjaFtE', 
+                            'https://www.youtube.com/watch?v=degq0sxYlLI', 'https://www.youtube.com/watch?v=04QpInkz9so', 'https://www.youtube.com/watch?v=ntG_EEfpasM',
+                            'https://www.youtube.com/watch?v=tEPB7uzKuh4', 'https://www.youtube.com/watch?v=ogMNV33AhCY', 'https://www.youtube.com/watch?v=49m5nW7TESc',
+                            'https://www.youtube.com/watch?v=V6Wz5in47Cg', 'https://www.youtube.com/watch?v=YzBx5oeNCHA', 'https://www.youtube.com/watch?v=ysSxxIqKNN0',
+                            'https://www.youtube.com/watch?v=2wHU5ocfFsA', 'https://www.youtube.com/watch?v=uR_2MMar0s0', 'https://www.youtube.com/watch?v=SZlRX03BzeA']
+            let age = calculateAge(new Date(2002, 11, 26, 0, 0, 0, 0)); //December 26: January is month 0
+            document.getElementById('firstline').innerText = `Hi there! I'm Simon Brugel (${age}, he/him). I'm a student at the University of Delaware (c. of 2025), pursuing a BSc in Computer Science (with a focus in Artifical Intelligence & Robotics).`
+            document.getElementById('song').href = songURLs[Math.floor(Math.random() * songURLs.length)];
+            document.getElementById('song').innerText = 'Click here to listen to a random entry from a list of my top songs.'
+        });
+
+        function calculateAge(birthday) { // birthday is a date
+            let ageDifMs = Date.now() - birthday;
+            let ageDate = new Date(ageDifMs); // miliseconds from epoch
+            return Math.abs(ageDate.getUTCFullYear() - 1970);
+        }
+
+    </script>
 </html>
