@@ -11,6 +11,12 @@ body {
 	background-image: linear-gradient(to right, #0c234d , #0053e4);
 	line-height: 14pt;
 }
+@media (max-width: 600px) { /* for mobile devices */
+	body { 
+		background-color: #0053e4;
+		background-image: none
+	}
+}
 
 /* p */
 p {
@@ -41,10 +47,10 @@ p {
 		font-size: 8vw;
 	}
 	.smalltext {
-		font-size: 2vw;
+		font-size: 4vw;
 	}
 	.intable {
-		font-size: 4vw;
+		font-size: 6vw;
 	}
 }
 
@@ -139,4 +145,11 @@ a:hover {
 		margin-left: 6vw;
 		margin-right: 6vw;
 	}
+}
+
+/* hr */
+hr {
+	height: 1px;
+	color: #ffffff;
+	background-color: #ffffff;
 }
