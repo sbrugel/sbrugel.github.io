@@ -19,8 +19,10 @@
 			<p class="centertext" id="firstline"><b>There should be something better than this here. Maybe it's because scripts are disabled on your browser...?</b></p>
 			<p>My biggest hobbies are computer-centric. I'm an avid gamer, with my main favorite genres being strategy, simulation, and sandbox. Of course, I enjoy other things, too! They are listed below.</p>
             <hr>
-            <p>As you have probably seen, I also enjoy developing projects. My main programming/markdown
-                languages are C#, HTML, CSS, JavaScript, Java, and Python. Especially since I am a 
+            <p>As you have probably seen, I also enjoy developing projects. Currently, I work as a manager of the college's computer science department's official Discord server, maintaining the server itself as well
+                as its custom-made bot, <a href="https://github.com/ud-cis-discord/SageV2">Sage.</a></p>
+            <p>My main programming/markdown
+                languages are C#, HTML, CSS, JavaScript, Java, TypeScript, and Python. Especially since I am a 
                 college student enrolled within the Computer Science major, I can't wait to learn more about many things in my field. For more information on my works and involvements, please view 
             the <i>Projects</i> page.</p>
             <p>I have also familiarized myself with Blender (for 3D asset creation) and the Unity game engine. However, while I do have a bit of experience in modelling, it is not 
@@ -47,22 +49,15 @@
                 <li>Learning German.</li>
                 <li>Video editing.</li>
                 <li>Driving my car, especially to places I have never been to before.</li>
-                <li>Listening to all sorts of music. D&B (Pendulum FTW!) and rock are my favorite genres, though there are definitely outliers to my music tastes! <a href="" id="song"></a></li>
+                <li>Listening to all sorts of music. D&B, electronic and rock are my favorite genres.</li>
             </ul>
 		</div>
 		<div id="footer"></div>
     </body>
     <script>
         $().ready(function() {
-            let songURLs = ['https://www.youtube.com/watch?v=p_HnxvdeK0U', 'https://www.youtube.com/watch?v=k-Xv0sKBMA8', 'https://www.youtube.com/watch?v=bwX_zWjaFtE', 
-                            'https://www.youtube.com/watch?v=degq0sxYlLI', 'https://www.youtube.com/watch?v=04QpInkz9so', 'https://www.youtube.com/watch?v=ntG_EEfpasM',
-                            'https://www.youtube.com/watch?v=tEPB7uzKuh4', 'https://www.youtube.com/watch?v=ogMNV33AhCY', 'https://www.youtube.com/watch?v=49m5nW7TESc',
-                            'https://www.youtube.com/watch?v=V6Wz5in47Cg', 'https://www.youtube.com/watch?v=YzBx5oeNCHA', 'https://www.youtube.com/watch?v=ysSxxIqKNN0',
-                            'https://www.youtube.com/watch?v=2wHU5ocfFsA', 'https://www.youtube.com/watch?v=uR_2MMar0s0', 'https://www.youtube.com/watch?v=SZlRX03BzeA']
             let age = calculateAge(new Date(2002, 11, 26, 0, 0, 0, 0)); //December 26: January is month 0
             document.getElementById('firstline').innerText = `Hi there! I'm Simon Brugel (${age}, he/him). I'm a student at the University of Delaware (c. of 2025), pursuing a BSc in Computer Science (with a focus in Artifical Intelligence & Robotics).`
-            document.getElementById('song').href = songURLs[Math.floor(Math.random() * songURLs.length)];
-            document.getElementById('song').innerText = 'Click here to listen to a random entry from a list of my top songs.'
         });
 
         function calculateAge(birthday) { // birthday is a date
