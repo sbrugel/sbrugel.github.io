@@ -1,70 +1,131 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-        <link href='https://fonts.googleapis.com/css?family=Encode Sans Condensed' rel='stylesheet'>
-		<link rel="stylesheet" type="text/css" href="styles.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-        <script src="js/moment-with-locales.js"></script>
-		<script src="pageload.js"></script>
-		<title>sbrugel.com | About Me</title>
-    </head>
-    <body>
-		<div id="nav"></div>
-		<div class="content-div">
-			<p class="bigtext"><i><b><u>About Me</u></b></i></p>
-			<p class="centertext" id="firstline"><b>There should be something better than this here. Maybe it's because scripts are disabled on your browser...?</b></p>
-			<p>My biggest hobbies are computer-centric. I'm an avid gamer, with my main favorite genres being strategy, simulation, and sandbox. Of course, I enjoy other things, too! They are listed below.</p>
-            <hr>
-            <p>As you have probably seen, I also enjoy developing projects. Currently, I work as a manager of the college's computer science department's official Discord server, maintaining the server itself as well
-                as its custom-made bot, <a href="https://github.com/ud-cis-discord/SageV2">Sage.</a></p>
-            <p>My main programming/markdown
-                languages are C#, HTML, CSS, JavaScript, Java, TypeScript, and Python. Especially since I am a 
-                college student enrolled within the Computer Science major, I can't wait to learn more about many things in my field. For more information on my works and involvements, please view 
-            the <i>Projects</i> page.</p>
-            <p>I have also familiarized myself with Blender (for 3D asset creation) and the Unity game engine. However, while I do have a bit of experience in modelling, it is not 
-                something I actively pursue.</p>
-            <hr>
-            <p>If any unusual or otherwise uncommon fixation defines me, it's trains. They're something I've been interested in for years, having learned the ins and outs of them, from 
-                routes to timetables to train types, I developed scenarios and patches for <a href="https://store.steampowered.com/app/24010/Train_Simulator_2022/">
-                Train Simulator</a> though this is something from the past that I am not as involved in. You can view my releases in the <i>Game Content</i> page.
-            </p>
-            <p>I also enjoy photography whenever I get the chance. Of course, trains are mainly what I photograph. Eventually, I hope 
-                to get into more general photography, such as that of nature. I've uploaded many of my high-resolution pictures to <a href="https://www.flickr.com/photos/183445295@N08/">Flickr</a>
-            </p>
-            <hr>
-            <p>Another one of my hobbies is playing music, with my primary instrument being the trombone. I was in my high school's marching band, which actively performed at 
-                football games and competitively as part of the <a href="https://cavalcadeofbands.com/">Cavalcade of Bands</a>, a competitive band circuit based in southeastern 
-                Pennsylvania. That time was one of the most enjoyable I had, having met many friends, an awesome band director, and, on a large stage, performing something that 
-                I may never have the opportunity to do again.</p>
-                <p>I was also involved in my high school's wind ensemble, jazz band, pep band, and for my senior year, a mini-ensemble that covered 
-                    <a href="https://www.youtube.com/c/LuckyChops">Lucky Chops</a> songs over Zoom during the COVID-19 pandemic.</p>
-            <hr>
-            <p>Some other hobbies I have include:</p>
-            <ul>
-                <li>Biking. I enjoy going on bike rides whenever it's nice out, whether for a brief jaunt or a long trip.</li>
-                <li>Learning German.</li>
-                <li>Video editing.</li>
-                <li>Driving my car, especially to places I have never been to before.</li>
-                <li>Listening to all sorts of music. D&B, electronic and rock are my favorite genres.</li>
-            </ul>
-		</div>
-		<div id="footer"></div>
-    </body>
-    <script>
-        $().ready(function() {
-            let age = calculateAge(new Date(2002, 11, 26, 0, 0, 0, 0)); //December 26: January is month 0
-            document.getElementById('firstline').innerText = `Hi there! I'm Simon Brugel (${age}, he/him). I'm a student at the University of Delaware (c. of 2025), pursuing a BSc in Computer Science (with a focus in Artifical Intelligence & Robotics).`
-        });
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Encode Sans Condensed"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/moment-with-locales.js"></script>
+    <script src="pageload.js"></script>
+    <title>sbrugel.com | About Me</title>
+  </head>
+  <body>
+    <div id="nav"></div>
+    <div class="content-div">
+      <p class="bigtext">
+        <i
+          ><b><u>About Me</u></b></i
+        >
+      </p>
+      <p class="centertext" id="firstline">
+        <b
+          >There should be something better than this here. Maybe it's because
+          scripts are disabled on your browser...?</b
+        >
+      </p>
+      <p>
+        My biggest hobbies are computer-centric. I'm a software/web dev, both as
+        a hobby and in the professional world. (In an alternate universe, I'd
+        probably have become a graphic designer.) I'm also an avid gamer, with
+        my main favorite genres being strategy, simulation, and sandbox. Of
+        course, I enjoy other things, too! They are listed below.
+      </p>
+      <hr />
+      <p>
+        As you have probably seen, I also enjoy developing projects. Alongside
+        personal projects, I work as a manager of my college's computer science
+        department's official Discord server, maintaining the server itself as
+        well as its custom-made bot,
+        <a href="https://github.com/ud-cis-discord/SageV2">Sage.</a> I also
+        intern as a web developer, working with React and JavaScript to develop
+        applications.
+      </p>
+      <p>
+        My main programming/markdown languages are C#, HTML, CSS, JavaScript,
+        Java, TypeScript, and Python. I also know a bit of C and Node.js and am
+        currently learning C++ and React. For more information on my works and
+        involvements, please view the <i>Projects</i> page.
+      </p>
+      <p>
+        I have also familiarized myself with Blender (for 3D asset creation).
+        However, while I do have a bit of experience in modelling, it is not
+        something I actively pursue. I also have worked with the Unity game
+        engine, though my forte in that regard is scripting, not modelling,
+        animation, or other such areas.
+      </p>
+      <hr />
+      <p>
+        If any unusual or otherwise uncommon fixation defines me, it's trains.
+        They're something I've been interested in for years, having learned the
+        ins and outs of them, from routes to timetables to train types, I
+        developed scenarios and patches for
+        <a
+          href="https://store.steampowered.com/app/24010/Train_Simulator_2022/"
+        >
+          Train Simulator</a
+        >
+        though this is something from the past that I am no longer involved in.
+      </p>
+      <p>
+        I also enjoy photography whenever I get the chance. Of course, trains
+        are mainly what I photograph. Eventually, I hope to get into more
+        general photography, such as that of nature. I've uploaded many of my
+        high-resolution pictures to
+        <a href="https://www.flickr.com/photos/183445295@N08/">Flickr.</a>
+      </p>
+      <hr />
+      <p>
+        Another one of my hobbies is playing music, with my primary instrument
+        being the trombone. I was in my high school's marching band, which
+        actively performed at football games and competitively as part of the
+        <a href="https://cavalcadeofbands.com/">Cavalcade of Bands</a>, a
+        competitive band circuit based in southeastern Pennsylvania. That time
+        was one of the most enjoyable I had, having met many friends, an awesome
+        band director, and, on a large stage, performing something that I may
+        never have the opportunity to do again.
+      </p>
+      <p>
+        I was also involved in my high school's wind ensemble, jazz band, pep
+        band, and for my senior year, a mini-ensemble that covered
+        <a href="https://www.youtube.com/c/LuckyChops">Lucky Chops</a> songs
+        over Zoom during the COVID-19 pandemic.
+      </p>
+      <hr />
+      <p>Some other hobbies I have include:</p>
+      <ul>
+        <li>
+          Biking. I enjoy going on bike rides whenever it's nice out, whether
+          for a brief jaunt or a long trip.
+        </li>
+        <li>Learning German.</li>
+        <li>Video editing.</li>
+        <li>
+          Driving my car, especially to places I have never been to before.
+        </li>
+        <li>Listening to all sorts of music.</li>
+      </ul>
+    </div>
+    <div id="footer"></div>
+  </body>
+  <script>
+    $().ready(function () {
+      let age = calculateAge(new Date(2002, 11, 26, 0, 0, 0, 0)); // December 26: January is month 0
+      document.getElementById(
+        "firstline"
+      ).innerText = `Hi there! I'm Simon Brugel (${age}, he/him). I'm a student at the University of Delaware (c. of 2025), pursuing a BSc in Computer Science (with a focus in Artifical Intelligence & Robotics).`;
+    });
 
-        function calculateAge(birthday) { // birthday is a date
-            let ageDifMs = Date.now() - birthday;
-            let ageDate = new Date(ageDifMs); // miliseconds from epoch
-            return Math.abs(ageDate.getUTCFullYear() - 1970);
-        }
-
-    </script>
+    function calculateAge(birthday) {
+      // birthday is a date
+      let ageDifMs = Date.now() - birthday;
+      let ageDate = new Date(ageDifMs); // miliseconds from epoch
+      return Math.abs(ageDate.getUTCFullYear() - 1970);
+    }
+  </script>
 </html>
