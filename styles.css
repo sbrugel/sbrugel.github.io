@@ -24,6 +24,9 @@ p {
 	font-size: 2vw;
 	color: #74dbd6;
 }
+#error {
+	color: #db7474;
+}
 .smalltext {
 	text-align: center;
 	font-size: 0.8vw;
@@ -52,7 +55,7 @@ p {
 		font-size: 4vw;
 	}
 	.intable {
-		font-size: 6vw;
+		font-size: 5vw;
 	}
 }
 
@@ -116,6 +119,12 @@ a:hover {
 }
 .nav-link {
 	margin-right: 2vh;
+}
+@media (max-width: 600px) {
+	.nav-link {
+		margin-left: 5vh;
+		margin-right: 5vh;
+	}
 }
 
 /* div */
