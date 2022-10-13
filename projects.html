@@ -15,11 +15,9 @@
     <body>
 		<div id="nav"></div>
 		<div class="content-div">
-			<p class="bigtext"><b>Projects</b></p>
-            <p><b>A list of the main, personal projects I have worked on.</b></p>
-            <p>The projects I've worked on are various in scale and are created in many languages and for different purposes. Each entry has links to their source code on GitHub, and, if applicable, a direct download link.</p>
-            <p>Every project I work on, I learn something new - whether that's a fantastic library, a fundamental of programming, or just... how to do things! And what to Google, of course... anyways, this page will see regular updates with any new projects I release.</p>
-            <p>Click <a href="#ts">here</a> to view my TS Classic projects (e.g. Background Changer).</p>
+            <p><i>This page has a list of many of the projects I have worked on, most of them independently.</i></p>
+            <p><b>Shortcuts:</b> <a href="#other">Other Projects</a>, <a href="https://sbrugel.com/game-content.html">Simulator-Related Content</a></p>
+			<p class="bigtext" id="main"><b>Main Projects</b></p>
 			<table>
                 <tr>
                     <td>
@@ -30,33 +28,12 @@
                     </td>
                     <td>
                         <p class="intable">Sage is an all-in-one Discord bot used to manage the University of Delaware Computer/Information Science department's official Discord 
-                            server, which has over 1,500 members including both students and professors. The bot and the server are maintained by four university undergraduates, 
-                            including myself, on behalf of the college's CIS department.<br><br>The bot has many features to enhance the learning and college community experience, 
-                            including but not limited to:</p>
-                        <ul>
-                            <li><p class="intable" style="text-align:left;">Self-assignable class roles that grant access to class-specific general and help channels, giving students
-                            greater access to course help, something which other majors don't have.</p></li>
-                            <li><p class="intable" style="text-align:left;">Private/anonymous questions related to coursework can be submitted by students.</p></li>
-                            <li><p class="intable" style="text-align:left;">Fun commands to enhance chatting, such as coin flipping, dice rolling, and rock-paper-scissors.</p></li>
-                            <li><p class="intable" style="text-align:left;">The ability to set reminders at specific times/intervals through bot commands.</p></li>
-                            <li><p class="intable" style="text-align:left;">Miscellaneous utilities such as poll creation via command.</p></li>
-                            <li><p class="intable" style="text-align:left;">...and much more!</p></li>
-                        </ul>
-                        <p class="intable">I've been a member of the Sage team since 2021, having joined in my freshman year of college. I'm responsible for adding new features to simplify the bot's use while enhancing the user experience, and of course, fighting the occasional fire.
-                        </p>
+                            server, which has over 2,500 students and 25+ professors. The bot and the server are maintained by three university undergraduates, 
+                            including myself, on behalf of the college's CIS department.<br><br>The bot has many features to enhance the learning and college community experience, including
+                        the ability to ask private questions for professors/TAs to view and in-chat polls.</p>
+                        <p class="intable"><b>Written in:</b> TypeScript, NodeJS</p>
                     </td>
                 </tr> 
-                <tr>
-                    <td>
-                        <p class="intable"><b>Practice Handbells</b></p>
-                        <img class="tableimg" src="https://sbrugel.com/img/handbells.png">
-                        <br>
-                        <p><a href="https://www.practicehandbells.com/">More Info</a></p>
-                    </td>
-                    <td>
-                        <p class="intable">I was involved in the software development of Practice Handbells, a product that provides a cost-efficient way to practice handbells at home without having to buy an expensive, full set of real bells. These utilize components and the IDE of Arduino, an open-source electronics platform.</p>
-                    </td>
-                </tr>
                 <tr>
                     <td>
                         <p class="intable"><b>Journal Manager</b></p>
@@ -66,6 +43,7 @@
                     </td>
                     <td>
                         <p class="intable">A Windows Forms application that allows the user to write journal entries, save them locally, and view them later.</p>
+                        <p class="intable"><b>Written in:</b> C#</p>
                     </td>
                 </tr>
                 <tr>
@@ -77,6 +55,7 @@
                     </td>
                     <td>
                         <p class="intable">A Windows Forms application that allows the user to create sets of flash cards for studying, save them on their system, and review them in another window, being able to shuffle the card order at any time.</p>
+                        <p class="intable"><b>Written in:</b> C#</p>
                     </td>
                 </tr>
                 <tr>
@@ -89,86 +68,8 @@
                     </td>
                     <td>
                         <p class="intable">Originally created in 2021, this is a Discord bot that fetches from the SEPTA API every 2 minutes and returns delays, last recorded location, and train consist information for user-inputted train numbers in a specified text channel. It also regularly updates users on alerts/advisories for regional rail lines.</p>
-                        <p class="intable">Version 2 consists of a complete overhaul and re-writing of the original bot's code owing to a recent overhaul of SEPTA's website and feeds. Version 1 of this project, which introduced me to many fundamentals of Git and GitHub, is now archived, no longer being worked on. You can view that <a href="https://github.com/sbrugel/SEPTA-Checker">here</a>.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="intable"><b>img2pi</b></p>
-                        <img class="tableimg" src="https://sbrugel.com/img/img2pi.png">
-                        <br>
-                        <p><a href="https://github.com/sbrugel/img2pi">View Source/More Info</a></p>
-                    </td>
-                    <td>
-                        <p class="intable">Displays a jpg/png image on a Raspberry Pi's sense hat.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="intable"><b>Asteroids</b></p>
-                        <img class="tableimg" src="https://sbrugel.com/img/asteroids.png">
-                        <br>
-                        <p><a href="https://github.com/sbrugel/cisc108-asteroids">View Source/More Info</a></p>
-                    </td>
-                    <td>
-                        <p class="intable">This is a recreation of the Atari game Asteroids, made in Python using the Designer.py library. Created as a final project for a university class.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="intable"><b>Biking Weather</b></p>
-                        <img class="tableimg" src="https://user-images.githubusercontent.com/58154576/182970908-fcec81c5-1389-4f40-924c-bc2c512702d0.png">
-                        <br>
-                        <p><a href="https://github.com/sbrugel/biking-weather">View Source/More Info</a></p>
-                    </td>
-                    <td>
-                        <p class="intable">A React app that intakes a location name/area code, makes an API call to determine weather conditions, and tells if they are good for biking.</p>
-                        <p class="intable">The user has the ability to enter both location names and area codes to determine the weather/conditions in an area. The user is presented with the temperature (actual and feels-like), chance of rain (current and in the next hour), and humidity. The data is also highlighted in either green (good for biking) or red (not good).</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="intable"><b>Railroad Locomotive Scraper</b></p>
-                        <img class="tableimg" src="https://i.imgur.com/Rh0Hnvt.gif">
-                        <br>
-                        <p><a href="https://github.com/sbrugel/rr-locomotive-scraper">View Source/More Info</a></p>
-                    </td>
-                    <td>
-                        <p class="intable">A small web scraping project that intakes a railroad company owner's reporting mark (e.g. 'NS', 'BNSF', ...) and a locomotive number. The program then scrapes <b>RRPictureArchives</b> to find that locomotive, searching through pages using a divide-and-conquer algorithm to reduce the average searching time (especially for locos with higher numbers). It returns the locomotive model as well as any associated notes.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="intable"><b>Birthday Bot</b></p>
-                        <img class="tableimg" src="https://user-images.githubusercontent.com/58154576/157116233-f6a4ea44-7f7a-449d-93ef-db05598292c0.png">
-                        <br>
-                        <p><a href="https://github.com/sbrugel/birthday-bot">View Source/More Info</a></p>
-                    </td>
-                    <td>
-                        <p class="intable">Discord bot that announces user-inputted birthdays in a guild. Users can enter their birth month/day and optionally year and on their birthday, a message will be automatically sent in a channel specified in the .env file, wishing that user a happy birthday.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="intable"><b>ZUSI Stock Swapper</b></p>
-                        <img class="tableimg" src="https://sbrugel.com/img/zusiswap.png">
-                        <br>
-                        <p><a href="https://github.com/sbrugel/ZUSI-Stock-Swapper">View Source/More Info</a></p>
-                    </td>
-                    <td>
-                        <p class="intable">A GUI application that allows for easy, basic stock swapping for trains in <a href="https://store.steampowered.com/app/1040730/ZUSI_3__Aerosoft_Edition/">ZUSI 3: Aerosoft Edition</a>. Also features basic German localization.<br><br>This will soon allow the user to more intricately modify consists by adding/removing components and reversing them.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="intable"><b>Emojilang</b></p>
-                        <img class="tableimg" src="https://user-images.githubusercontent.com/58154576/170095943-044dabd0-f04d-4ca9-8bd4-0ea8173b63c4.png">
-                        <br>
-                        <p><a href="https://github.com/sbrugel/emojilang">View Source/More Info</a></p>
-                    </td>
-                    <td>
-                        <p class="intable">A fake programming language based on Python, using its syntax, except with core functions and keywords using emojis instead! Specifically this includes a C# Windows Forms program that serves as a very basic pseudo-IDE for the language, featuring the ability to save files and run them within the program.</p>
-                        <p class="intable">This project is currently heavily work-in-progress. More updates are to come soon to improve the program.</p>
+                        <p class="intable">Version 2 consists of a complete overhaul and re-writing of the original bot's code owing to a recent overhaul of SEPTA's website and feeds.</p>
+                        <p class="intable"><b>Written in:</b> TypeScript, NodeJS</p>
                     </td>
                 </tr>
                 <tr>
@@ -181,21 +82,102 @@
                     </td>
                     <td>
                         <p class="intable">Based on known grades/weights and the weight of an unknown grade, this Python script calculates the unknown grade needed to get a target final grade, as well as the highest/lowest possible grades that can be achieved, and a programatically-generated graph that shows the final grade that will be achieved based on the value of the unknown grade.</p>
+                        <p class="intable"><b>Written in:</b> Python</p>
                     </td>
                 </tr>
-                <!-- Currently privated for updating -->
-                <!-- <tr>
+            </table>
+
+			<p class="bigtext" id="other"><b>Other Projects</b></p>
+            <p><i>Other, smaller things I've done. Not everything is on here; you can view the complete list of my works on my GitHub.</i></p>
+
+            <table>
+                <tr>
                     <td>
-                        <p class="intable"><b>Journal Manager</b></p>
-                        <img class="tableimg" src="https://user-images.githubusercontent.com/58154576/155890966-a8ebd0fa-722c-41ca-a932-4b8af269a122.png">
+                        <p class="intable"><b>Practice Handbells</b></p>
+                        <img class="tableimg" src="https://sbrugel.com/img/handbells.png">
                         <br>
-                        <p><a href="https://github.com/sbrugel/journal-manager/releases">Download</a></p>
-                        <p><a href="https://github.com/sbrugel/journal-manager">View Source/More Info</a></p>
+                        <p><a href="https://www.practicehandbells.com/">More Info</a></p>
                     </td>
                     <td>
-                        <p class="intable">A Windows Forms application that allows the user to write journal entries, save them locally, and view them later.</p>
+                        <p class="intable">I was involved in the software development of Practice Handbells, a product that provides a cost-efficient way to practice handbells at home without having to buy an expensive, full set of real bells. These utilize components and the IDE of Arduino, an open-source electronics platform.</p>
+                        <p class="intable"><b>Written in:</b> C</p>
                     </td>
-                </tr> -->
+                </tr>
+                <tr>
+                    <td>
+                        <p class="intable"><b>Biking Weather</b></p>
+                        <img class="tableimg" src="https://user-images.githubusercontent.com/58154576/182970908-fcec81c5-1389-4f40-924c-bc2c512702d0.png">
+                        <br>
+                        <p><a href="https://github.com/sbrugel/biking-weather">View Source/More Info</a></p>
+                    </td>
+                    <td>
+                        <p class="intable">A React app that intakes a location name/area code, makes an API call to determine weather conditions, and tells if they are good for biking.</p>
+                        <p class="intable">The user has the ability to enter both location names and area codes to determine the weather/conditions in an area. The user is presented with the temperature (actual and feels-like), chance of rain (current and in the next hour), and humidity. The data is also highlighted in either green (good for biking) or red (not good).</p>
+                        <p class="intable"><b>Written in:</b> JavaScript, ReactJS</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="intable"><b>img2pi</b></p>
+                        <img class="tableimg" src="https://sbrugel.com/img/img2pi.png">
+                        <br>
+                        <p><a href="https://github.com/sbrugel/img2pi">View Source/More Info</a></p>
+                    </td>
+                    <td>
+                        <p class="intable">Displays a jpg/png image on a Raspberry Pi's sense hat.</p>
+                        <p class="intable"><b>Written in:</b> C</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="intable"><b>Asteroids</b></p>
+                        <img class="tableimg" src="https://sbrugel.com/img/asteroids.png">
+                        <br>
+                        <p><a href="https://github.com/sbrugel/cisc108-asteroids">View Source/More Info</a></p>
+                    </td>
+                    <td>
+                        <p class="intable">This is a recreation of the Atari game Asteroids, made in Python using the Designer.py library. Created as a final project for a university class.</p>
+                        <p class="intable"><b>Written in:</b> Python</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="intable"><b>Railroad Locomotive Scraper</b></p>
+                        <img class="tableimg" src="https://i.imgur.com/Rh0Hnvt.gif">
+                        <br>
+                        <p><a href="https://github.com/sbrugel/rr-locomotive-scraper">View Source/More Info</a></p>
+                    </td>
+                    <td>
+                        <p class="intable">A small web scraping project that intakes a railroad company owner's reporting mark (e.g. 'NS', 'BNSF', ...) and a locomotive number. The program then scrapes <b>RRPictureArchives</b> to find that locomotive, searching through pages using a divide-and-conquer algorithm to reduce the average searching time (especially for locos with higher numbers). It returns the locomotive model as well as any associated notes.</p>
+                        <p class="intable"><b>Written in:</b> Python</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="intable"><b>Birthday Bot</b></p>
+                        <img class="tableimg" src="https://user-images.githubusercontent.com/58154576/157116233-f6a4ea44-7f7a-449d-93ef-db05598292c0.png">
+                        <br>
+                        <p><a href="https://github.com/sbrugel/birthday-bot">View Source/More Info</a></p>
+                    </td>
+                    <td>
+                        <p class="intable">Discord bot that announces user-inputted birthdays in a guild. Users can enter their birth month/day and optionally year and on their birthday, a message will be automatically sent in a channel specified in the .env file, wishing that user a happy birthday.</p>
+                        <p class="intable"><b>Written in:</b> TypeScript, NodeJS</p>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <p class="intable"><b>Emojilang</b></p>
+                        <img class="tableimg" src="https://user-images.githubusercontent.com/58154576/170095943-044dabd0-f04d-4ca9-8bd4-0ea8173b63c4.png">
+                        <br>
+                        <p><a href="https://github.com/sbrugel/emojilang">View Source/More Info</a></p>
+                    </td>
+                    <td>
+                        <p class="intable">A fake programming language based on Python, using its syntax, except with core functions and keywords using emojis instead! Specifically this includes a C# Windows Forms program that serves as a very basic pseudo-IDE for the language, featuring the ability to save files and run them within the program.</p>
+                        <p class="intable">This project is currently heavily work-in-progress. More updates are to come soon to improve the program.</p>
+                        <p class="intable"><b>Written in:</b> C#</p>
+                    </td>
+                </tr>
                 <tr>
                     <td>
                         <p class="intable"><b>Discord Translate</b></p>
@@ -206,6 +188,7 @@
                     </td>
                     <td>
                         <p class="intable">A bot that uses the Google Translate API to translate both user-provided strings (through commands) and contents of other messages (through context menus) to any language that Google Translate supports.</p>
+                        <p class="intable"><b>Written in:</b> TypeScript, NodeJS</p>
                     </td>
                 </tr>
                 <tr>
@@ -219,6 +202,8 @@
                     <td>
                         <p class="intable">Intended to complement Mike Wright's Hellfire 3 this program was written as a personal project that allows for a more organized list of moves (aka, a journey behind a loco or in a unit from one destination to another) that the player has done over various games (or as the game calls them, weeks).</p>
                         <p class="intable">It was created with RailMiles in mind, following a very similar layout where the user can view their all-time journeys, as well as number of miles behind each loco/class, and a ranking of each class sorted by total miles. This program also features import/export, where the user can export their moves list/data as a .hfm file. Other users can import .hfm files to view journeys, or to compare their statistics with their own using the Compare Stats/Compare Miles feature.</p>
+                        <p class="intable"><i>Technically, this is simulator-related content, but I feel like the scope of this project is big enough for it to fit in with my general stuff.</i></p>
+                        <p class="intable"><b>Written in:</b> C#</p>
                     </td>
                 </tr>
                 <tr>
@@ -230,6 +215,7 @@
                     </td>
                     <td>
                         <p class="intable">A Discord bot that announces if there is an F1 race or qualifying race on the current day. This totally wasn't created so I can avoid Discord voice chats if there's a race going on, since I'm not really interested in F1...! :)</p>
+                        <p class="intable"><b>Written in:</b> TypeScript, NodeJS</p>
                     </td>
                 </tr>
                 <tr>
@@ -241,6 +227,7 @@
                     </td>
                     <td>
                         <p class="intable">A dabble into GUI programming in Python, using the Tkinter GUI library. This calculates the stats of a Pokemon, based on level, nature, base stat values, IVs, and EVs. The results have been verified against formulas and examples on Bulbapedia.</p>
+                        <p class="intable"><b>Written in:</b> Python</p>
                     </td>
                 </tr>
                 <tr>
@@ -252,6 +239,7 @@
                     </td>
                     <td>
                         <p class="intable">A simple Python script that reads through a user specified text file and finds lines that are over a number of characters the user inputs. Initially made for my own convenience for my final project of a computer science class to ensure all lines of my code were readable.</p>
+                        <p class="intable"><b>Written in:</b> Python</p>
                     </td>
                 </tr>
                 <tr>
@@ -263,6 +251,7 @@
                     </td>
                     <td>
                         <p class="intable">My first independent foray into TypeScript, this is a Discord bot that keeps a constant check on user provided Discord thread channel IDs and regularly unarchives them, if they are archived. This prevents users from having to manually unarchive them, whether through sending a message or through the setting, or boosting the server enough to get a long enough thread lifetime.</p>
+                        <p class="intable"><b>Written in:</b> TypeScript, NodeJS</p>
                     </td>
                 </tr>
                 <!-- <tr>
@@ -276,29 +265,7 @@
                         <p class="intable">Created as a small personal project that eventually evolved (pun totally not intended), web scraping software that analyzes the strengths and weaknesses of a team of Pokemon, as well as return basic information about Pokemon in an organized manner.</p>
                     </td>
                 </tr> -->
-                <tr>
-                    <td>
-                        <p class="intable"><b>SimSig Game Updates Bot</b></p>
-                        <img class="tableimg" src="https://user-images.githubusercontent.com/58154576/140078467-5ed13559-e143-4cee-95a1-526b98d234da.png">
-                        <br>
-                        <p><a href="https://github.com/sbrugel/SimSig-Game-Updates">View Source/More Info</a></p>
-                    </td>
-                    <td>
-                        <p class="intable">Discord bot that posts upcoming multiplayer games from the SimSig websites, in a rich embed format, at 00:00 each day</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="intable"><b>SimSig Simulation Picker</b></p>
-                        <img class="tableimg" src="https://raw.githubusercontent.com/sbrugel/sbrugel.github.io/main/img/ssp.png">
-                        <br>
-                        <p><a href="https://sbrugel.github.io/simsig/simulation-picker.html">Run</a></p>
-                        <p><a href="https://github.com/sbrugel/simsig-simulation-picker">View Source/More Info</a></p>
-                    </td>
-                    <td>
-                        <p class="intable">This is an HTML page, with associated JavaScript and CSS, that picks a random SimSig simulation (out of the full pool of British SimSig sims) with all associated settings.</p>
-                    </td>
-                </tr>
+                
                 <tr>
                     <td>
                         <p class="intable"><b>sbrugel.github.io</b></p>
@@ -308,47 +275,7 @@
                     </td>
                     <td>
                         <p class="intable">The source of this website, presented in a neat, organized format. How cool is that?!</p>
-                    </td>
-                </tr>
-            </table>
-
-            <p class="bigtext" id="ts"><b>Train Simulator Stuff</b></p>
-            <table>
-                <tr>
-                    <td>
-                        <p class="intable"><b>TS Readme Generator & Scenario Packager</b></p>
-                        <img class="tableimg" src="https://sbrugel.com/img/rmg.png">
-                        <br>
-                        <p><a href="https://github.com/sbrugel/TS-Readme-Generator/releases">Download</a></p>
-                        <p><a href="https://github.com/sbrugel/TS-Readme-Generator">View Source/More Info</a></p>
-                    </td>
-                    <td>
-                        <p class="intable">A program that not only packages TS scenarios efficiently and quickly into a folder, but also automatically writes the scenario README based on scenario properties and user input.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="intable"><b>TS Background Changer</b></p>
-                        <img class="tableimg" src="https://sbrugel.com/img/tsbg.png">
-                        <br>
-                        <p><a href="https://github.com/sbrugel/TS-Background-Changer/releases">Download</a></p>
-                        <p><a href="https://github.com/sbrugel/TS-Background-Changer">View Source/More Info</a></p>
-                    </td>
-                    <td>
-                        <p class="intable">Software that allows the user to change the menu background of Train Simulator 20XX.
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="intable"><b>AP Preload Shortener</b></p>
-                        <img class="tableimg" src="https://camo.githubusercontent.com/7dd0317cf05e131e0062853f122913258aac99f773c2860f7929761bd41d122c/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3733353231333132363536373332393930352f3830353838333633353331353530373230312f756e6b6e6f776e2e706e67">
-                        <br>
-                        <p><a href="https://github.com/sbrugel/ap-preload-shortener/releases">Download</a></p>
-                        <p><a href="https://github.com/sbrugel/ap-preload-shortener">View Source/More Info</a></p>
-                    </td>
-                    <td>
-                        <p class="intable">A program that shortens the consist names for Armstrong Powerhouse add-ons in the quick drive menu for ease of readability. Developed to support future releases without the need for an update.</p>
+                        <p class="intable"><b>Written in:</b> HTML, CSS, tiny bits of JavaScript</p>
                     </td>
                 </tr>
             </table>
