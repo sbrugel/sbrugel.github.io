@@ -40,22 +40,45 @@ body {
 /* div */
 .splash {
     height: 100vh;
-    background: #348ceb;
+    background: #8bb6fc;
     color: #ffffff;
 
     text-align: center;
     top: 50%;
 }
 
+/* h */
+h1 {
+    font-size: 28pt;
+    color: #348ceb;
+    padding: 20px;
+    margin-left: 10vw;
+	margin-right: 10vw;
+    text-align: center;
+}
+
+h2 {
+    font-size: 22pt;
+    color: #348ceb;
+    padding: 20px;
+    margin-left: 10vw;
+	margin-right: 10vw;
+}
+
 /* p */
 p {
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 20px;
-	padding-right: 20px;
+    padding-right: 20px;
+    margin-left: 10vw;
+	margin-right: 10vw;
 	font-size: 1.2vw;
 	line-height: normal;
 }
 
 .splash-text {
+    margin: 0;
     /* Center horizontally and vertically */
     position: absolute;
     top: 50%;
@@ -70,19 +93,61 @@ p {
     animation-duration: 1s;
 }
 
-.splash-header {
-    font-size: 22pt;
+.splash-content-l {
     position: relative;
     animation-name: splash-left;
     animation-duration: 2s;
 }
 
-.splash-content {
+.splash-content-r {
     position: relative;
     animation-name: splash-right;
     animation-duration: 2s;
 }
 
-.splash-text {
-    margin-right: 2vh;
+.collapsible-text {
+    margin-left: 0.3vw;
+	margin-right: 0.3vw;
+	font-size: 1.2vw;
+	line-height: normal;
+}
+
+/* a */
+a {
+	color: #c7dcff;
+    text-decoration: none;
+}
+a:hover {
+	color: #8c9cb8;
+}
+
+/* collapsible */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 5px;
+    width: 80%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+  
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    margin-left: 10vw;
+	margin-right: 10vw;
 }
