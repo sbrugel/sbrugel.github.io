@@ -1,0 +1,88 @@
+/* html + general things */
+html {
+    scroll-behavior: smooth;
+
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+* {
+    margin: 0;
+}
+
+/* animations */
+@keyframes splash {
+    0%   { opacity: 0 }
+    100% { opacity: 1; }
+}
+
+@keyframes splash-left {
+    0%   { left:-500px; opacity: 0 }
+    50%   { left:500px; opacity: 0 }
+    100% { left:0px; opacity: 1; }
+}
+
+@keyframes splash-right {
+    0%   { left:-500px; opacity: 0 }
+    50%   { left:-500px; opacity: 0 }
+    100% { left:0px; opacity: 1; }
+}
+
+/* body */
+body { 
+	min-width: 525px;
+	font-family: 'Barlow';
+    font-size: 14pt;
+}
+
+/* div */
+.splash {
+    height: 100vh;
+    background: #348ceb;
+    color: #ffffff;
+
+    text-align: center;
+    top: 50%;
+}
+
+/* p */
+p {
+    padding-left: 20px;
+	padding-right: 20px;
+	font-size: 1.2vw;
+	line-height: normal;
+}
+
+.splash-text {
+    /* Center horizontally and vertically */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.splash-main {
+    font-size: 30pt;
+    position: relative;
+    animation-name: splash;
+    animation-duration: 1s;
+}
+
+.splash-header {
+    font-size: 22pt;
+    position: relative;
+    animation-name: splash-left;
+    animation-duration: 2s;
+}
+
+.splash-content {
+    position: relative;
+    animation-name: splash-right;
+    animation-duration: 2s;
+}
+
+.splash-text {
+    margin-right: 2vh;
+}
