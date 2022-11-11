@@ -34,6 +34,21 @@ html {
   }
 }
 
+@keyframes splash-center {
+  0% {
+    left: 0px;
+    opacity: 0;
+  }
+  50% {
+    left: 0px;
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
+
 @keyframes splash-right {
   0% {
     left: -500px;
@@ -82,7 +97,9 @@ body {
 h1 {
   font-size: 28pt;
   color: #3287a8;
-  padding: 20px;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: 10vw;
   margin-right: 10vw;
   text-align: center;
@@ -91,7 +108,9 @@ h1 {
 h2 {
   font-size: 22pt;
   color: #3287a8;
-  padding: 20px;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: 10vw;
   margin-right: 10vw;
 }
@@ -141,6 +160,12 @@ p {
 .splash-content-r {
   position: relative;
   animation-name: splash-right;
+  animation-duration: 2s;
+}
+
+.splash-content-c {
+  position: relative;
+  animation-name: splash-center;
   animation-duration: 2s;
 }
 

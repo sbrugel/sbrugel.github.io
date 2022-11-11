@@ -25,8 +25,12 @@
           <br />
           <span
             ><a href="#about" class="splash-content-r">About Me</a
-            >&emsp;&ensp;<a href="#projects" class="splash-content-l"
+            >&emsp;&ensp;<a href="#projects" class="splash-content-c"
               >Projects</a
+            >&emsp;&ensp;<a
+              href="mailto:sbrugel@udel.edu"
+              class="splash-content-l"
+              >Contact</a
             ></span
           >
           <br />
@@ -112,9 +116,9 @@
             to create their own flash card sets and quiz themselves on them,
             custom-built, sophisticated game content installers, and
             applications that display local CSV game data in numerous, organized
-            formats.<br /><br />Additionally, I've worked with the
-            Unity 3D game engine, which uses C# for scripting, mainly in the
-            areas of just component scripting and UI design.
+            formats.<br /><br />Additionally, I've worked with the Unity 3D game
+            engine, which uses C# for scripting, mainly in the areas of just
+            component scripting and UI design.
           </p>
         </div>
         <button type="button" class="collapsible">
@@ -284,9 +288,8 @@
 
         <h1 id="projects"><strong>Projects</strong></h1>
         <p>
-          Below are the major projects I've worked on, most of them
-          independently. The collapsible below contains many, more minor things
-          I've worked on. Click on the pictures to learn more about each
+          These are the computer-science-related projects I've worked on, most
+          of them independently. Click on the pictures to learn more about each
           project; links to their source on GitHub are also available.
         </p>
         <table>
@@ -472,6 +475,199 @@
             </td>
           </tr>
         </table>
+
+        <button type="button" class="collapsible">
+          <p class="collapsible-text">
+            Click here to view additional projects I've worked on.
+          </p>
+        </button>
+        <div class="content">
+          <table>
+            <tr>
+              <td>
+                <img src="img/sage.png" class="tableimg" id="sage" />
+                <div id="sage-modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="img/sage.png" />
+                    <p>
+                      Sage is an all-in-one Discord bot used to manage the
+                      University of Delaware Computer Science department's
+                      official Discord server, which has over 2,500 students and
+                      25+ professors. The bot and the server are maintained by
+                      three university undergraduates, including myself, on
+                      behalf of the college's CIS department.
+                    </p>
+                    <p>
+                      The bot has many features to enhance the learning and
+                      college community experience, including the ability to ask
+                      private questions for professors/TAs to view and in-chat
+                      polls.
+                    </p>
+                    <p>
+                      <a href="https://github.com/ud-cis-discord/SageV2"
+                        >View Source</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p class="intable"><strong>Sage</strong></p>
+              </td>
+
+              <td>
+                <img
+                  src="https://camo.githubusercontent.com/e851f5067c89472e0c9ac7db0c6fd304d8c57326df134264c3fb550fb4fdad60/68747470733a2f2f692e696d6775722e636f6d2f357258765732642e706e67"
+                  class="tableimg"
+                  id="septadelays"
+                />
+                <div id="septadelays-modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img
+                      src="https://camo.githubusercontent.com/e851f5067c89472e0c9ac7db0c6fd304d8c57326df134264c3fb550fb4fdad60/68747470733a2f2f692e696d6775722e636f6d2f357258765732642e706e67"
+                    />
+                    <p>
+                      Written in JavaScript + React/Express and TypeScript, this
+                      is a full-stack web application that displays delay data
+                      (average/mean/extremities) of SEPTA regional rail
+                      services. The app has a backend that connects to a
+                      database, a frontend that displays the information based
+                      on user queries, and a supplemental script that scrapes
+                      the SEPTA API every 15 minutes, posting delay data for
+                      each SEPTA service to the database.
+                    </p>
+                    <p>
+                      <a href="https://github.com/sbrugel/septa-delay-history"
+                        >View Source</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p class="intable"><strong>SEPTA Delay Statistics</strong></p>
+              </td>
+
+              <td>
+                <img
+                  src="https://camo.githubusercontent.com/8448899f5067e02dc99751282a88722553df942119dcccadfd2553af645fe7f5/68747470733a2f2f692e696d6775722e636f6d2f4135774f594d362e706e67"
+                  class="tableimg"
+                  id="septatracker"
+                />
+                <div id="septatracker-modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img
+                      src="https://camo.githubusercontent.com/8448899f5067e02dc99751282a88722553df942119dcccadfd2553af645fe7f5/68747470733a2f2f692e696d6775722e636f6d2f4135774f594d362e706e67"
+                    />
+                    <p>
+                      Originally created in 2021, this is a Discord bot that
+                      fetches from the SEPTA API every 2 minutes and returns
+                      delays, last recorded location, and train consist
+                      information for user-inputted train numbers in a specified
+                      text channel. It also regularly updates users on
+                      alerts/advisories for regional rail lines.
+                    </p>
+                    <p>
+                      <a href="https://github.com/sbrugel/septa-checker-v2"
+                        >View Source</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p class="intable"><strong>SEPTA Delay History</strong></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img
+                  src="https://user-images.githubusercontent.com/58154576/155890966-a8ebd0fa-722c-41ca-a932-4b8af269a122.png"
+                  class="tableimg"
+                  id="journalmanager"
+                />
+                <div id="journalmanager-modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img
+                      src="https://user-images.githubusercontent.com/58154576/155890966-a8ebd0fa-722c-41ca-a932-4b8af269a122.png"
+                    />
+                    <p>
+                      A Windows Forms application that allows the user to write
+                      journal entries, save them locally, and view them later.
+                      Also has many other features, including entry
+                      tagging/searching (by keyword or tag), and text formatting
+                      using a tag system.
+                    </p>
+                    <p>
+                      <a href="https://github.com/sbrugel/journal-manager"
+                        >View Source</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p class="intable"><strong>Journal Manager</strong></p>
+              </td>
+
+              <td>
+                <img
+                  src="https://camo.githubusercontent.com/deed2cf6e16561c7c92f9fc331fbe6ac1a05746e57a9787057a93f0792a26539/68747470733a2f2f692e696d6775722e636f6d2f47367a77526b4f2e676966"
+                  class="tableimg"
+                  id="flashcards"
+                />
+                <div id="flashcards-modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img
+                      src="https://camo.githubusercontent.com/deed2cf6e16561c7c92f9fc331fbe6ac1a05746e57a9787057a93f0792a26539/68747470733a2f2f692e696d6775722e636f6d2f47367a77526b4f2e676966"
+                    />
+                    <p>
+                      A Windows Forms application that allows the user to create
+                      sets of flash cards for studying, save them on their
+                      system, and review them in another window, being able to
+                      shuffle the card order at any time.
+                    </p>
+                    <p>
+                      <a href="https://github.com/sbrugel/flash-card-generator"
+                        >View Source</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p class="intable"><strong>Flash Card Maker</strong></p>
+              </td>
+
+              <td>
+                <img
+                  src="https://i.imgur.com/9sebZd8.png"
+                  class="tableimg"
+                  id="finalgradecalc"
+                />
+                <div id="finalgradecalc-modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="https://i.imgur.com/9sebZd8.png" />
+                    <p>
+                      Based on known grades/weights and the weight of an unknown
+                      grade, this Python script calculates the unknown grade
+                      needed to get a target final grade, as well as the
+                      highest/lowest possible grades that can be achieved, and a
+                      programatically-generated graph that shows the final grade
+                      that will be achieved based on the value of the unknown
+                      grade.
+                    </p>
+                    <p>
+                      <a
+                        href="https://github.com/sbrugel/final-grade-calculator"
+                        >View Source</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p class="intable"><strong>Final Grade Calculator</strong></p>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <p>And so, that's about it from me. Thanks for visiting!</p>
       </div>
     </div>
   </body>
