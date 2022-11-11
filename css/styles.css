@@ -49,6 +49,17 @@ html {
   }
 }
 
+@keyframes modal {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 /* body */
 body {
   min-width: 525px;
@@ -98,6 +109,13 @@ p {
   color: #ffffff;
 }
 
+.intable {
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
 .splash-text {
   margin: 0;
   /* Center horizontally and vertically */
@@ -143,16 +161,24 @@ a:hover {
 }
 
 /* tables */
-table,
+table {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
 td,
 th {
-  color: #ffffff;
+  color: #222222;
   font-size: 1.2vw;
   line-height: normal;
   text-align: center;
   justify-content: center;
   align-items: center;
-  border: 3px solid white;
+  border: 3px solid #222222;
   border-collapse: collapse;
   margin-bottom: 10px;
   margin: auto;
@@ -160,24 +186,23 @@ th {
 
 td,
 th {
-  max-width: 40vw;
+  width: 30vw;
 }
 
 /* img */
 .tableimg {
   display: block;
-  max-width: 75%;
-  height: auto;
+  max-width: 66%;
   align-self: center;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 
 /* collapsible */
 .collapsible {
   background-color: #333333;
   cursor: pointer;
-  padding: 5px;
   width: 80%;
   border: none;
   text-align: left;
@@ -185,6 +210,7 @@ th {
   font-size: 15px;
   margin-left: 10vw;
   margin-right: 10vw;
+  border: 1px solid #222222;
 }
 
 .active,
@@ -202,12 +228,23 @@ th {
   margin-right: 10vw;
 }
 
+.collapsible:after {
+  content: "\02795"; /* Unicode character for "plus" sign (+) */
+  font-size: 20px;
+  color: white;
+  float: right;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
 /* modal */
-/* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -217,13 +254,18 @@ th {
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
-/* Modal Content/Box */
+/* Modal Content */
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  position: relative;
+  background-color: #333333;
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: modal;
+  -webkit-animation-duration: 0.4s;
+  animation-name: modal;
+  animation-duration: 0.4s;
 }
 
 /* The Close Button */
