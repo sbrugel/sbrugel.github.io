@@ -217,7 +217,7 @@ th {
 /* img */
 .tableimg {
   display: block;
-  max-width: 66%;
+  max-width: 80%;
   align-self: center;
   margin-left: auto;
   margin-right: auto;
@@ -236,6 +236,14 @@ th {
   margin-left: 10vw;
   margin-right: 10vw;
   border: 1px solid #222222;
+}
+
+.c-top {
+  border-radius: 25px 25px 0px 0px;
+}
+
+.c-bottom {
+  border-radius: 0px 0px 25px 25px;
 }
 
 .active,
@@ -269,7 +277,7 @@ th {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 70px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -285,7 +293,7 @@ th {
   background-color: #333333;
   margin: auto;
   width: 80%;
-  padding: 10px;
+  padding: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   -webkit-animation-name: modal;
   -webkit-animation-duration: 0.4s;

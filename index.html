@@ -68,7 +68,7 @@
           school/college classes, or work experience. Click on the dropdowns to
           view more about the languages I've used so far.
         </p>
-        <button type="button" class="collapsible">
+        <button type="button" class="collapsible c-top">
           <p class="collapsible-text">Java</p>
         </button>
         <div class="content">
@@ -201,7 +201,7 @@
         <button type="button" class="collapsible">
           <p class="collapsible-text">Assembly</p>
         </button>
-        <div class="content">
+        <div class="content  c-bottom">
           <p class="collapsible-text">
             I bet you weren't expecting this to appear on this list.<br /><br />I
             learned the basics of this language through a sophomore-year machine
@@ -218,7 +218,7 @@
           Of course, computer science is not the only interest or hobby of
           mine...
         </p>
-        <button type="button" class="collapsible">
+        <button type="button" class="collapsible c-top">
           <p class="collapsible-text">Gaming</p>
         </button>
         <div class="content">
@@ -278,7 +278,7 @@
         <button type="button" class="collapsible">
           <p class="collapsible-text">Other Things</p>
         </button>
-        <div class="content">
+        <div class="content c-bottom">
           <p class="collapsible-text">
             Canoeing/kayaking, biking, watching TV (my top shows are Let's Make
             a Deal and Futurama), mini-golfing, hiking, roller coasters, and
@@ -485,188 +485,207 @@
           <table>
             <tr>
               <td>
-                <img src="img/sage.png" class="tableimg" id="sage" />
-                <div id="sage-modal" class="modal">
+                <img src="https://user-images.githubusercontent.com/58154576/182970908-fcec81c5-1389-4f40-924c-bc2c512702d0.png" class="tableimg" id="biking-weather" />
+                <div id="biking-weather-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img src="img/sage.png" />
+                    <img src="https://user-images.githubusercontent.com/58154576/182970908-fcec81c5-1389-4f40-924c-bc2c512702d0.png" />
                     <p>
-                      Sage is an all-in-one Discord bot used to manage the
-                      University of Delaware Computer Science department's
-                      official Discord server, which has over 2,500 students and
-                      25+ professors. The bot and the server are maintained by
-                      three university undergraduates, including myself, on
-                      behalf of the college's CIS department.
+                      A React app that intakes a location name/area code, makes an API call to determine weather conditions, and tells if they are good for biking.
                     </p>
                     <p>
-                      The bot has many features to enhance the learning and
-                      college community experience, including the ability to ask
-                      private questions for professors/TAs to view and in-chat
-                      polls.
+                      The user has the ability to enter both location names and area codes to determine the weather/conditions in an area. The user is presented with the temperature (actual and feels-like), chance of rain (current and in the next hour), and humidity. The data is also highlighted in either green (good for biking) or red (not good).
                     </p>
                     <p>
-                      <a href="https://github.com/ud-cis-discord/SageV2"
+                      <a href="https://github.com/sbrugel/biking-weather"
                         >View Source</a
                       >
                     </p>
                   </div>
                 </div>
-                <p class="intable"><strong>Sage</strong></p>
+                <p class="intable"><strong>Biking Weather</strong></p>
               </td>
-
+  
               <td>
-                <img
-                  src="https://camo.githubusercontent.com/e851f5067c89472e0c9ac7db0c6fd304d8c57326df134264c3fb550fb4fdad60/68747470733a2f2f692e696d6775722e636f6d2f357258765732642e706e67"
-                  class="tableimg"
-                  id="septadelays"
-                />
-                <div id="septadelays-modal" class="modal">
+                <img src="https://sbrugel.com/img/img2pi.png" class="tableimg" id="img2pi" />
+                <div id="img2pi-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img
-                      src="https://camo.githubusercontent.com/e851f5067c89472e0c9ac7db0c6fd304d8c57326df134264c3fb550fb4fdad60/68747470733a2f2f692e696d6775722e636f6d2f357258765732642e706e67"
-                    />
+                    <img src="https://sbrugel.com/img/img2pi.png" style="width:25%;" />
                     <p>
-                      Written in JavaScript + React/Express and TypeScript, this
-                      is a full-stack web application that displays delay data
-                      (average/mean/extremities) of SEPTA regional rail
-                      services. The app has a backend that connects to a
-                      database, a frontend that displays the information based
-                      on user queries, and a supplemental script that scrapes
-                      the SEPTA API every 15 minutes, posting delay data for
-                      each SEPTA service to the database.
+                      C and Python scripts. Displays a jpg/png image on a Raspberry Pi's sense hat.
                     </p>
                     <p>
-                      <a href="https://github.com/sbrugel/septa-delay-history"
-                        >View Source</a
+                      <a href="https://github.com/sbrugel/img2pi"
+                        >https://github.com/sbrugel/img2pi</a
                       >
                     </p>
                   </div>
                 </div>
-                <p class="intable"><strong>SEPTA Delay Statistics</strong></p>
+                <p class="intable"><strong>img2pi</strong></p>
               </td>
-
+  
               <td>
-                <img
-                  src="https://camo.githubusercontent.com/8448899f5067e02dc99751282a88722553df942119dcccadfd2553af645fe7f5/68747470733a2f2f692e696d6775722e636f6d2f4135774f594d362e706e67"
-                  class="tableimg"
-                  id="septatracker"
-                />
-                <div id="septatracker-modal" class="modal">
+                <img src="https://sbrugel.com/img/asteroids.png" class="tableimg" id="asteroids" />
+                <div id="asteroids-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img
-                      src="https://camo.githubusercontent.com/8448899f5067e02dc99751282a88722553df942119dcccadfd2553af645fe7f5/68747470733a2f2f692e696d6775722e636f6d2f4135774f594d362e706e67"
-                    />
+                    <img src="https://sbrugel.com/img/asteroids.png" />
                     <p>
-                      Originally created in 2021, this is a Discord bot that
-                      fetches from the SEPTA API every 2 minutes and returns
-                      delays, last recorded location, and train consist
-                      information for user-inputted train numbers in a specified
-                      text channel. It also regularly updates users on
-                      alerts/advisories for regional rail lines.
+                      This is a recreation of the Atari game Asteroids, made in Python using the Designer.py library. Created as a final project for a university class.
                     </p>
                     <p>
-                      <a href="https://github.com/sbrugel/septa-checker-v2"
+                      <a href="https://github.com/sbrugel/cisc108-asteroids"
                         >View Source</a
                       >
                     </p>
                   </div>
                 </div>
-                <p class="intable"><strong>SEPTA Delay History</strong></p>
+                <p class="intable"><strong>Asteroids</strong></p>
+              </td>
+            </tr>
+  
+            <tr>
+              <td>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" class="tableimg" id="python-things" />
+                <div id="python-things-modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" style="width:25%;" />
+                    <p>
+                      A variety of smaller projects created in Python. Visit the repostiory for more information!
+                    </p>
+                    <p>
+                      <a href="https://github.com/sbrugel/python-things"
+                        >View Source</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p class="intable"><strong>Python Things (small projects)</strong></p>
+              </td>
+  
+              <td>
+                <img src="https://user-images.githubusercontent.com/58154576/157116233-f6a4ea44-7f7a-449d-93ef-db05598292c0.png" class="tableimg" id="birthday-bot" />
+                <div id="birthday-bot-modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="https://user-images.githubusercontent.com/58154576/157116233-f6a4ea44-7f7a-449d-93ef-db05598292c0.png" />
+                    <p>
+                      Discord bot that announces user-inputted birthdays in a guild. Users can enter their birth month/day and optionally year and on their birthday, a message will be automatically sent in a channel specified in the .env file, wishing that user a happy birthday.
+                    </p>
+                    <p>
+                      <a href="https://github.com/sbrugel/birthday-bot"
+                        >View Source</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p class="intable"><strong>Birthday Bot</strong></p>
+              </td>
+  
+              <td>
+                <img src="https://camo.githubusercontent.com/998a2e4efd5bdce22108c801205c96ddaa8d808668d83ad6611d6bccd13559bf/68747470733a2f2f692e696d6775722e636f6d2f6155536b7239682e676966" class="tableimg" id="translate" />
+                <div id="translate-modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="https://camo.githubusercontent.com/998a2e4efd5bdce22108c801205c96ddaa8d808668d83ad6611d6bccd13559bf/68747470733a2f2f692e696d6775722e636f6d2f6155536b7239682e676966" style="width:50%;" />
+                    <p>
+                      A bot that uses the Google Translate API to translate both user-provided strings (through commands) and contents of other messages (through context menus) to any language that Google Translate supports.
+                    </p>
+                    <p>
+                      <a href="https://github.com/sbrugel/discord-translate"
+                        >View Source</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p class="intable"><strong>Discord Translate</strong></p>
               </td>
             </tr>
 
             <tr>
               <td>
-                <img
-                  src="https://user-images.githubusercontent.com/58154576/155890966-a8ebd0fa-722c-41ca-a932-4b8af269a122.png"
-                  class="tableimg"
-                  id="journalmanager"
-                />
-                <div id="journalmanager-modal" class="modal">
+                <img src="https://user-images.githubusercontent.com/58154576/170095943-044dabd0-f04d-4ca9-8bd4-0ea8173b63c4.png" class="tableimg" id="emojilang" />
+                <div id="emojilang-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img
-                      src="https://user-images.githubusercontent.com/58154576/155890966-a8ebd0fa-722c-41ca-a932-4b8af269a122.png"
-                    />
+                    <img src="https://user-images.githubusercontent.com/58154576/170095943-044dabd0-f04d-4ca9-8bd4-0ea8173b63c4.png" style="width:33%;" />
                     <p>
-                      A Windows Forms application that allows the user to write
-                      journal entries, save them locally, and view them later.
-                      Also has many other features, including entry
-                      tagging/searching (by keyword or tag), and text formatting
-                      using a tag system.
+                      A fake programming language based on Python, using its syntax, except with core functions and keywords using emojis instead! Specifically this includes a C# Windows Forms program that serves as a very basic pseudo-IDE for the language, featuring the ability to save files and run them within the program.
                     </p>
                     <p>
-                      <a href="https://github.com/sbrugel/journal-manager"
+                      <a href="https://github.com/sbrugel/emojilang"
                         >View Source</a
                       >
                     </p>
                   </div>
                 </div>
-                <p class="intable"><strong>Journal Manager</strong></p>
+                <p class="intable"><strong>Emojilang</strong></p>
               </td>
 
               <td>
-                <img
-                  src="https://camo.githubusercontent.com/deed2cf6e16561c7c92f9fc331fbe6ac1a05746e57a9787057a93f0792a26539/68747470733a2f2f692e696d6775722e636f6d2f47367a77526b4f2e676966"
-                  class="tableimg"
-                  id="flashcards"
-                />
-                <div id="flashcards-modal" class="modal">
+                <img src="https://user-images.githubusercontent.com/58154576/136306005-88317fd0-1cc6-4275-beea-3835953eea06.png" class="tableimg" id="hellfire" />
+                <div id="hellfire-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img
-                      src="https://camo.githubusercontent.com/deed2cf6e16561c7c92f9fc331fbe6ac1a05746e57a9787057a93f0792a26539/68747470733a2f2f692e696d6775722e636f6d2f47367a77526b4f2e676966"
-                    />
+                    <img src="https://user-images.githubusercontent.com/58154576/136306005-88317fd0-1cc6-4275-beea-3835953eea06.png" />
                     <p>
-                      A Windows Forms application that allows the user to create
-                      sets of flash cards for studying, save them on their
-                      system, and review them in another window, being able to
-                      shuffle the card order at any time.
+                      A program that displays the list of journeys/player statistics for Mike Wright's game Hellfire 3
                     </p>
                     <p>
-                      <a href="https://github.com/sbrugel/flash-card-generator"
+                      <a href="https://github.com/sbrugel/HellfireMiles"
                         >View Source</a
                       >
                     </p>
                   </div>
                 </div>
-                <p class="intable"><strong>Flash Card Maker</strong></p>
+                <p class="intable"><strong>Hellfire Miles</strong></p>
               </td>
 
               <td>
-                <img
-                  src="https://i.imgur.com/9sebZd8.png"
-                  class="tableimg"
-                  id="finalgradecalc"
-                />
-                <div id="finalgradecalc-modal" class="modal">
+                <img src="https://i.imgur.com/UmDKqAJ.png" class="tableimg" id="f1" />
+                <div id="f1-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img src="https://i.imgur.com/9sebZd8.png" />
+                    <img src="https://i.imgur.com/UmDKqAJ.png" />
                     <p>
-                      Based on known grades/weights and the weight of an unknown
-                      grade, this Python script calculates the unknown grade
-                      needed to get a target final grade, as well as the
-                      highest/lowest possible grades that can be achieved, and a
-                      programatically-generated graph that shows the final grade
-                      that will be achieved based on the value of the unknown
-                      grade.
+                      A Discord bot that announces if there is an F1 race or qualifying race on the current day. This totally wasn't created so I can avoid Discord voice chats if there's a race going on, since I'm not really interested in F1...! :)
                     </p>
                     <p>
-                      <a
-                        href="https://github.com/sbrugel/final-grade-calculator"
+                      <a href="https://github.com/sbrugel/f1-announcer-bot"
                         >View Source</a
                       >
                     </p>
                   </div>
                 </div>
-                <p class="intable"><strong>Final Grade Calculator</strong></p>
+                <p class="intable"><strong>F1 Announcer Bot</strong></p>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <img src="https://sbrugel.com/img/statcalc.png" class="tableimg" id="stat-calc" />
+                <div id="stat-calc-modal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <img src="https://sbrugel.com/img/statcalc.png" />
+                    <p>
+                      A dabble into GUI programming in Python, using the Tkinter GUI library. This calculates the stats of a Pokemon, based on level, nature, base stat values, IVs, and EVs. The results have been verified against formulas and examples on Bulbapedia.
+                    </p>
+                    <p>
+                      <a href="https://github.com/sbrugel/pokemon-stat-calculator"
+                        >View Source</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <p class="intable"><strong>Pokemon Stat Calculator</strong></p>
               </td>
             </tr>
           </table>
         </div>
+        <p>If you're looking for simulator-related things I've made, <a href="https://sbrugel.com/game-content.html">this is the temporary page for that.</a></p>
         <p>And so, that's about it from me. Thanks for visiting!</p>
       </div>
     </div>
