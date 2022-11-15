@@ -23,16 +23,11 @@
           <span class="splash-main"><strong>Simon Brugel</strong></span>
           <br />
           <br />
-          <span
-            ><a href="#about" class="splash-content-r">About Me</a
-            >&emsp;&ensp;<a href="#projects" class="splash-content-c"
-              >Projects</a
-            >&emsp;&ensp;<a
-              href="mailto:sbrugel@udel.edu"
-              class="splash-content-l"
-              >Contact</a
-            ></span
-          >
+          <span class="splash-content-c">
+            <a href="#about">About Me</a><br>
+            <a href="#projects">Projects</a><br>
+            <a href="mailto:sbrugel@udel.edu">Contact</a>
+          </span>
           <br />
           <br />
           <span
@@ -299,7 +294,7 @@
               <div id="sage-modal" class="modal">
                 <div class="modal-content">
                   <span class="close">&times;</span>
-                  <img src="img/sage.png" />
+                  <img class="modalimg" src="img/sage.png" />
                   <p>
                     Sage is an all-in-one Discord bot used to manage the
                     University of Delaware Computer Science department's
@@ -333,13 +328,13 @@
               <div id="septadelays-modal" class="modal">
                 <div class="modal-content">
                   <span class="close">&times;</span>
-                  <img
+                  <img class="modalimg"
                     src="https://camo.githubusercontent.com/e851f5067c89472e0c9ac7db0c6fd304d8c57326df134264c3fb550fb4fdad60/68747470733a2f2f692e696d6775722e636f6d2f357258765732642e706e67"
                   />
                   <p>
                     Written in JavaScript + React/Express and TypeScript, this
                     is a full-stack web application that displays delay data
-                    (average/mean/extremities) of SEPTA regional rail services.
+                    of SEPTA regional rail services.
                     The app has a backend that connects to a database, a
                     frontend that displays the information based on user
                     queries, and a supplemental script that scrapes the SEPTA
@@ -365,7 +360,7 @@
               <div id="septatracker-modal" class="modal">
                 <div class="modal-content">
                   <span class="close">&times;</span>
-                  <img
+                  <img class="modalimg"
                     src="https://camo.githubusercontent.com/8448899f5067e02dc99751282a88722553df942119dcccadfd2553af645fe7f5/68747470733a2f2f692e696d6775722e636f6d2f4135774f594d362e706e67"
                   />
                   <p>
@@ -397,7 +392,8 @@
               <div id="journalmanager-modal" class="modal">
                 <div class="modal-content">
                   <span class="close">&times;</span>
-                  <img
+                  <img class="modalimg"
+                    class="modalimg"
                     src="https://user-images.githubusercontent.com/58154576/155890966-a8ebd0fa-722c-41ca-a932-4b8af269a122.png"
                   />
                   <p>
@@ -426,7 +422,7 @@
               <div id="flashcards-modal" class="modal">
                 <div class="modal-content">
                   <span class="close">&times;</span>
-                  <img
+                  <img class="modalimg"
                     src="https://camo.githubusercontent.com/deed2cf6e16561c7c92f9fc331fbe6ac1a05746e57a9787057a93f0792a26539/68747470733a2f2f692e696d6775722e636f6d2f47367a77526b4f2e676966"
                   />
                   <p>
@@ -454,7 +450,7 @@
               <div id="finalgradecalc-modal" class="modal">
                 <div class="modal-content">
                   <span class="close">&times;</span>
-                  <img src="https://i.imgur.com/9sebZd8.png" />
+                  <img class="modalimg" src="https://i.imgur.com/9sebZd8.png" />
                   <p>
                     Based on known grades/weights and the weight of an unknown
                     grade, this Python script calculates the unknown grade
@@ -476,20 +472,20 @@
           </tr>
         </table>
 
-        <button type="button" class="collapsible">
+        <button type="button" class="collapsible c-top">
           <p class="collapsible-text">
             Click here to view additional projects I've worked on.
           </p>
         </button>
-        <div class="content">
-          <table>
+        <div class="content c-bottom">
+          <table class="table-collapsible">
             <tr>
               <td>
                 <img src="https://user-images.githubusercontent.com/58154576/182970908-fcec81c5-1389-4f40-924c-bc2c512702d0.png" class="tableimg" id="biking-weather" />
                 <div id="biking-weather-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img src="https://user-images.githubusercontent.com/58154576/182970908-fcec81c5-1389-4f40-924c-bc2c512702d0.png" />
+                    <img class="modalimg" src="https://user-images.githubusercontent.com/58154576/182970908-fcec81c5-1389-4f40-924c-bc2c512702d0.png" />
                     <p>
                       A React app that intakes a location name/area code, makes an API call to determine weather conditions, and tells if they are good for biking.
                     </p>
@@ -511,13 +507,13 @@
                 <div id="img2pi-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img src="https://sbrugel.com/img/img2pi.png" style="width:25%;" />
+                    <img class="modalimg" src="https://sbrugel.com/img/img2pi.png" style="width:25%;" />
                     <p>
                       C and Python scripts. Displays a jpg/png image on a Raspberry Pi's sense hat.
                     </p>
                     <p>
                       <a href="https://github.com/sbrugel/img2pi"
-                        >https://github.com/sbrugel/img2pi</a
+                        >View Source</a
                       >
                     </p>
                   </div>
@@ -530,7 +526,7 @@
                 <div id="asteroids-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img src="https://sbrugel.com/img/asteroids.png" />
+                    <img class="modalimg" src="https://sbrugel.com/img/asteroids.png" />
                     <p>
                       This is a recreation of the Atari game Asteroids, made in Python using the Designer.py library. Created as a final project for a university class.
                     </p>
@@ -551,7 +547,7 @@
                 <div id="python-things-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" style="width:25%;" />
+                    <img class="modalimg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" style="width:25%;" />
                     <p>
                       A variety of smaller projects created in Python. Visit the repostiory for more information!
                     </p>
@@ -570,7 +566,7 @@
                 <div id="birthday-bot-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img src="https://user-images.githubusercontent.com/58154576/157116233-f6a4ea44-7f7a-449d-93ef-db05598292c0.png" />
+                    <img class="modalimg" src="https://user-images.githubusercontent.com/58154576/157116233-f6a4ea44-7f7a-449d-93ef-db05598292c0.png" />
                     <p>
                       Discord bot that announces user-inputted birthdays in a guild. Users can enter their birth month/day and optionally year and on their birthday, a message will be automatically sent in a channel specified in the .env file, wishing that user a happy birthday.
                     </p>
@@ -589,7 +585,7 @@
                 <div id="translate-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img src="https://camo.githubusercontent.com/998a2e4efd5bdce22108c801205c96ddaa8d808668d83ad6611d6bccd13559bf/68747470733a2f2f692e696d6775722e636f6d2f6155536b7239682e676966" style="width:50%;" />
+                    <img class="modalimg" src="https://camo.githubusercontent.com/998a2e4efd5bdce22108c801205c96ddaa8d808668d83ad6611d6bccd13559bf/68747470733a2f2f692e696d6775722e636f6d2f6155536b7239682e676966" style="width:50%;" />
                     <p>
                       A bot that uses the Google Translate API to translate both user-provided strings (through commands) and contents of other messages (through context menus) to any language that Google Translate supports.
                     </p>
@@ -610,7 +606,7 @@
                 <div id="emojilang-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img src="https://user-images.githubusercontent.com/58154576/170095943-044dabd0-f04d-4ca9-8bd4-0ea8173b63c4.png" style="width:33%;" />
+                    <img class="modalimg" src="https://user-images.githubusercontent.com/58154576/170095943-044dabd0-f04d-4ca9-8bd4-0ea8173b63c4.png" style="width:33%;" />
                     <p>
                       A fake programming language based on Python, using its syntax, except with core functions and keywords using emojis instead! Specifically this includes a C# Windows Forms program that serves as a very basic pseudo-IDE for the language, featuring the ability to save files and run them within the program.
                     </p>
@@ -629,7 +625,7 @@
                 <div id="hellfire-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img src="https://user-images.githubusercontent.com/58154576/136306005-88317fd0-1cc6-4275-beea-3835953eea06.png" />
+                    <img class="modalimg" src="https://user-images.githubusercontent.com/58154576/136306005-88317fd0-1cc6-4275-beea-3835953eea06.png" />
                     <p>
                       A program that displays the list of journeys/player statistics for Mike Wright's game Hellfire 3
                     </p>
@@ -648,7 +644,7 @@
                 <div id="f1-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img src="https://i.imgur.com/UmDKqAJ.png" />
+                    <img class="modalimg" src="https://i.imgur.com/UmDKqAJ.png" />
                     <p>
                       A Discord bot that announces if there is an F1 race or qualifying race on the current day. This totally wasn't created so I can avoid Discord voice chats if there's a race going on, since I'm not really interested in F1...! :)
                     </p>
@@ -669,7 +665,7 @@
                 <div id="stat-calc-modal" class="modal">
                   <div class="modal-content">
                     <span class="close">&times;</span>
-                    <img src="https://sbrugel.com/img/statcalc.png" />
+                    <img class="modalimg" src="https://sbrugel.com/img/statcalc.png" />
                     <p>
                       A dabble into GUI programming in Python, using the Tkinter GUI library. This calculates the stats of a Pokemon, based on level, nature, base stat values, IVs, and EVs. The results have been verified against formulas and examples on Bulbapedia.
                     </p>
