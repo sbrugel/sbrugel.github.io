@@ -183,8 +183,8 @@ p {
 .collapsible-text {
   margin-left: 0.3vw;
   margin-right: 0.3vw;
-  font-size: 1.2vw;
-  line-height: normal;
+  font-size: 1.2vw;;
+  display: inline-block;
 }
 
 @media (max-width: 800px) { /* for mobile devices */
