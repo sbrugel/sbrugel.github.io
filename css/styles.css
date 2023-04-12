@@ -323,6 +323,53 @@ th {
   cursor: pointer;
 }
 
+/* not mobile but smaller (split, for example) */
+@media screen and (max-width: 1200px) and (orientation: portrait) {
+  h1 {
+    font-size: 39pt;
+  }
+
+  h2 {
+    font-size: 44pt;
+  }
+
+  p {
+		font-size: 3vw;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+  .collapsible-text {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    font-size: 3vw;
+  }
+
+  .table-collapsible {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+	td, th {
+		font-size: 4vw;
+    border: 3px solid #222222;
+    width: auto;
+    display: block;
+	}
+
+  .tableimg {
+    max-width: 60vw;
+    max-height: 60vw;
+  }
+
+  .content {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .modalimg {
+    max-width: 70vw;
+  }
+}
+
 /* mobile on portrait */
 @media screen and (max-width: 650px) and (orientation: portrait) {
   .splash {
@@ -334,7 +381,7 @@ th {
   }
 
   h2 {
-    font-size: 44pt;
+    font-size: 33pt;
   }
 
   p {
