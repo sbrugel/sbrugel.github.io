@@ -138,6 +138,10 @@ p {
   color: #ffffff;
 }
 
+.center {
+  text-align: center;
+}
+
 .intable {
   padding: 0;
   padding-top: 10px;
@@ -223,6 +227,7 @@ table {
   margin-right: 5vw;
 }
 
+
 td,
 th {
   color: #222222;
@@ -235,23 +240,19 @@ th {
   border-collapse: collapse;
   margin-bottom: 10px;
   margin: auto;
-}
-
-td,
-th {
   width: 30vw;
 }
 
 @media (max-width: 800px) {
   .table-collapsible {
     margin-left: 5vw;
-  margin-right: 5vw;
+    margin-right: 5vw;
   }
 	td, th {
 		font-size: 4vw;
-		max-width: 4vw;
-		display: table-row;
     border: 3px solid #222222;
+    width: auto;
+    display: block;
 	}
 }
 
