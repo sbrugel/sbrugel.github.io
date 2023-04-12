@@ -115,16 +115,6 @@ h2 {
   margin-right: 10vw;
 }
 
-@media (max-width: 800px) {
-  h1 {
-    font-size: 50pt;
-  }
-
-  h2 {
-    font-size: 44pt;
-  }
-}
-
 /* p */
 p {
   padding-top: 10px;
@@ -190,19 +180,6 @@ p {
   display: inline-block;
 }
 
-@media (max-width: 800px) { /* for mobile devices */
-	p {
-		font-size: 6vw;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-  .collapsible-text {
-    margin-left: 1.5vw;
-    margin-right: 1.5vw;
-    font-size: 6vw;
-  }
-}
-
 /* a */
 a {
   color: #c7dcff;
@@ -214,7 +191,12 @@ a:hover {
 
 /* tables */
 table {
+  max-width: 80vw;
   margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .table-collapsible {
@@ -238,19 +220,6 @@ th {
   width: 30vw;
 }
 
-@media (max-width: 800px) {
-  .table-collapsible {
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }
-	td, th {
-		font-size: 4vw;
-    border: 3px solid #222222;
-    width: auto;
-    display: block;
-	}
-}
-
 /* img */
 .tableimg {
   display: block;
@@ -262,12 +231,6 @@ th {
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
-  .tableimg {
-    max-width: 60vw;
-    max-height: 60vw;
-  }
-}
 /* collapsible */
 .collapsible {
   background-color: #333333;
@@ -303,13 +266,6 @@ th {
   margin-left: 10vw;
   margin-right: 9.6vw;
   padding: 0 18px;
-}
-
-@media (max-width: 800px) {
-  .content {
-    margin-left: 10vw;
-    margin-right: 10vw;
-  }
 }
 
 .collapsible:after {
@@ -352,13 +308,6 @@ th {
   animation-name: modal;
   animation-duration: 0.4s;
 }
-
-@media (max-width: 800px) {
-  .modalimg {
-    max-width: 70vw;
-  }
-}
-
 /* The Close Button */
 .close {
   color: #aaa;
@@ -372,4 +321,55 @@ th {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* mobile on portrait */
+@media screen and (max-width: 650px) and (orientation: portrait) {
+  .splash {
+    height: 130vh;
+  }
+
+  h1 {
+    font-size: 50pt;
+  }
+
+  h2 {
+    font-size: 44pt;
+  }
+
+  p {
+		font-size: 6vw;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+  .collapsible-text {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+    font-size: 6vw;
+  }
+
+  .table-collapsible {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+	td, th {
+		font-size: 4vw;
+    border: 3px solid #222222;
+    width: auto;
+    display: block;
+	}
+
+  .tableimg {
+    max-width: 60vw;
+    max-height: 60vw;
+  }
+
+  .content {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .modalimg {
+    max-width: 70vw;
+  }
 }
