@@ -176,8 +176,20 @@ p {
 .collapsible-text {
   margin-left: 0.3vw;
   margin-right: 0.3vw;
-  font-size: 1.2vw;;
+  font-size: 1.2vw;
   display: inline-block;
+  justify-content: space-between;
+}
+
+.collapsible-title {
+  margin-left: 0.3vw;
+  margin-right: 0.3vw;
+  font-size: 1.2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline; /* Adjust alignment as needed */
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 /* a */
