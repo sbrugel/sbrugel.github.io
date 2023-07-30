@@ -350,7 +350,7 @@ th {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-  .collapsible-text {
+  .collapsible-text, .collapsible-title {
     margin-left: 1.5vw;
     margin-right: 1.5vw;
     font-size: 3vw;
@@ -401,7 +401,7 @@ th {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-  .collapsible-text {
+  .collapsible-text, .collapsible-title {
     margin-left: 1.5vw;
     margin-right: 1.5vw;
     font-size: 6vw;
