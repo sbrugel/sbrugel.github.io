@@ -9,47 +9,49 @@ html {
   margin: 0;
 }
 
-/* body */
+/* stuff consistent across the body */
 body {
   font-family: "Barlow";
   font-size: 14pt;
-  background-color: #404040;
+  background-color: #202020;
 }
 
-/* divs */
+/* specific divs */
 .languages {
   display: flex;
   align-items: stretch;
   justify-content: center;
 }
 
-.center {
-  margin: 5px;
-  max-width: 50%;
-  border: 3px solid green;
-  padding: 10px;
-}
-
 /* h */
+/* this is used for headers */
 h1 {
   font-size: 28pt;
   color: #3287a8;
-  padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: 10vw;
   margin-right: 10vw;
   text-align: center;
 }
 
+/* this is used for sub-headers */
 h2 {
   font-size: 22pt;
   color: #3287a8;
-  padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
   margin-left: 10vw;
   margin-right: 10vw;
+  text-align: center;
+}
+
+/* this is used for language titles */
+h3 {
+  font-size: 2vw;
+  color: #ffffff;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /* p */
@@ -63,6 +65,7 @@ p {
   color: #ffffff;
 }
 
+/* this is used for text directly in the body */
 .normal-text {
   padding-top: 10px;
   padding-bottom: 10px;
