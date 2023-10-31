@@ -42,6 +42,13 @@ h2 {
   text-align: center;
 }
 
+/* this h1/h2 is used for project headers */
+.project-header {
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
 /* this is used for language titles */
 h3 {
   font-size: 2vw;
@@ -60,6 +67,7 @@ p {
   padding-bottom: 2px;
   padding-left: 4px;
   padding-right: 4px;
+  margin: 10px;
   font-size: 1.2vw;
   line-height: normal;
   color: #ffffff;
@@ -75,6 +83,11 @@ p {
   margin-right: 10vw;
 }
 
+/* this is used for text in project cards */
+.center {
+  text-align: center;
+}
+
 /* a */
 a {
   color: #c7dcff;
@@ -83,6 +96,59 @@ a {
 
 a:hover {
   color: #8c9cb8;
+}
+
+/* ============= REPSONSIVENESS ============= */
+/* mobile on portrait */
+/* @media screen and (max-width: 650px) and (orientation: portrait) {
+  .splash {
+    height: 130vh;
+  }
+
+  h1,
+  h2 {
+    font-size: 39pt;
+  }
+
+  h3 {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 3vw;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hide-on-small-window {
+    visibility: hidden;
+  }
+} */
+
+/* not mobile but smaller (split, for example) */
+@media screen and (max-width: 1200px) {
+  .splash {
+    height: 130vh;
+  }
+
+  h1,
+  h2 {
+    font-size: 39pt;
+  }
+
+  h3 {
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 3vw;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hide-on-small-window {
+    visibility: hidden;
+  }
 }
 
 /* ============= SPLASH STUFF ============= */

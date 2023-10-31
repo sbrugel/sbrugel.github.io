@@ -60,15 +60,12 @@
 
 				<h1 id="projects"><strong>Projects</strong></h1>
 				<p class="normal-text">
-					These are the computer-science-related projects I've worked on, most of them independently. Click on the pictures to learn more about each
-					project; links to their source on GitHub are also available.
-				</p>
-				<p class="normal-text">
+					These are the computer-science-related projects I've worked on, most of them independently.<br /><br />
 					If you're looking for simulator-related things I've made,
-					<a href="https://sbrugel.com/game-content.html">this is the temporary page for that.</a>
+					<a href="https://sbrugel.com/game-content.html">this is the temporary page for that.</a> (CSS is gone, too lazy to bring it back.)
 				</p>
 
-				<!-- <div id="projects"></div> -->
+				<div id="projects-cards"></div>
 
 				<h1 id="exp"><strong>Experience</strong></h1>
 				<p class="normal-text">Below is an outline of my experience with computer science. Click on the dropdowns to view more information about each of them.</p>
@@ -164,7 +161,7 @@
 				color1: "#aab8b9",
 				color2: "#aab8b9",
 			},
-		]
+		];
 
 		languages.map(function(language, index) {
 			function generateImage() {
@@ -173,6 +170,7 @@
 				const languageImage = document.createElement("img");
 				languageImage.src = language.img;
 				languageImage.style.cssText = `max-width: 125px; aspect-ratio: 1/1; `;
+				languagePicDiv.className = "hide-on-small-window";
 				languagePicDiv.appendChild(languageImage);
 				return languagePicDiv;
 			}
@@ -226,7 +224,101 @@
 			return parent;
 		}).forEach(function(element) {
 			document.getElementById("languages").appendChild(element);
-		})
+		});
+
+		const projects = [
+			{
+				name: "Sage",
+				date: "December 2021 - current",
+				img: "https://sbrugel.com/img/sage.png",
+				description: "An all-in-one Discord bot used to manage the University of Delaware CIS department's official Discord server, which has over 3,000 students and 25+ professors.",
+				source: "https://github.com/ud-cis-discord/SageV2",
+			},
+			{
+				name: "GO-DE",
+				date: "April 2023",
+				img: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/467/678/datas/gallery.jpg",
+				description: "A full-stack, social-media like site where registered users are given an expansive list of interesting places in Delaware to mark as visited and share with friends. 2023 HenHacks Hackathon submission.",
+				source: "https://github.com/sbrugel/go-de",
+			},
+			{
+				name: "SEPTA Checker",
+				date: "August 2022",
+				img: "https://camo.githubusercontent.com/8448899f5067e02dc99751282a88722553df942119dcccadfd2553af645fe7f5/68747470733a2f2f692e696d6775722e636f6d2f4135774f594d362e706e67",
+				description: "A Discord bot that fetches from the SEPTA API every 2 minutes and returns delays, last recorded location, train consist information, and alerts for user-inputted train numbers.",
+				source: "https://github.com/sbrugel/septa-checker-v2",
+			},
+			{
+				name: "Journal Manager",
+				date: "October 2021",
+				img: "https://user-images.githubusercontent.com/58154576/155890966-a8ebd0fa-722c-41ca-a932-4b8af269a122.png",
+				description: "A Windows Forms application that allows the user to write journal entries, save them locally, and view them later. Has many other features, including entry tagging, searching, and text formatting using a tag system.",
+				source: "https://github.com/sbrugel/journal-manager",
+			},
+		];
+
+		projects.map(function(project, index) {
+			function generateLeftAbout() {
+				const projectLeftDiv = document.createElement("div");
+				projectLeftDiv.style.cssText = `display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; margin: 5px; border: 5px solid #3287a8; border-radius: 20px; padding: 5px; `
+				const projectName = document.createElement("h3");
+				projectName.textContent = project.name;
+				projectName.className = "project-header";
+				const projectDate = document.createElement("p");
+				projectDate.textContent = project.date;
+				projectDate.className = "project-header";
+				projectLeftDiv.appendChild(projectName);
+				projectLeftDiv.appendChild(document.createElement("br"));
+				projectLeftDiv.appendChild(projectDate);
+				return projectLeftDiv;
+			}
+
+			function generateImage() {
+				const projectPicDiv = document.createElement("div");
+				projectPicDiv.style.cssText = `display: flex; justify-content: center; align-items: center; width: 50%; margin: 5px; border: 5px solid #3287a8; border-radius: 20px; padding: 5px; aspect-ratio: 1/1;`
+				const projectImage = document.createElement("img");
+				projectImage.src = project.img;
+				projectImage.style.cssText = `max-width: 90%;`;
+				projectPicDiv.appendChild(projectImage);
+				projectPicDiv.className = "hide-on-small-window";
+				return projectPicDiv;
+			}
+
+			function generateRightAbout() {
+				const projectRightDiv = document.createElement("div");
+				projectRightDiv.style.cssText = `display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; margin: 5px; border: 5px solid #3287a8; border-radius: 20px; padding: 5px; `
+				const projectAbout = document.createElement("p");
+				projectAbout.textContent = project.description;
+				projectAbout.className = "center";
+				const projectSrc = document.createElement("p");
+				const projectSrcText = document.createElement("a");
+				projectSrcText.textContent = "View source";
+				projectSrcText.href = project.source;
+				projectSrc.appendChild(projectSrcText);
+				projectRightDiv.appendChild(projectAbout);
+				projectRightDiv.appendChild(projectSrc);
+				return projectRightDiv;
+			}
+
+			const parent = document.createElement("div");
+			parent.style.cssText = 
+			`
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 20px;
+				padding-right: 20px;
+				margin-left: 10vw;
+				margin-right: 10vw;
+  			`
+			parent.className = "languages";
+
+			parent.appendChild(generateLeftAbout());
+			parent.appendChild(generateImage());
+			parent.appendChild(generateRightAbout());
+			return parent;
+		}).forEach(function(element) {
+			document.getElementById("projects-cards").appendChild(element);
+		});
 
 		// random song link!
 		const songs = [
@@ -291,27 +383,5 @@
 				}
 			});
 		}
-
-		// modal events
-		// const projectImgs = document.getElementsByClassName("tableimg");
-
-		// for (let i = 0; i < projectImgs.length; i++) {
-		// 	projectImgs[i].addEventListener("click", function () {
-		// 		const modal = document.getElementById(projectImgs[i].id + "-modal");
-		// 		const closeBtn = document.getElementsByClassName("close")[i];
-
-		// 		modal.style.display = "block";
-		// 		closeBtn.addEventListener("click", function () {
-		// 			modal.style.display = "none";
-		// 		});
-
-		// 		// also close modal when anywhere out of it is clicked
-		// 		window.onclick = function (event) {
-		// 			if (event.target == modal) {
-		// 				modal.style.display = "none";
-		// 			}
-		// 		};
-		// 	});
-		// }
 	</script>
 </html>
