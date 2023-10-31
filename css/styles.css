@@ -99,33 +99,6 @@ a:hover {
 }
 
 /* ============= REPSONSIVENESS ============= */
-/* mobile on portrait */
-/* @media screen and (max-width: 650px) and (orientation: portrait) {
-  .splash {
-    height: 130vh;
-  }
-
-  h1,
-  h2 {
-    font-size: 39pt;
-  }
-
-  h3 {
-    font-size: 6vw;
-  }
-
-  p {
-    font-size: 3vw;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .hide-on-small-window {
-    visibility: hidden;
-  }
-} */
-
-/* not mobile but smaller (split, for example) */
 @media screen and (max-width: 1200px) {
   .splash {
     height: 130vh;
