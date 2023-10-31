@@ -34,633 +34,460 @@
 
 			<div>
 				<h1 id="about"><strong>About</strong></h1>
-				<p>
+				<p class="normal-text">
 					Hello, the name's Simon. I'm a junior computer science major at the University of Delaware with a strong interest in software and web
 					development. Besides programming, I have a wide array of other interests, all detailed below!
 				</p>
 
 				<h2><strong>Computer Science</strong></h2>
-				<p>
+				<p class="normal-text">
 					I started development as a hobby in 2015, and since then, I've learned many different languages, whether through my own learning, high
 					school/college classes, or work experience.<br /><br />
 
 					At the University of Delaware, I have taken (or am taking) a number of higher-level computer science courses covering a large variety of
 					fields, including Logic in Programming, Algorithms, Operating Systems, Software Engineering, Automata Theory, and Artifical Intelligence.<br /><br />
-
-					Click on the dropdowns to view more about the languages I've used so far.
 				</p>
-				<button type="button" class="collapsible c-top">
-					<p class="collapsible-title">Java</p>
-				</button>
-				<div class="content">
-					<p class="collapsible-text">
-						The first programming language I learned, way back in 2015. From creating the well-known Hello World program to a few GUI utilities and
-						games using Swing, Java was my first step into the world of coding.
-					</p>
-				</div>
-				<button type="button" class="collapsible">
-					<p class="collapsible-title">Python</p>
-				</button>
-				<div class="content">
-					<p class="collapsible-text">
-						The second language I learned. With it, I’ve made numerous games (using Pygame) and lightweight GUI applications. More recently, I’ve used
-						the PIL library for programs involving image processing.
-					</p>
-				</div>
-				<button type="button" class="collapsible">
-					<p class="collapsible-title">C# (.NET)</p>
-				</button>
-				<div class="content">
-					<p class="collapsible-text">
-						What I’d consider to be my favorite language, I’ve made tons of GUI utilities using .NET/Windows Forms, from flash card set creators, to
-						desktop journal keeping, to custom-built game mod installers.<br /><br />I’ve also used Unity for UI design/component scripting/game
-						development, and a bit of ASP.NET for back-end work.
-					</p>
-				</div>
-				<button type="button" class="collapsible">
-					<p class="collapsible-title">HTML & CSS</p>
-				</button>
-				<div class="content">
-					<p class="collapsible-text">
-						Considering these languages make up the majority of this page's source, I believe they need no introduction. This website has gone through
-						many iterations over the years, and over that time my passion for web development grew. That would especially be the case after I picked
-						up…
-					</p>
-				</div>
-				<button type="button" class="collapsible">
-					<p class="collapsible-title">JavaScript (NodeJS, React)</p>
-				</button>
-				<div class="content">
-					<p class="collapsible-text">
-						Probably my most commonly used language these days. I taught myself the language at first, making numerous projects from web-based 3D
-						games to Discord bots.<br /><br />In the past couple of years I’ve extensively used React for full-stack web development, primarily in
-						professional environments but also on a few personal projects. Additionally, I’ve used numerous other libraries, including Express.js (for
-						building REST APIs), and Swagger (for automatic API documentation).
-					</p>
-				</div>
-				<button type="button" class="collapsible">
-					<p class="collapsible-title">TypeScript</p>
-				</button>
-				<div class="content">
-					<p class="collapsible-text">
-						While I initially disliked this subset of JavaScript, that changed as I worked collaboratively with other students on a bot for the
-						University of Delaware's official Computer Science Discord which used the language. Now I prefer to use it over vanilla JS where possible,
-						due to its strict typing and principles more closely related to OOP.<br /><br />More recently, I used TypeScript with Flood Element to
-						write dynamic load tests for web applications, allowing many concurrent user interactions with them to be accurately simulated.
-					</p>
-				</div>
-				<button type="button" class="collapsible">
-					<p class="collapsible-title">C++</p>
-				</button>
-				<div class="content">
-					<p class="collapsible-text">
-						This was a language I picked up in 2022 for a university Data Structures class. Since then, I’ve used it in some other projects, including
-						an implementation of Yahtzee and a process scheduling simulation.
-					</p>
-				</div>
-				<button type="button" class="collapsible">
-					<p class="collapsible-title">C</p>
-				</button>
-				<div class="content">
-					<p class="collapsible-text">
-						This was a language I was introduced to in 2022 for a university Systems Programming class. At the time I used it for Raspberry Pi
-						projects, but later on I used it more in an Operating Systems class to demonstrate concepts such as threads, synchronization, scheduling,
-						and deadlock avoidance.
-					</p>
-				</div>
-				<button type="button" class="collapsible">
-					<p class="collapsible-title">Assembly</p>
-				</button>
-				<div class="content">
-					<p class="collapsible-text">
-						I learned the basics of this language through a sophomore-year machine organization class at college, concepts including arithmetic,
-						bit-shifting operations, branching/loops, managing the stack, and arrays. It was an interesting experience, to say the least!
-					</p>
-				</div>
-				<button type="button" class="collapsible">
-					<p class="collapsible-title">Other Tools & Misc</p>
-				</button>
-				<div class="content c-bottom">
-					<p class="collapsible-text">
-						<strong>Frameworks:</strong> Bootstrap<br />
-						<strong>Databases:</strong> MongoDB<br />
-						<strong>Version Control:</strong> Git, Subversion<br />
-						<strong>IDEs:</strong> Visual Studio 2022, Visual Studio Code, JetBrains <em>(IntelliJ, PyCharm, CLion)</em><br />
-						<strong>CI/CD:</strong> Jenkins<br />
-						<strong>OS:</strong> Windows, Linux<br />
-					</p>
-				</div>
 
 				<h2><strong>Other Interests</strong></h2>
-				<p>
+				<p class="normal-text">
 					Of course, computer science is not the only interest or hobby of mine... I also enjoy gaming, drawing, writing, biking, kayaking, and
 					listening to music (<a onclick="window.location.href = randomLink;">click here for a random song I like</a>), among other things. I'm also a
 					massive transport and train nerd.
 				</p>
 
+				<h2>My Languages, Frameworks, & Tools</h2>
+				<div id="languages"></div>
+
 				<h1 id="projects"><strong>Projects</strong></h1>
-				<p>
-					These are the computer-science-related projects I've worked on, most of them independently. Click on the pictures to learn more about each
-					project; links to their source on GitHub are also available.
-				</p>
-				<p>
+				<p class="normal-text">
+					These are the main computer-science-related projects I've worked on, most of them independently. More projects are available on <a href="https://sbrugel.com/img/github.png">GitHub.</a> Click an image to view a bigger version!<br /><br />
 					If you're looking for simulator-related things I've made,
-					<a href="https://sbrugel.com/game-content.html">this is the temporary page for that.</a>
+					<a href="https://sbrugel.com/game-content.html">this is the temporary page for that.</a> (CSS is gone, too lazy to bring it back.)
 				</p>
-				<table>
-					<tr>
-						<td>
-							<img src="img/sage.png" class="tableimg" id="sage" />
-							<div id="sage-modal" class="modal">
-								<div class="modal-content">
-									<span class="close">&times;</span>
-									<img class="modalimg" src="img/sage.png" />
-									<p>
-										Sage is an all-in-one Discord bot used to manage the University of Delaware Computer Science department's official Discord server,
-										which has over 2,500 students and 25+ professors. See "CISC Discord Manager" under the <em>Experiences</em> section of this page
-										for more information on this project!
-									</p>
-									<p>
-										<a href="https://github.com/ud-cis-discord/SageV2">View Source</a>
-									</p>
-								</div>
-							</div>
-							<p class="intable"><strong>Sage</strong></p>
-						</td>
 
-						<td>
-							<img
-								src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/467/678/datas/gallery.jpg"
-								class="tableimg"
-								id="go-de"
-							/>
-							<div id="go-de-modal" class="modal">
-								<div class="modal-content">
-									<span class="close">&times;</span>
-									<img class="modalimg" src="https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/467/678/datas/gallery.jpg" />
-									<p>
-										GO-DE is a full-stack, social-media like site where registered users are given an expansive list of interesting places in Delaware
-										to visit, ranging from parks and beaches, to landmarks and historic sites. Users can mark these places as visited and comment on
-										how their visit went/any thoughts and other remarks, and aim to visit every location that is on our list. It was created for the
-										2023 HenHacks Hackathon in 24 hours.<br /><br />
-										View more about it on the
-										<a href="https://devpost.com/software/go-de">DevPost page!</a>
-									</p>
-									<p>
-										<a href="https://github.com/sbrugel/go-de">View Source</a>
-									</p>
-								</div>
-							</div>
-							<p class="intable"><strong>GO-DE</strong></p>
-						</td>
-
-						<td>
-							<img
-								src="https://camo.githubusercontent.com/8448899f5067e02dc99751282a88722553df942119dcccadfd2553af645fe7f5/68747470733a2f2f692e696d6775722e636f6d2f4135774f594d362e706e67"
-								class="tableimg"
-								id="septatracker"
-							/>
-							<div id="septatracker-modal" class="modal">
-								<div class="modal-content">
-									<span class="close">&times;</span>
-									<img
-										class="modalimg"
-										src="https://camo.githubusercontent.com/8448899f5067e02dc99751282a88722553df942119dcccadfd2553af645fe7f5/68747470733a2f2f692e696d6775722e636f6d2f4135774f594d362e706e67"
-									/>
-									<p>
-										This is a Discord bot that fetches from the SEPTA API every 2 minutes and returns delays, last recorded location, and train
-										consist information for user-inputted train numbers in a specified text channel. It also regularly updates users on
-										alerts/advisories for regional rail lines.
-									</p>
-									<p>
-										<a href="https://github.com/sbrugel/septa-checker-v2">View Source</a>
-									</p>
-								</div>
-							</div>
-							<p class="intable">
-								<strong>SEPTA Checker (Discord Bot)</strong>
-							</p>
-						</td>
-					</tr>
-
-					<tr>
-						<td>
-							<img
-								src="https://user-images.githubusercontent.com/58154576/155890966-a8ebd0fa-722c-41ca-a932-4b8af269a122.png"
-								class="tableimg"
-								id="journalmanager"
-							/>
-							<div id="journalmanager-modal" class="modal">
-								<div class="modal-content">
-									<span class="close">&times;</span>
-									<img
-										class="modalimg"
-										class="modalimg"
-										src="https://user-images.githubusercontent.com/58154576/155890966-a8ebd0fa-722c-41ca-a932-4b8af269a122.png"
-									/>
-									<p>
-										A Windows Forms application that allows the user to write journal entries, save them locally, and view them later. Also has many
-										other features, including entry tagging/searching (by keyword or tag), and text formatting using a tag system.
-									</p>
-									<p>
-										<a href="https://github.com/sbrugel/journal-manager">View Source</a>
-									</p>
-								</div>
-							</div>
-							<p class="intable"><strong>Journal Manager</strong></p>
-						</td>
-
-						<td>
-							<img
-								src="https://camo.githubusercontent.com/deed2cf6e16561c7c92f9fc331fbe6ac1a05746e57a9787057a93f0792a26539/68747470733a2f2f692e696d6775722e636f6d2f47367a77526b4f2e676966"
-								class="tableimg"
-								id="flashcards"
-							/>
-							<div id="flashcards-modal" class="modal">
-								<div class="modal-content">
-									<span class="close">&times;</span>
-									<img
-										class="modalimg"
-										src="https://camo.githubusercontent.com/deed2cf6e16561c7c92f9fc331fbe6ac1a05746e57a9787057a93f0792a26539/68747470733a2f2f692e696d6775722e636f6d2f47367a77526b4f2e676966"
-									/>
-									<p>
-										A Windows Forms application that allows the user to create sets of flash cards for studying, save them on their system, and review
-										them in another window, being able to shuffle the card order at any time.
-									</p>
-									<p>
-										<a href="https://github.com/sbrugel/flash-card-generator">View Source</a>
-									</p>
-								</div>
-							</div>
-							<p class="intable"><strong>Flash Card Maker</strong></p>
-						</td>
-
-						<td>
-							<img src="https://i.imgur.com/jq4I322.gif" class="tableimg" id="pygames" />
-							<div id="pygames-modal" class="modal">
-								<div class="modal-content">
-									<span class="close">&times;</span>
-									<img class="modalimg" src="https://i.imgur.com/jq4I322.gif" />
-									<p>
-										Games I made in Python using Pygame. 8 games are included, 6 of which are remixes of games from
-										<em>Making Games with Python & Pygame</em> by Al Sweigart, 2 of which are original recreations of other popular games.<br />
-										Features dynamic main menus/options menus for each game, which intake data from JSON files to setup the GUIs, such as buttons to
-										select games and game options.
-									</p>
-									<p>
-										<a href="https://github.com/sbrugel/python-games">View Source</a>
-									</p>
-								</div>
-							</div>
-							<p class="intable"><strong>Python Games</strong></p>
-						</td>
-					</tr>
-				</table>
-
-				<button type="button" class="collapsible c-top">
-					<p class="collapsible-text">Click here to view additional projects I've worked on.</p>
-				</button>
-				<div class="content c-bottom">
-					<p class="center"><strong>NOTE:</strong> Not the full list; additional smaller projects not listed here can be found on my GitHub.</p>
-					<table class="table-collapsible">
-						<tr>
-							<td>
-								<img
-									src="https://camo.githubusercontent.com/e851f5067c89472e0c9ac7db0c6fd304d8c57326df134264c3fb550fb4fdad60/68747470733a2f2f692e696d6775722e636f6d2f357258765732642e706e67"
-									class="tableimg"
-									id="septadelays"
-								/>
-								<div id="septadelays-modal" class="modal">
-									<div class="modal-content">
-										<span class="close">&times;</span>
-										<img
-											class="modalimg"
-											src="https://camo.githubusercontent.com/e851f5067c89472e0c9ac7db0c6fd304d8c57326df134264c3fb550fb4fdad60/68747470733a2f2f692e696d6775722e636f6d2f357258765732642e706e67"
-										/>
-										<p>
-											This is a full-stack web application that displays delay data of SEPTA regional rail services. The app has a backend that
-											connects to a database, a frontend that displays the information based on user queries, and a supplemental script that scrapes
-											the SEPTA API every 15 minutes, posting delay data for each SEPTA service to the database.
-										</p>
-										<p>
-											<a href="https://github.com/sbrugel/septa-delay-history">View Source</a>
-										</p>
-									</div>
-								</div>
-								<p class="intable"><strong>SEPTA Delay Statistics</strong></p>
-							</td>
-
-							<td>
-								<img src="https://i.imgur.com/c5lCljF.png" class="tableimg" id="whos-that-pokemon" />
-								<div id="whos-that-pokemon-modal" class="modal">
-									<div class="modal-content">
-										<span class="close">&times;</span>
-										<img class="modalimg" src="https://i.imgur.com/c5lCljF.png" />
-										<p>
-											A React app which aims to replicate the segment of the same name in the Pokemon anime. Players are given a silhouette of a
-											Pokemon, and are asked to identify it.<br />Still WIP - more features to come! A proof of concept version is available online.
-										</p>
-										<p>
-											<a href="http://sbrugel.com/whos-that-pokemon/">Try it out!</a>
-											<br />
-											<a href="https://github.com/sbrugel/whos-that-pokemon">View Source</a>
-										</p>
-									</div>
-								</div>
-								<p class="intable">
-									<strong>Who's that Pokemon? (React App)</strong>
-								</p>
-							</td>
-
-							<td>
-								<img
-									src="https://camo.githubusercontent.com/de9d73baee7c4765a39d5df6162dc6d6c8eacffe18d1e3acc99b7f51a0ba9597/68747470733a2f2f692e696d6775722e636f6d2f71374e7a7570692e706e67"
-									class="tableimg"
-									id="cisc361-project"
-								/>
-								<div id="cisc361-project-modal" class="modal">
-									<div class="modal-content">
-										<span class="close">&times;</span>
-										<img
-											class="modalimg"
-											src="https://camo.githubusercontent.com/de9d73baee7c4765a39d5df6162dc6d6c8eacffe18d1e3acc99b7f51a0ba9597/68747470733a2f2f692e696d6775722e636f6d2f71374e7a7570692e706e67"
-										/>
-										<p>
-											Final project for CISC361 at the University of Delaware. An operating system simulation of job scheduling, resource management,
-											and deadlock avoidance, written in C++.
-										</p>
-										<p>
-											<a href="https://github.com/sbrugel/cisc361-project">View Source</a>
-										</p>
-									</div>
-								</div>
-								<p class="intable">
-									<strong>Operating System Sim (CISC361 Project)</strong>
-								</p>
-							</td>
-						</tr>
-
-						<tr>
-							<td>
-								<img src="https://sbrugel.com/img/img2pi.png" class="tableimg" id="img2pi" />
-								<div id="img2pi-modal" class="modal">
-									<div class="modal-content">
-										<span class="close">&times;</span>
-										<img class="modalimg" src="https://sbrugel.com/img/img2pi.png" style="width: 25%" />
-										<p>C and Python scripts. Displays a jpg/png image on a Raspberry Pi's sense hat.</p>
-										<p>
-											<a href="https://github.com/sbrugel/img2pi">View Source</a>
-										</p>
-									</div>
-								</div>
-								<p class="intable"><strong>img2pi</strong></p>
-							</td>
-
-							<td>
-								<img src="https://i.imgur.com/9sebZd8.png" class="tableimg" id="finalgradecalc" />
-								<div id="finalgradecalc-modal" class="modal">
-									<div class="modal-content">
-										<span class="close">&times;</span>
-										<img class="modalimg" src="https://i.imgur.com/9sebZd8.png" />
-										<p>
-											Based on known grades/weights and the weight of an unknown grade, this Python script calculates the unknown grade needed to get
-											a target final grade, as well as the highest/lowest possible grades that can be achieved. It also saves a
-											programatically-generated graph that shows the final grade that will be achieved based on the value of the unknown grade.
-										</p>
-										<p>
-											<a href="https://github.com/sbrugel/final-grade-calculator">View Source</a>
-										</p>
-									</div>
-								</div>
-								<p class="intable"><strong>Final Grade Calculator</strong></p>
-							</td>
-
-							<td>
-								<img src="https://i.imgur.com/SIzCxyt.gif" class="tableimg" id="latex-osk" />
-								<div id="latex-osk-modal" class="modal">
-									<div class="modal-content">
-										<span class="close">&times;</span>
-										<img class="modalimg" src="https://i.imgur.com/SIzCxyt.gif" />
-										<p>
-											A program written in Python which aims to make typing LaTeX commands a lot less cumbersome. Based on a map which links LaTeX
-											commands to symbols, buttons are dynamically added onto the screen; when pressed, they insert LaTeX commands onto the window's
-											textbox.
-										</p>
-										<p>
-											<a href="https://github.com/sbrugel/latex-osk">View Source</a>
-										</p>
-									</div>
-								</div>
-								<p class="intable"><strong>LaTeX On Screen Keyboard</strong></p>
-							</td>
-						</tr>
-
-						<tr>
-							<td>
-								<img
-									src="https://camo.githubusercontent.com/b31dea54eb386a488512edf53b26323e30b7a26bdef5b9a6b19056b737e4ee5a/68747470733a2f2f692e696d6775722e636f6d2f4c5a49774838322e706e67"
-									class="tableimg"
-									id="counting-bot"
-								/>
-								<div id="counting-bot-modal" class="modal">
-									<div class="modal-content">
-										<span class="close">&times;</span>
-										<img
-											class="modalimg"
-											src="https://camo.githubusercontent.com/b31dea54eb386a488512edf53b26323e30b7a26bdef5b9a6b19056b737e4ee5a/68747470733a2f2f692e696d6775722e636f6d2f4c5a49774838322e706e67"
-											style="width: 25%"
-										/>
-										<p>
-											A TypeScript Discord bot that tracks a specified channel and ensures the only messages that get sent are numbers increasing
-											sequentially, message after message.
-										</p>
-										<p>
-											<a href="https://github.com/sbrugel/counting-bot">View Source</a>
-										</p>
-									</div>
-								</div>
-								<p class="intable"><strong>Counting Bot</strong></p>
-							</td>
-
-							<td>
-								<img
-									src="https://camo.githubusercontent.com/998a2e4efd5bdce22108c801205c96ddaa8d808668d83ad6611d6bccd13559bf/68747470733a2f2f692e696d6775722e636f6d2f6155536b7239682e676966"
-									class="tableimg"
-									id="translate"
-								/>
-								<div id="translate-modal" class="modal">
-									<div class="modal-content">
-										<span class="close">&times;</span>
-										<img
-											class="modalimg"
-											src="https://camo.githubusercontent.com/998a2e4efd5bdce22108c801205c96ddaa8d808668d83ad6611d6bccd13559bf/68747470733a2f2f692e696d6775722e636f6d2f6155536b7239682e676966"
-											style="width: 50%"
-										/>
-										<p>
-											A bot that uses the Google Translate API to translate both user-provided strings (through commands) and contents of other
-											messages (through context menus) to any language that Google Translate supports.
-										</p>
-										<p>
-											<a href="https://github.com/sbrugel/discord-translate">View Source</a>
-										</p>
-									</div>
-								</div>
-								<p class="intable"><strong>Discord Translate</strong></p>
-							</td>
-
-							<td>
-								<img src="https://sbrugel.com/img/statcalc.png" class="tableimg" id="stat-calc" />
-								<div id="stat-calc-modal" class="modal">
-									<div class="modal-content">
-										<span class="close">&times;</span>
-										<img class="modalimg" src="https://sbrugel.com/img/statcalc.png" />
-										<p>
-											A first dabble into GUI programming in Python, using the Tkinter GUI library. This calculates the stats of a Pokemon, based on
-											level, nature, base stat values, IVs, and EVs, verified against formulas and examples on Bulbapedia.
-										</p>
-										<p>
-											<a href="https://github.com/sbrugel/pokemon-stat-calculator">View Source</a>
-										</p>
-									</div>
-								</div>
-								<p class="intable"><strong>Pokemon Stat Calculator</strong></p>
-							</td>
-						</tr>
-
-						<tr>
-							<td>
-								<img
-									src="https://user-images.githubusercontent.com/58154576/170095943-044dabd0-f04d-4ca9-8bd4-0ea8173b63c4.png"
-									class="tableimg"
-									id="emojilang"
-								/>
-								<div id="emojilang-modal" class="modal">
-									<div class="modal-content">
-										<span class="close">&times;</span>
-										<img
-											class="modalimg"
-											src="https://user-images.githubusercontent.com/58154576/170095943-044dabd0-f04d-4ca9-8bd4-0ea8173b63c4.png"
-											style="width: 33%"
-										/>
-										<p>
-											A fake programming language based on Python, using its syntax, except with core functions and keywords using emojis instead!
-											This includes a C# Windows Forms program that serves as a very basic IDE for the language, featuring the ability to save files
-											and execute them within the program.
-										</p>
-										<p>
-											<a href="https://github.com/sbrugel/emojilang">View Source</a>
-										</p>
-									</div>
-								</div>
-								<p class="intable"><strong>Emojilang</strong></p>
-							</td>
-
-							<td>
-								<img
-									src="https://user-images.githubusercontent.com/58154576/136306005-88317fd0-1cc6-4275-beea-3835953eea06.png"
-									class="tableimg"
-									id="hellfire"
-								/>
-								<div id="hellfire-modal" class="modal">
-									<div class="modal-content">
-										<span class="close">&times;</span>
-										<img
-											class="modalimg"
-											src="https://user-images.githubusercontent.com/58154576/136306005-88317fd0-1cc6-4275-beea-3835953eea06.png"
-										/>
-										<p>A program that displays the list of journeys/player statistics for Mike Wright's game Hellfire 3.</p>
-										<p>
-											<a href="https://github.com/sbrugel/HellfireMiles">View Source</a>
-										</p>
-									</div>
-								</div>
-								<p class="intable"><strong>Hellfire Miles</strong></p>
-							</td>
-						</tr>
-					</table>
-				</div>
+				<div id="projects-cards"></div>
 
 				<h1 id="exp"><strong>Experience</strong></h1>
-				<p>Below is an outline of my experience with computer science. Click on the dropdowns to view more information about each of them.</p>
+				<p class="normal-text">Below is an outline of my experience with computer science. Click on the dropdowns to view more information about each of them.</p>
 
-				<button type="button" class="collapsible c-top">
-					<p class="collapsible-title">
-						<span style="text-align: left"><strong>WTS Paradigm (Madison, WI)</strong> - Software Developer Intern</span>
-						<span style="text-align: right">(May 2023 - Aug 2023)</span>
-					</p>
-				</button>
-				<div class="content">
-					<p class="collapsible-text">
-						Using JavaScript/React and C#/ASP.NET, worked with an Agile team on a full-stack web application for creating quotes and orders, used by
-						over 100,000 users.<br /><br />
-						Utilized TypeScript/Flood Element to revamp a load testing system, allowing for more accurate simulations of web apps under heavy
-						traffic.<br /><br />
-						Collaborated with a team to investigate applications of AI in software and began development of an internal chatbot through Azure
-						OpenAI.<br /><br />
-					</p>
-				</div>
-				<button type="button" class="collapsible">
-					<p class="collapsible-title">
-						<span style="text-align: left"><strong>Quantum Strategies (Glen Mills, PA)</strong> - Computer Science Intern</span>
-						<span style="text-align: right">(May 2022 - Oct 2022)</span>
-					</p>
-				</button>
-				<div class="content">
-					<p class="collapsible-text">
-						Using JavaScript/React in an Agile work environment, worked on numerous front-end and back-end fixes for an online employee interaction
-						center.<br /><br />
-						Wrote the foundational code for a full-stack performance management application.
-					</p>
-				</div>
-				<button type="button" class="collapsible">
-					<p class="collapsible-title">
-						<span style="text-align: left"><strong>University of Delaware (Newark, DE)</strong> - Teaching Assistant</span>
-						<span style="text-align: right">(Feb 2023 - current)</span>
-					</p>
-				</button>
-				<div class="content">
-					<p class="collapsible-text">
-						<strong>Spring 2023: </strong>CISC 181 (Intro to Computer Science II), teaching Java, object-oriented programming, and unit testing.<br />
-						<strong>Fall 2023: </strong>CISC 304 (Logic for Programming), teaching propositional/first-order logic, natural deduction, and
-						resolution.<br /><br />
-						Assisting students with course material through weekly office hours and labs.<br /><br />
-						Grading class assignments in a timely fashion, providing detailed feedback.
-					</p>
-				</div>
-				<button type="button" class="collapsible">
-					<p class="collapsible-title">
-						<span style="text-align: left"><strong>University of Delaware (Newark, DE)</strong> - Sensify Lab Research Assistant</span>
-						<span style="text-align: right">(Apr 2022 - current)</span>
-					</p>
-				</button>
-				<div class="content">
-					<p class="collapsible-text">
-						Under the direction of Dr. Matthew Mauriello, creating C# and Python scripts for visualizing and playing back interactions with a physical
-						prototype.<br /><br />
-						Developing a UI in Unity for interactions with the prototype, used at community libraries.
-					</p>
-				</div>
-				<button type="button" class="collapsible">
-					<p class="collapsible-title">
-						<span style="text-align: left"><strong>University of Delaware (Newark, DE)</strong> - CISC Discord Manager</span>
-						<span style="text-align: right">(Dec 2021 - current)</span>
-					</p>
-				</button>
-				<div class="content c-bottom">
-					<p class="collapsible-text">
-						Working with professors and other students to develop a Discord bot in TypeScript, providing effective, safe, and easy communication for
-						2500+ students and 25+ professors within the department.<br /><br />
-						Adding/enhancing functionality, including the ability to submit questions to professors/TA confidentially, and create user polls.<br /><br />
-						Moderating chat interactions to ensure a safe and welcoming environment for students and professors.<br /><br />
-						Interviewing candidates to fulfill undergraduate team roles, and helping new team members navigate the system by writing documentation and
-						leading team meetings
-					</p>
-				</div>
+				<div id="experiences"></div>
 			</div>
 		</div>
 	</body>
 
 	<script>
+		const languages = [
+			{
+				name: "Java",
+				description: "The first programming language I learned, with my journey starting with the infamous Hello World program. Eventually, I made a few GUI utilities and games with Swing. These days, I don't use it frequently but I know its syntax off the top of my head.",
+				img: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
+				color1: "#f8981d",
+				color2: "#5382a1",
+			},
+			{
+				name: "Python",
+				description: "The second language I learned, and coincidentially my second favorite! I've utilized it for all sorts of things, such as games and lightweight GUI/console line utility applications. More recently, I've used the PIL library for image processing, and Numpy + Pandas for machine learning/data science.",
+				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
+				color1: "#366c9c",
+				color2: "#f5d856",
+			},
+			{
+				name: "C#",
+				description: "Tied with TypeScript for my favorite language. Using .NET/Windows Forms, I've made tons of GUI utilities from flash card set makers, to desktop journal keeping, to custom-built game mod installers. I also used the language with Unity for UI design/component scripting and game development, and with ASP.NET for backend work.",
+				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png",
+				color1: "#a27add",
+				color2: "#360092",
+			},
+			{
+				name: "HTML",
+				description: "Considering this language (plus CSS) makes up this page's source, I believe it needs no introduction. Over the years, my use of this language on its own has declined in favor of frameworks and dynamic component rendering using plain JS, but it is still an important tool in my arsenal.",
+				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png",
+				color1: "#e34f26",
+				color2: "#ef652a",
+			},
+			{
+				name: "CSS",
+				description: "This has always been a somewhat tricky language for me, but it's gotten a bit easier since learning flexbox, among other things. This website has gone through many iterations over the last 6 years, and with each revamp, I have learned many new things about styling.",
+				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
+				color1: "#214ce5",
+				color2: "#2465f1",
+			},
+			{
+				name: "JavaScript",
+				description: "This is my most commonly used language these days, and a former favorite of mine. I taught myself the language at first, starting off with a variety of projects from web-based 3D games to Discord bots. Nowadays, I use it in tandem with other libraries such as Express.js (for REST APIs) and Swagger (for API documentation), though not as much because of...",
+				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png",
+				color1: "#f0dc4e",
+				color2: "#f0dc4e",
+			},
+			{
+				name: "TypeScript",
+				description: "Tied with C# for my favorite language. TypeScript has massively grown on me over the years, so much so that I now prefer it over JavaScript! The catalyst for that was my involvement in a student-driven Discord bot project for the University of Delaware's official CIS Discord. More recently, I used it with Flood Element to write dynamic load tests for web apps, among other side projects.",
+				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201",
+				color1: "#2d79c7",
+				color2: "#2d79c7",
+			},
+			{
+				name: "React",
+				description: "A framework I have several years of experience with. While I have used it mostly in professional environments, I have made a few academic and side projects with it. Nowadays, this framework combined with TypeScript is my first choice when it comes to developing any sort of major application.",
+				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png",
+				color1: "#61dbfb",
+				color2: "#61dbfb",
+			},
+			{
+				name: "C",
+				description: "This was a language I was introduced to in 2022 for a university Systems Programming class. At the time I used it for Raspberry Pi projects, but later on I used it more in an Operating Systems class to demonstrate concepts such as threads, synchronization, scheduling, and deadlock avoidance.",
+				img: "https://seeklogo.com/images/C/c-programming-language-logo-9B32D017B1-seeklogo.com.png",
+				color1: "#a9b9cb",
+				color2: "#7f8b99",
+			},
+			{
+				name: "C++",
+				description: "This was a language I picked up in 2022 for a university Data Structures class. Since then, I’ve used it in some other projects, including an implementation of Yahtzee and a process scheduling simulation.",
+				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
+				color1: "#659bd3",
+				color2: "#004283",
+			},
+			{
+				name: "Assembly",
+				description: "I learned the basics of this language through a sophomore-year machine organization class at college, concepts including arithmetic, bit-shifting operations, branching/loops, managing the stack, and arrays. It was an interesting experience, to say the least!",
+				img: "https://gitconnected.com/public/images/tutorials/assembly-language",
+				color1: "#0000bf",
+				color2: "#0505c0",
+			},
+			{
+				name: "Other",
+				description: "Bootstrap, MongoDB, Git, Subversion, Visual Studio 2022, Visual Studio Code, JetBrains, Jenkins, Windows, Linux.",
+				img: "https://upload.wikimedia.org/wikipedia/en/b/bb/Emoji_hammer.png",
+				color1: "#aab8b9",
+				color2: "#aab8b9",
+			},
+		];
+
+		languages.map(function(language, index) {
+			function generateImage() {
+				const languagePicDiv = document.createElement("div");
+				languagePicDiv.style.cssText = `display: flex; justify-content: center; align-items: center; max-width: 15%; margin: 5px; border: 5px solid ${language.color1}; border-radius: 20px; padding: 5px; aspect-ratio: 1/1; `
+				const languageImage = document.createElement("img");
+				languageImage.src = language.img;
+				languageImage.style.cssText = `max-width: 125px; aspect-ratio: 1/1; `;
+				languagePicDiv.className = "hide-on-small-window";
+				languagePicDiv.appendChild(languageImage);
+				return languagePicDiv;
+			}
+
+			function generateAbout() {
+				function createHeader() {
+					const languageHeader = document.createElement("h3");
+					languageHeader.textContent = language.name;
+					return languageHeader;
+				}
+
+				function createText() {
+					const languageAbout = document.createElement("p");
+					languageAbout.textContent = language.description;
+					return languageAbout;
+				}
+
+				const languageAboutDiv = document.createElement("div");
+				languageAboutDiv.style.cssText = `display: flex; justify-content: center; align-items: center; margin: 5px; border: 5px solid ${language.color2}; border-radius: 20px; padding: 5px;`
+
+				if (index % 2 == 0) {
+					languageAboutDiv.appendChild(createHeader());
+					languageAboutDiv.appendChild(createText());
+				} else {
+					languageAboutDiv.appendChild(createText());
+					languageAboutDiv.appendChild(createHeader());
+				}
+				
+				return languageAboutDiv;
+			}
+
+			const parent = document.createElement("div");
+			parent.style.cssText = 
+			`
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 20px;
+				padding-right: 20px;
+				margin-left: 10vw;
+				margin-right: 10vw;
+  			`
+			parent.className = "languages";
+
+			if (index % 2 == 0) {
+				parent.appendChild(generateImage());
+				parent.appendChild(generateAbout());
+			} else {
+				parent.appendChild(generateAbout());
+				parent.appendChild(generateImage());
+			}
+			return parent;
+		}).forEach(function(element) {
+			document.getElementById("languages").appendChild(element);
+		});
+
+		const projects = [
+			{
+				name: "Sage",
+				date: "December 2021 - current",
+				img: "https://sbrugel.com/img/sage.png",
+				description: "An all-in-one Discord bot used to manage the University of Delaware CIS department's official Discord server, which has over 3,000 students and 25+ professors.",
+				source: "https://github.com/ud-cis-discord/SageV2",
+			},
+			{
+				name: "GO-DE",
+				date: "April 2023",
+				img: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/467/678/datas/gallery.jpg",
+				description: "A full-stack, social-media like site where registered users are given an expansive list of interesting places in Delaware to mark as visited and share with friends. 2023 HenHacks Hackathon submission.",
+				source: "https://github.com/sbrugel/go-de",
+			},
+			{
+				name: "Python Games",
+				date: "December 2022",
+				img: "https://i.imgur.com/jq4I322.gif",
+				description: "Games I made in Python using Pygame. Features dynamic main menus/options menus for each game, which intake data from JSON files to setup the GUIs, such as buttons to select games and game options.",
+				source: "https://github.com/sbrugel/python-games",
+			},
+			{
+				name: "Flash Card Maker",
+				date: "September 2022",
+				img: "https://camo.githubusercontent.com/deed2cf6e16561c7c92f9fc331fbe6ac1a05746e57a9787057a93f0792a26539/68747470733a2f2f692e696d6775722e636f6d2f47367a77526b4f2e676966",
+				description: "A Windows Forms application that allows the user to create sets of flash cards for studying, save them on their system, and review them in another window, being able to shuffle the card order at any time.",
+				source: "https://github.com/sbrugel/flash-card-generator",
+			},
+			{
+				name: "SEPTA Checker",
+				date: "August 2022",
+				img: "https://camo.githubusercontent.com/8448899f5067e02dc99751282a88722553df942119dcccadfd2553af645fe7f5/68747470733a2f2f692e696d6775722e636f6d2f4135774f594d362e706e67",
+				description: "A Discord bot that fetches from the SEPTA API every 2 minutes and returns delays, last recorded location, train consist information, and alerts for user-inputted train numbers.",
+				source: "https://github.com/sbrugel/septa-checker-v2",
+			},
+			{
+				name: "Journal Manager",
+				date: "October 2021",
+				img: "https://user-images.githubusercontent.com/58154576/155890966-a8ebd0fa-722c-41ca-a932-4b8af269a122.png",
+				description: "A Windows Forms application that allows the user to write journal entries, save them locally, and view them later. Has many other features, including entry tagging, searching, and text formatting using a tag system.",
+				source: "https://github.com/sbrugel/journal-manager",
+			},
+			{
+				name: "Operating System Sim",
+				date: "May 2023",
+				img: "https://camo.githubusercontent.com/de9d73baee7c4765a39d5df6162dc6d6c8eacffe18d1e3acc99b7f51a0ba9597/68747470733a2f2f692e696d6775722e636f6d2f71374e7a7570692e706e67",
+				description: "CISC361 Final Project. An operating system simulation of job scheduling, resource management, and deadlock avoidance, written in C++.",
+				source: "https://github.com/sbrugel/cisc361-project",
+			},
+			{
+				name: "Who's that Pokemon?",
+				date: "April 2023",
+				img: "https://i.imgur.com/c5lCljF.png",
+				description: "A React app which aims to replicate the segment of the same name in the Pokemon anime. Players are given a silhouette of a Pokemon, and are asked to identify it.",
+				source: "https://github.com/sbrugel/whos-that-pokemon",
+			},
+			{
+				name: "LaTeX On Screen Keyboard",
+				date: "February 2023",
+				img: "https://i.imgur.com/SIzCxyt.gif",
+				description: "A program written in Python which aims to make typing LaTeX commands a lot less cumbersome. Based on a map which links LaTeX commands to symbols, buttons are dynamically added onto the screen; when pressed, they insert LaTeX commands onto the window's textbox.",
+				source: "https://github.com/sbrugel/latex-osk",
+			},
+			{
+				name: "Counting Bot",
+				date: "January 2023",
+				img: "https://camo.githubusercontent.com/b31dea54eb386a488512edf53b26323e30b7a26bdef5b9a6b19056b737e4ee5a/68747470733a2f2f692e696d6775722e636f6d2f4c5a49774838322e706e67",
+				description: "A TypeScript Discord bot that tracks a specified channel and ensures the only messages that get sent are numbers increasing sequentially, message after message.",
+				source: "https://github.com/sbrugel/counting-bot",
+			},
+			{
+				name: "SEPTA Delay History",
+				date: "October 2022",
+				img: "https://camo.githubusercontent.com/e851f5067c89472e0c9ac7db0c6fd304d8c57326df134264c3fb550fb4fdad60/68747470733a2f2f692e696d6775722e636f6d2f357258765732642e706e67",
+				description: "Full-stack React app that shows delay statistics over single days or 7/30/180 day intervals for SEPTA rail services.",
+				source: "https://github.com/sbrugel/septa-delay-history",
+			},
+			{
+				name: "Final Grade Calculator",
+				date: "May 2022",
+				img: "https://i.imgur.com/9sebZd8.png",
+				description: "Based on known grades/weights and the weight of an unknown grade, this Python script calculates the unknown grade needed to get a target final grade, as well as the highest/lowest possible grades that can be achieved.",
+				source: "https://github.com/sbrugel/final-grade-calculator",
+			},
+			{
+				name: "img2pi",
+				date: "March 2022",
+				img: "https://sbrugel.com/img/img2pi.png",
+				description: "C and Python scripts. Displays a jpg/png image on a Raspberry Pi's sense hat.",
+				source: "https://github.com/sbrugel/img2pi",
+			},
+		];
+
+		projects.map(function(project, index) {
+			function generateLeftAbout() {
+				const projectLeftDiv = document.createElement("div");
+				projectLeftDiv.style.cssText = `display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; margin: 5px; border: 5px solid #3287a8; border-radius: 20px; padding: 5px; `
+				const projectName = document.createElement("h3");
+				projectName.textContent = project.name;
+				projectName.className = "project-header";
+				const projectDate = document.createElement("p");
+				projectDate.textContent = project.date;
+				projectDate.className = "project-header";
+				projectLeftDiv.appendChild(projectName);
+				projectLeftDiv.appendChild(document.createElement("br"));
+				projectLeftDiv.appendChild(projectDate);
+				return projectLeftDiv;
+			}
+
+			function generateImage() {
+				const projectPicDiv = document.createElement("div");
+				projectPicDiv.style.cssText = `display: flex; justify-content: center; align-items: center; width: 50%; margin: 5px; border: 5px solid #3287a8; border-radius: 20px; padding: 5px; aspect-ratio: 1/1;`
+				const projectImage = document.createElement("img");
+				projectImage.src = project.img;
+				projectImage.style.cssText = `max-width: 90%;`;
+				projectImage.addEventListener('mouseover', function() {
+					projectImage.style.cursor = 'pointer';
+				});
+				projectImage.addEventListener('click', function() {
+					const imageUrl = projectImage.src;
+					window.location.href = imageUrl;
+				});
+				projectPicDiv.appendChild(projectImage);
+				projectPicDiv.className = "hide-on-small-window";
+				return projectPicDiv;
+			}
+
+			function generateRightAbout() {
+				const projectRightDiv = document.createElement("div");
+				projectRightDiv.style.cssText = `display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; margin: 5px; border: 5px solid #3287a8; border-radius: 20px; padding: 5px; `
+				const projectAbout = document.createElement("p");
+				projectAbout.textContent = project.description;
+				projectAbout.className = "center";
+				const projectSrc = document.createElement("p");
+				const projectSrcText = document.createElement("a");
+				projectSrcText.textContent = "View source";
+				projectSrcText.href = project.source;
+				projectSrc.appendChild(projectSrcText);
+				projectRightDiv.appendChild(projectAbout);
+				projectRightDiv.appendChild(projectSrc);
+				return projectRightDiv;
+			}
+
+			const parent = document.createElement("div");
+			parent.style.cssText = 
+			`
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 20px;
+				padding-right: 20px;
+				margin-left: 10vw;
+				margin-right: 10vw;
+  			`
+			parent.className = "languages";
+
+			parent.appendChild(generateLeftAbout());
+			parent.appendChild(generateImage());
+			parent.appendChild(generateRightAbout());
+			return parent;
+		}).forEach(function(element) {
+			document.getElementById("projects-cards").appendChild(element);
+		});
+
+		const experiences = [
+			{
+				link: "https://myparadigm.com/",
+				img: "https://myparadigm.com/wp-content/uploads/2020/07/Paradigm-Technology-for-the-Building-Products-Industry.png",
+				position: "Software Developer Intern",
+				held: "May 2023 - August 2023 (Madison, WI - Remote)",
+				details: "Using JS/React and C#/ASP.NET, I worked with an Agile team on a full-stack web application for creating quotes and orders, used by over 100,000 users. I lso used TypeScript/Flood Element to revamp a load testing system, allowing for more accurate simulations of web apps under heavy traffic, and collaborated with a team to investigate applications of AI in software, beginning development of an internal chatbot via Azure OpenAI.",
+			},
+			{
+				link: "https://qs2500.com/",
+				img: "https://qs2500.com/wp-content/uploads/2020/07/Qunatum-Staregies-logo.png",
+				position: "Computer Science Intern",
+				held: "May 2022 - October 2022 (Glen Mills, PA - Remote)",
+				details: "For my first internship, I used JS/React in an Agile work environment to work on numerous frontend/backend fixes for an online employee interaction center. Near the end of my time here, I wrote the foundational code for a full-stack performance management application.",
+			},
+
+			{
+				link: "https://www.cis.udel.edu/",
+				img: "https://content.sportslogos.net/logos/31/657/full/delaware_blue_hens_logo_alternate_20097704.png",
+				position: "Teaching Assistant",
+				held: "February 2023 - Current (Newark, DE)",
+				details: "I have been an undergraduate TA for CISC181 (Intro to Computer Science II - Java, OOP, unit testing) and CISC304 (Logic for Programming; propositional/first-order logic, natural deduction, resolution). My duties include assisting students with course material through weekly office hours/labs, and grading cousework in a timely fashion while providing feedback.",
+			},
+			{
+				link: "https://www.cis.udel.edu/",
+				img: "https://content.sportslogos.net/logos/31/657/full/delaware_blue_hens_logo_alternate_20097704.png",
+				position: "Research Assistant @ Sensify Lab",
+				held: "April 2022 - Current (Newark, DE)",
+				details: "Under the direction of Dr. Matthew Mauriello, I work on C#/Unity and Python scripts/user interfaces for visualizing and playing back interactions with a physical prototype used in community libraries.",
+			},
+			{
+				link: "https://www.cis.udel.edu/",
+				img: "https://content.sportslogos.net/logos/31/657/full/delaware_blue_hens_logo_alternate_20097704.png",
+				position: "CISC Discord Manager",
+				held: "December 2021 - Current (Newark, DE)",
+				details: "Since my freshman year, I have worked with a team of undergraduates to develop a Discord bot for the UD CIS Discord server, providing effective and safe communication for 3000+ students and 25+ professors through continously enhancing functionality for the bot (see 'Sage' under Projects). As I currently hold a senior position within the team, I am also responsible for interviewing candidates and guiding new members around the system through documentation and team meetings.",
+			},
+		];
+
+		experiences.map(function(experience, index) {
+			function generateImage() {
+				const experiencePicDiv = document.createElement("div");
+				experiencePicDiv.style.cssText = `display: flex; justify-content: center; align-items: center; margin: 5px; width: 30%; border: 5px solid #3287a8; border-radius: 20px;`
+				const experienceImage = document.createElement("img");
+				experienceImage.addEventListener('mouseover', function() {
+					experienceImage.style.cursor = 'pointer';
+				});
+				experienceImage.addEventListener('click', function() {
+					window.location.href = experience.link;
+				});
+				experienceImage.src = experience.img;
+				experienceImage.style.cssText = `max-width: 90%;`;
+				experiencePicDiv.appendChild(experienceImage);
+				return experiencePicDiv;
+			}
+
+			function generateAbout() {
+				const experienceAboutDiv = document.createElement("div");
+				experienceAboutDiv.style.cssText = `display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 5px; width: 70%;border: 5px solid #3287a8; border-radius: 20px;`
+				const experiencePosition = document.createElement("h3");
+				experiencePosition.textContent = experience.position;
+				experiencePosition.className = "project-header";
+
+				const experienceHeld = document.createElement("p");
+				const experienceHeldText = document.createElement("em");
+				experienceHeldText.textContent = experience.held;
+				experienceHeld.appendChild(experienceHeldText);
+
+				const experienceAbout = document.createElement("p");
+				experienceAbout.textContent = experience.details;
+				experienceAbout.className = "center";
+
+				experienceAboutDiv.appendChild(experiencePosition);
+				experienceAboutDiv.appendChild(experienceHeld);
+				experienceAboutDiv.appendChild(experienceAbout);
+				return experienceAboutDiv;
+			}
+
+			const parent = document.createElement("div");
+			parent.style.cssText = 
+			`
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 20px;
+				padding-right: 20px;
+				margin-left: 10vw;
+				margin-right: 10vw;
+				display: flex;
+  			`
+			parent.className = "experiences";
+
+			parent.appendChild(generateImage());
+			parent.appendChild(generateAbout());
+			return parent;
+		}).forEach(function(element) {
+			document.getElementById("experiences").appendChild(element);
+		});
+
 		// random song link!
 		const songs = [
 			"https://www.youtube.com/watch?v=Kpeip2B8l2E", // Porcupine Tree - Arriving Somewhere but not Here
@@ -722,28 +549,6 @@
 				} else {
 					content.style.maxHeight = content.scrollHeight + "px";
 				}
-			});
-		}
-
-		// modal events
-		const projectImgs = document.getElementsByClassName("tableimg");
-
-		for (let i = 0; i < projectImgs.length; i++) {
-			projectImgs[i].addEventListener("click", function () {
-				const modal = document.getElementById(projectImgs[i].id + "-modal");
-				const closeBtn = document.getElementsByClassName("close")[i];
-
-				modal.style.display = "block";
-				closeBtn.addEventListener("click", function () {
-					modal.style.display = "none";
-				});
-
-				// also close modal when anywhere out of it is clicked
-				window.onclick = function (event) {
-					if (event.target == modal) {
-						modal.style.display = "none";
-					}
-				};
 			});
 		}
 	</script>
