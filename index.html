@@ -36,8 +36,12 @@
 				<h1 id="about"><strong>About</strong></h1>
 				<p class="normal-text">
 					Hello, the name's Simon. I'm a junior computer science major at the University of Delaware with a strong interest in software and web
-					development. Besides programming, I have a wide array of other interests, all detailed below!
+					development. Besides programming, I have a wide array of other interests, all detailed below!<br /><br />
+
+					 
 				</p>
+
+				<p class="center"><strong>FUN FACT: </strong><span id="fact">You don't have JavaScript enabled...</span></p>
 
 				<h2><strong>Computer Science</strong></h2>
 				<p class="normal-text">
@@ -46,13 +50,6 @@
 
 					At the University of Delaware, I have taken (or am taking) a number of higher-level computer science courses covering a large variety of
 					fields, including Logic in Programming, Algorithms, Operating Systems, Software Engineering, Automata Theory, and Artificial Intelligence.<br /><br />
-				</p>
-
-				<h2><strong>Other Interests</strong></h2>
-				<p class="normal-text">
-					Of course, computer science is not the only interest or hobby of mine... I also enjoy gaming, drawing, writing, biking, kayaking, and
-					listening to music (<a onclick="window.location.href = randomLink;">click here for a random song I like</a>), among other things. I'm also a
-					massive transport and train nerd.
 				</p>
 
 				<h2>My Languages, Frameworks, & Tools</h2>
@@ -531,68 +528,20 @@
 			document.getElementById("experiences").appendChild(element);
 		});
 
-		// random song link!
-		const songs = [
-			"https://www.youtube.com/watch?v=Kpeip2B8l2E", // Porcupine Tree - Arriving Somewhere but not Here
-			"https://youtu.be/aiQPNlaAJPM", // Porcupine Tree - Heartattack in a Layby
-			"https://www.youtube.com/watch?v=1wF1sgXqF90", // Linkin Park - Final Masquerade
-			"https://www.youtube.com/watch?v=YgVzhgygYfs", // Linkin Park - In Between
-			"https://youtu.be/D3MB_EkNV5Y", // Linkin Park - Castle of Glass
-			"https://youtu.be/5qF_qbaWt3Q", // Linkin Park - Waiting for the End
-			"https://youtu.be/dbB-mICjkQM", // Muse - Plug in Baby
-			"https://youtu.be/47P6CI7V8gM", // Muse - Undisclosed Desires
-			"https://youtu.be/vk24UKKI4yY", // Muse - Panic Station
-			"https://youtu.be/3dm_5qWWDV8", // Muse - Hysteria
-			"https://youtu.be/Pgum6OT_VH8", // Muse - Starlight
-			"https://youtu.be/04QpInkz9so", // Pendulum - Propane Nightmares
-			"https://youtu.be/ogMNV33AhCY", // Pendulum - Witchcraft
-			"https://www.youtube.com/watch?v=kjhSu_m5mZg", // Pendulum - Encoder
-			"https://youtu.be/u3IAybZOt-E", // Paramore - When it Rains
-			"https://youtu.be/mgJ8BZi3vTA", // Paramore - Emergency
-			"https://www.youtube.com/watch?v=OtB-WY2fbhg", // Foo Fighters - Dear Rosemary
-			"https://youtu.be/eBG7P-K-r1Y", // Foo Fighters - Everlong
-			"https://youtu.be/7DtCdO6jfG0", // Foo Fighters - But, Honestly
-			"https://youtu.be/8bbTtPL1jRs", // My Chemical Romance - Famous Last Words
-			"https://youtu.be/RRKJiM9Njr8", // My Chemical Romance - Welcome to the Black Parade
-			"https://youtu.be/8E-anGEPhFU", // Nothing but Thieves - Futureproof
-			"https://youtu.be/daIrVUzHdqw", // Dead by Sunrise - Too Late
-			"https://youtu.be/dpRtG7A4KA0", // Fallout Boy - Heartbreak Feels So Good
-			"https://youtu.be/-C0v_59n0ZY", // Kasabian - Chemicals
-			"https://youtu.be/nllCB13s9fI", // You Me at Six - Deep Cuts
-			"https://youtu.be/bRpN4hjXUuE", // The Blue Stones - Shaking off the Rust
-			"https://www.youtube.com/watch?v=ZHwVBirqD2s", // Elton John - I'm Still Standing
-			"https://www.youtube.com/watch?v=PNMDYGGv4fg", // Genesis - Man on the Corner
-			"https://www.youtube.com/watch?v=HUeLOj4Skiw", // London Grammar - I Need the Night
-			"https://www.youtube.com/watch?v=rdpBZ5_b48g", // Green Day - WMUWSE
-			"https://www.youtube.com/watch?v=d020hcWA_Wg", // Coldplay - Clocks
-			"https://www.youtube.com/watch?v=tgIqecROs5M", // AWOLNATION - Sail
-			"https://www.youtube.com/watch?v=qaeWss85_vg", // Manchester Orchestra - The Gold
-			"https://www.youtube.com/watch?v=AVIl88WjCf8", // Reflekt - Need to Feel Loved (Matrix Remix)
-			"https://www.youtube.com/watch?v=6GPXwbh1rrk", // Sub Focus - Safe in Sound
-			"https://www.youtube.com/watch?v=6JauWWN62aQ", // MUZZ - Spectrum (Futurebound Remix)
-			"https://youtu.be/LWjzRvt6k1I", // Knife Party - Begin Again
-			"https://youtu.be/K-xeeZhzo_o", // The Prodigy - Light Up the Sky
-			"https://youtu.be/gENguMCE_34", // Approaching Nirvana - What I Need
-			"https://www.youtube.com/watch?v=uaKc_zmtWqo&", // Eric Prydz - Breathe
-			"https://www.youtube.com/watch?v=SzWSh_1eUEU&", // Iron Maiden - Aces High
-			"https://www.youtube.com/watch?v=WsxyzaK-KpE", // Iron Maiden - The Trooper
-			"https://www.youtube.com/watch?v=KpCcJY-rJSs", // TDCC - What You Know
-		];
-		const randomLink = songs[Math.floor(Math.random() * songs.length)];
+		const facts = [
+			"I'm a train nerd with a large collection of rail magazines and books",
+			"I'm very into roller coasters, the most notable parks I've visited including SFGAdv and Cedar Point",
+			"My favorite Pokemon changes every few months... but my top ones have always been Grovyle and Latios",
+			"I survived Kingda Ka",
+			"Go Birds 🦅🦅🦅",
+			"I'm super into simulation, RPG, and roguelike games",
+			"Italian food is my favorite food, with Mexican being the runner-up",
+			"I like to hike, kayak, and bike",
+			"This text changes every time you refresh the page",
+			"I play the trombone",
+			"My favorite bands are Pendulum, Linkin Park, Foo Fighters, and Muse"
+		]
 
-		// collapsible events
-		const coll = document.getElementsByClassName("collapsible");
-
-		for (let i = 0; i < coll.length; i++) {
-			coll[i].addEventListener("click", function () {
-				this.classList.toggle("active");
-				const content = this.nextElementSibling;
-				if (content.style.maxHeight) {
-					content.style.maxHeight = null;
-				} else {
-					content.style.maxHeight = content.scrollHeight + "px";
-				}
-			});
-		}
+		document.getElementById('fact').innerHTML = facts[Math.floor(Math.random() * facts.length)];
 	</script>
 </html>
