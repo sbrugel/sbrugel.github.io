@@ -46,8 +46,8 @@
 				<h1 id="projects"><strong>Projects</strong></h1>
 				<p class="normal-text">
 					These are the main computer-science-related projects I've worked on, most of them independently. More projects are available on <a href="https://sbrugel.com/img/github.png">GitHub.</a> Click an image to view a bigger version!<br /><br />
-					If you're looking for simulator-related things I've made,
-					<a href="https://sbrugel.com/game-content.html">this is the temporary page for that.</a>
+					<!-- If you're looking for simulator-related things I've made, -->
+					<!-- <a href="https://sbrugel.com/game-content.html">this is the temporary page for that.</a> -->
 				</p>
 
 				<div id="projects-cards"></div>
@@ -62,7 +62,7 @@
 		const languages = [
 			{
 				name: "Java",
-				description: "The first programming language I learned back in 2015, with my journey starting with the infamous Hello World program.",
+				description: "Java was the first programming language I learned back in 2015, with my journey starting with the infamous Hello World program.",
 				img: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
 				color1: "#f8981d",
 				color2: "#5382a1",
@@ -76,28 +76,28 @@
 			},
 			{
 				name: "C#",
-				description: "Using .NET/Windows Forms, I've made tons of GUI utilities from flash card set makers and desktop journal keeping, to custom-built game mod installers and games in Unity.",
+				description: "Using .NET/Windows Forms, with C# I've made tons of GUI utilities from flash card set makers and desktop journal keeping, to custom-built game mod installers and games in Unity.",
 				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png",
 				color1: "#a27add",
 				color2: "#360092",
 			},
 			{
 				name: "HTML",
-				description: "Well, considering this language (plus CSS) makes up this page's source... I don't believe this language needs much introduction :)",
+				description: "Well, considering HTML (plus CSS) makes up this page's source... I don't believe this language needs much introduction :)",
 				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png",
 				color1: "#e34f26",
 				color2: "#ef652a",
 			},
 			{
 				name: "CSS",
-				description: "This website has gone through many iterations over the last 6 years, and with each revamp, I have learned many new things about styling.",
+				description: "This website has gone through many iterations over the last 6 years, and with each revamp, I have learned many new things about CSS and styling.",
 				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
 				color1: "#214ce5",
 				color2: "#2465f1",
 			},
 			{
 				name: "JavaScript",
-				description: "My foot in the door for web development. Beginning with web-based 3D games and Discord bots, I would later go on and use it in tandem with other libraries like React to make complex web apps..",
+				description: "JavaScript was my foot in the door for web development. Beginning with web-based 3D games and Discord bots, I would later go on and use it in tandem with other libraries like React to make complex web apps.",
 				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png",
 				color1: "#f0dc4e",
 				color2: "#f0dc4e",
@@ -111,7 +111,7 @@
 			},
 			{
 				name: "React",
-				description: "A framework I have several years of experience with, using it mostly in professional environments. TS + React is my go-to combo for application development.",
+				description: "React is a framework I have several years of experience with, using it mostly in professional environments. TS + React is my go-to combo for application development.",
 				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png",
 				color1: "#61dbfb",
 				color2: "#61dbfb",
@@ -125,28 +125,28 @@
 			},
 			{
 				name: "C++",
-				description: "I’ve used C++ to learn data structures, as well as in some other projects, including an implementation of Yahtzee and a process scheduling simulation.",
+				description: "I used C++ to learn data structures, as well as in some other projects, including an implementation of Yahtzee and a process scheduling simulation.",
 				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
 				color1: "#659bd3",
 				color2: "#004283",
 			},
 			{
 				name: "Assembly",
-				description: "I learned the basics of this language through a sophomore-year machine organization class at college. It was an interesting experience, to say the least!",
+				description: "I learned the basics of Assembly language through a sophomore-year machine organization class at college. It was an interesting experience, to say the least!",
 				img: "https://gitconnected.com/public/images/tutorials/assembly-language",
 				color1: "#0000bf",
 				color2: "#0505c0",
 			},
 			{
 				name: "University Courses",
-				description: "Data Structures, Machine Organization & Assembly, Software Engineering, Automata Theory, Logic in Programming, Algorithms, Operating Systems, Artificial Intelligence",
+				description: "UNIVERSITY COURSEWORK: Data Structures, Assembly & Machine Organization, Software Engineering, Automata Theory, Logic for Programming, Algorithms, Operating Systems, Parallel Computing, Database Systems, Artificial Intelligence, Machine Learning, Technical Writing, Calculus, Discrete Math, Statistics, Linear Algebra",
 				img: "https://www.udel.edu/content/dam/udelImages/dar/IHUDD/DAR-IHUDD2021-YouDee-IGsticker.png",
 				color1: "#2a6aa5",
 				color2: "#fadf40",
 			},
 			{
 				name: "Other",
-				description: "Bootstrap, MongoDB, Git, Subversion, Visual Studio 2022, Visual Studio Code, JetBrains, Jenkins, Windows, Linux",
+				description: "MISCELLANEOUS: SQL, MongoDB, Lisp, Bootstrap, Express, .NET, ASP.NET, Unity, Git, Subversion, Jenkins, REST APIs, Flood Element, Swagger, Visual Studio, Visual Studio Code, JetBrains, Windows, Bash",
 				img: "https://upload.wikimedia.org/wikipedia/en/b/bb/Emoji_hammer.png",
 				color1: "#aab8b9",
 				color2: "#aab8b9",
@@ -182,11 +182,11 @@
 				languageAboutDiv.style.cssText = `display: flex; justify-content: center; align-items: center; margin: 5px; border: 5px solid ${language.color2}; border-radius: 20px; padding: 5px;`
 
 				if (index % 2 == 0) {
-					languageAboutDiv.appendChild(createHeader());
+					// languageAboutDiv.appendChild(createHeader());
 					languageAboutDiv.appendChild(createText());
 				} else {
 					languageAboutDiv.appendChild(createText());
-					languageAboutDiv.appendChild(createHeader());
+					// languageAboutDiv.appendChild(createHeader());
 				}
 				
 				return languageAboutDiv;
@@ -235,14 +235,14 @@
 			{
 				name: "A* Maze Solver",
 				date: "November 2023",
-				img: "https://camo.githubusercontent.com/67f8fac4db9c246f50e5a63c97d7569476398b17a0e8fa05c3811e60d24981bb/68747470733a2f2f692e696d6775722e636f6d2f6a44474a6866412e676966",
+				img: "https://i.imgur.com/QGV2WkG.gif",
 				description: "Using Pygame for visuals, this is a maze solver which always returns the optimal solution (if one is available), using the reliable A* search algorithm.",
 				source: "https://github.com/sbrugel/python-ai-stuff",
 			},
 			{
 				name: "Visual Studio Code - Text List to Array",
 				date: "October 2023",
-				img: "https://camo.githubusercontent.com/82bbe4f56e09c3e54cc70e2b1036a4db3e2f32e989728a6f08a2e1333ede2c36/68747470733a2f2f692e696d6775722e636f6d2f6b7441556c53622e676966",
+				img: "https://i.imgur.com/BsK2JGy.gif",
 				description: "This extension adds a command which converts comma or newline separated lists to array declarations, similar to what is seen in Python and JS/TS.",
 				source: "https://github.com/sbrugel/vsc-text-list-to-array",
 			},
@@ -256,7 +256,7 @@
 			{
 				name: "Operating System Sim",
 				date: "April 2023 - May 2023",
-				img: "https://camo.githubusercontent.com/de9d73baee7c4765a39d5df6162dc6d6c8eacffe18d1e3acc99b7f51a0ba9597/68747470733a2f2f692e696d6775722e636f6d2f71374e7a7570692e706e67",
+				img: "https://i.imgur.com/iMclaO5.png",
 				description: "CISC361 Final Project. An operating system simulation of job scheduling, resource management, and deadlock avoidance, written in C++.",
 				source: "https://github.com/sbrugel/cisc361-project",
 			},
@@ -285,7 +285,7 @@
 			{
 				name: "Counting Bot",
 				date: "January 2023",
-				img: "https://camo.githubusercontent.com/b31dea54eb386a488512edf53b26323e30b7a26bdef5b9a6b19056b737e4ee5a/68747470733a2f2f692e696d6775722e636f6d2f4c5a49774838322e706e67",
+				img: "https://i.imgur.com/yolrb01.png",
 				description: "A TypeScript Discord bot that tracks a specified channel and ensures the only messages that get sent are numbers increasing sequentially, message after message.",
 				source: "https://github.com/sbrugel/counting-bot",
 			},
@@ -306,14 +306,14 @@
 			{
 				name: "SEPTA Delay History",
 				date: "October 2022 - November 2022",
-				img: "https://camo.githubusercontent.com/e851f5067c89472e0c9ac7db0c6fd304d8c57326df134264c3fb550fb4fdad60/68747470733a2f2f692e696d6775722e636f6d2f357258765732642e706e67",
+				img: "https://i.imgur.com/ctimWLY.png",
 				description: "Full-stack React app that shows delay statistics over single days or 7/30/180 day intervals for SEPTA rail services.",
 				source: "https://github.com/sbrugel/septa-delay-history",
 			},
 			{
 				name: "Flash Card Maker",
 				date: "September 2022 - October 2022",
-				img: "https://camo.githubusercontent.com/deed2cf6e16561c7c92f9fc331fbe6ac1a05746e57a9787057a93f0792a26539/68747470733a2f2f692e696d6775722e636f6d2f47367a77526b4f2e676966",
+				img: "https://i.imgur.com/9I62k7j.gif",
 				description: "A Windows Forms application that allows the user to create sets of flash cards for studying, save them on their system, and review them in another window, being able to shuffle the card order at any time.",
 				source: "https://github.com/sbrugel/flash-card-generator",
 			},
@@ -327,7 +327,7 @@
 			{
 				name: "SEPTA Checker",
 				date: "August 2021 - October 2022",
-				img: "https://camo.githubusercontent.com/8448899f5067e02dc99751282a88722553df942119dcccadfd2553af645fe7f5/68747470733a2f2f692e696d6775722e636f6d2f4135774f594d362e706e67",
+				img: "https://i.imgur.com/oIUC28v.png",
 				description: "A Discord bot that fetches from the SEPTA API every 2 minutes and returns delays, last recorded location, train consist information, and alerts for user-inputted train numbers.",
 				source: "https://github.com/sbrugel/septa-checker-v2",
 			},
@@ -428,7 +428,7 @@
 		const experiences = [
 			{
 				link: "https://myparadigm.com/",
-				img: "https://myparadigm.com/wp-content/uploads/2020/07/Paradigm-Technology-for-the-Building-Products-Industry.png",
+				img: "https://myparadigm.com/wp-content/uploads/2023/08/Paradigm-Rectangle-Logo-Height-Adjusted.png",
 				position: "Software Developer Intern",
 				held: "May 2023 - August 2023 (Madison, WI - Remote)",
 				details: "Using JS/React and C#/ASP.NET, I worked with an Agile team on a full-stack web application for creating quotes and orders used by over 100,000 users. I also used TypeScript/Flood Element to revamp a load testing system, allowing for more accurate simulations of web apps under heavy traffic, and collaborated with a team to investigate applications of AI in software, beginning development of an internal chatbot via Azure OpenAI.",
@@ -440,13 +440,12 @@
 				held: "May 2022 - October 2022 (Glen Mills, PA - Remote)",
 				details: "For my first internship, I used JS/React in an Agile work environment to work on numerous frontend/backend fixes for an online employee interaction center. Near the end of my time here, I wrote the foundational code for a full-stack performance management application.",
 			},
-
 			{
 				link: "https://www.cis.udel.edu/",
 				img: "https://www.udel.edu/content/dam/udelImages/dar/IHUDD/DAR-IHUDD2021-YouDee-IGsticker.png",
 				position: "Teaching Assistant",
 				held: "February 2023 - Current (Newark, DE)",
-				details: "CISC181 (Intro to Computer Science II) and CISC304 (Logic for Programming). My duties include assisting students with course material through weekly office hours/labs, and grading cousework in a timely fashion while providing feedback.",
+				details: "CISC181 (Intro to Computer Science II)\n, CISC275 (Software Engineering), and CISC304 (Logic for Programming). My duties include assisting students with course material through weekly office hours/labs, and grading cousework in a timely fashion while providing feedback.",
 			},
 			{
 				link: "https://www.cis.udel.edu/",
@@ -524,13 +523,14 @@
 		});
 
 		const facts = [
-			"I'm a train nerd with a large collection of rail magazines and books",
+			"I'm a train nerd with a large collection of railroad magazines and books",
 			"I survived Kingda Ka",
-			"Go Birds 🦅🦅🦅",
+			"Go Birds 🦅",
 			"I'm super into simulation, RPG, and roguelike games",
 			"I like to hike, kayak, and bike",
 			"This text changes every time you refresh the page",
-			"My favorite bands are Pendulum, Linkin Park, Foo Fighters, and Muse"
+			"My favorite bands are Pendulum, Linkin Park, Foo Fighters, and Muse",
+			"I'm an enjoyer of digital art and music production"
 		]
 
 		document.getElementById('fact').innerHTML = facts[Math.floor(Math.random() * facts.length)];
