@@ -125,79 +125,6 @@ a:hover {
 }
 
 /* ============= SPLASH STUFF ============= */
-@keyframes splash {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes splash-left {
-  0% {
-    left: -500px;
-    opacity: 0;
-  }
-
-  50% {
-    left: 500px;
-    opacity: 0;
-  }
-
-  100% {
-    left: 0px;
-    opacity: 1;
-  }
-}
-
-@keyframes splash-center {
-  0% {
-    left: 0px;
-    opacity: 0;
-  }
-
-  50% {
-    left: 0px;
-    opacity: 0;
-  }
-
-  100% {
-    left: 0px;
-    opacity: 1;
-  }
-}
-
-@keyframes splash-right {
-  0% {
-    left: -500px;
-    opacity: 0;
-  }
-
-  50% {
-    left: -500px;
-    opacity: 0;
-  }
-
-  100% {
-    left: 0px;
-    opacity: 1;
-  }
-}
-
-@keyframes modal {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
 .splash-text {
   margin: 0;
   /* Center horizontally and vertically */
@@ -210,33 +137,30 @@ a:hover {
 .splash-main {
   font-size: 30pt;
   position: relative;
-  animation-name: splash;
-  animation-duration: 1s;
 }
 
 .splash-content-l {
   position: relative;
-  animation-name: splash-left;
-  animation-duration: 2s;
 }
 
 .splash-content-r {
   position: relative;
-  animation-name: splash-right;
-  animation-duration: 2s;
 }
 
 .splash-content-c {
   position: relative;
-  animation-name: splash-center;
-  animation-duration: 2s;
 }
 
 .splash {
   height: 100vh;
-  background: #3287a8;
+  background-image: url(../img/splash.jpg);
+  background-position: center; /* Center the background image */
   color: #ffffff;
-
   text-align: center;
   top: 50%;
+}
+
+.splash-tint {
+  background-color: rgba(50, 135, 168, 1);
+  background-blend-mode: multiply;
 }
