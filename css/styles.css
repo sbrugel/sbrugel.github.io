@@ -43,7 +43,8 @@ h2 {
 }
 
 /* this h1/h2 is used for project headers */
-.project-header {
+.project-header,
+.about-header {
   color: #ffffff;
   text-align: center;
   margin: 0;
@@ -154,7 +155,8 @@ a:hover {
 .splash {
   height: 100vh;
   background-image: url(../img/splash.jpg);
-  background-position: center; /* Center the background image */
+  background-position: center;
+  /* Center the background image */
   color: #ffffff;
   text-align: center;
   top: 50%;
