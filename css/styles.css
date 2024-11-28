@@ -1,168 +1,88 @@
-/* ============= GENERAL HTML STUFF ============= */
-html {
-  scroll-behavior: smooth;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  overflow-x: hidden;
-  margin: 0;
-}
-
-/* stuff consistent across the body */
+/* full page styles */
 body {
-  font-family: "Barlow";
-  font-size: 14pt;
-  background-color: #202020;
+  background-color: #282c34;
+  font-family: "Ubuntu Mono", monospace;
+  color: #abb2bf;
 }
 
-/* specific divs */
-.languages {
+/* container for both columns */
+.container {
   display: flex;
-  align-items: stretch;
+  margin: 20px;
+  /* center the content */
   justify-content: center;
 }
 
-/* h */
-/* this is used for headers */
-h1 {
-  font-size: 28pt;
-  color: #3287a8;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  text-align: center;
-}
-
-/* this is used for sub-headers */
-h2 {
-  font-size: 22pt;
-  color: #3287a8;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  text-align: center;
-}
-
-/* this h1/h2 is used for project headers */
-.project-header,
-.about-header {
-  color: #ffffff;
-  text-align: center;
-  margin: 0;
-}
-
-/* this is used for language titles */
-h3 {
-  font-size: 2vw;
-  color: #ffffff;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 4px;
-  padding-right: 4px;
+/* the overall content columns */
+/* each column has a significant margin to the edges of the page, and a small gap in between */
+.left-column {
+  margin-left: 100px;
   margin-right: 10px;
+  padding: 10px;
+  width: 300px;
+  text-align: right;
+
+  /* don't move when you scroll */
+  position: sticky; 
+  top: 0; 
+  height: 100vh;
+}
+.right-column {
+  margin-right: 100px;
   margin-left: 10px;
+  padding: 10px;
+  width: 50%;
 }
 
-/* p */
-p {
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 4px;
-  padding-right: 4px;
-  margin: 10px;
-  font-size: 1.2vw;
-  line-height: normal;
-  color: #ffffff;
+/* two column layouts for inner content like professional experience */
+.two-column {
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center; /* Vertically center-align both divs */
 }
 
-/* this is used for text directly in the body */
-.normal-text {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: 10vw;
-  margin-right: 10vw;
+.two-column div {
+  flex-grow: 0; /* Prevent divs from stretching */
 }
 
-/* this is used for text in project cards */
-.center {
-  text-align: center;
+.two-column img {
+  display: block; /* Eliminate inline-block spacing issues */
+  max-width: 100%; /* Ensure the image scales properly */
 }
 
-/* a */
+/* text color classes */
+.green {
+  color: #98c379;
+}
+
+.blue {
+  color: #5798cd;
+}
+
+.orange {
+  color: #e8d378;
+}
+
+/* link properties (they'll all be blue) */
 a {
-  color: #c7dcff;
   text-decoration: none;
+  padding: 3px;
+  white-space: pre;
 }
 
 a:hover {
-  color: #8c9cb8;
+  color: black;
 }
 
-/* ============= REPSONSIVENESS ============= */
-@media screen and (max-width: 1200px) {
-  .splash {
-    height: 130vh;
-  }
-
-  h1,
-  h2 {
-    font-size: 39pt;
-  }
-
-  h3 {
-    font-size: 5vw;
-  }
-
-  p {
-    font-size: 3vw;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .hide-on-small-window {
-    visibility: hidden;
-  }
+a.blue:hover {
+  background-color: #5798cd;
 }
 
-/* ============= SPLASH STUFF ============= */
-.splash-text {
-  margin: 0;
-  /* Center horizontally and vertically */
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+a.orange:hover {
+  background-color: #e8d378;
 }
 
-.splash-main {
-  font-size: 30pt;
-  position: relative;
-}
-
-.splash-content-l {
-  position: relative;
-}
-
-.splash-content-r {
-  position: relative;
-}
-
-.splash-content-c {
-  position: relative;
-}
-
-.splash {
-  height: 100vh;
-  background-image: url(../img/splash.jpg);
-  background-position: center;
-  /* Center the background image */
-  color: #ffffff;
-  text-align: center;
-  top: 50%;
-}
-
-.splash-tint {
-  background-color: rgba(50, 135, 168, 1);
-  background-blend-mode: multiply;
+::selection {
+  background-color: #abb2bf;
+  color: black;
 }

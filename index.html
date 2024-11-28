@@ -3,655 +3,244 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=0.7" />
-		<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 
 		<link rel="icon" type="image/x-icon" href="https://sbrugel.com/img/favicon.ico" />
 		<title>sbrugel.com</title>
 	</head>
 	<body>
-		<div class="main">
-			<div class="splash splash-tint">
-				<p class="splash-text">
-					<span class="splash-main"><strong>Simon Brugel</strong></span>
-					<br />
-					<br />
-					<span class="splash-content-c">
-						<a href="#about"><strong>About Me</strong></a> · <a href="#projects"><strong>Projects</strong></a> ·
-						<a href="#exp"><strong>Experience</strong></a>
-					</span>
-					<br />
-					<br />
-					<span
-						><a href="https://github.com/sbrugel"
-							><img alt="Github" src="img/github.png" style="width: 50px; height: 50px" class="splash-content-r" /></a
-						>&emsp;&emsp;<a href="https://www.linkedin.com/in/sbrugel/"
-							><img alt="LinkedIn" src="img/linkedin.png" style="width: 50px; height: 50px" class="splash-content-l" /></a
-					></span>
-				</p>
+		<div class="container">
+			<div class="left-column">
+			  <img src="/img/me.png" alt="me!" style="width:40%; border:5px solid #98c379;" />
+			  <h1 class="green">sbrugel</h1>
+			  <p><a href="#about" class="blue">about me</a></p>
+			  <p><a href="#skills" class="blue">skills</a></p>
+			  <p><a href="#exp" class="blue">experience</a></p>
+			  <p><a href="#projects" class="blue">projects</a></p>
+			  <h5><a href="https://www.linkedin.com/in/sbrugel/" class="orange">linkedin</a></h5>
+			  <h5><a href="https://github.com/sbrugel" class="orange">github</a></h5>
+			  <h5><a href="mailto:sbrugel62@gmail.com" class="orange"">email</a></h5>
 			</div>
+			<div class="right-column">
+			  <h1 class="blue" id="about">about me</h1>
+			  <p>Hello and welcome! I'm Simon Brugel, a senior computer science undergraduate at the University of Delaware. This website serves as my portfolio, where you'll see my main industry/academic experiences and side projects.</p>
+			  <p>My specialty is software enginering, though I have experience in other fields including artificial intelligence/data science, human-computer interaction, systems programming, and DevOps. I'm also open to exploring new fields and applications, and as a very technically-minded person, I can pick up new technologies easily.</p>
+			  <p>Currently, I am seeking full-time employment in software engineering, data science, or related fields for after I graduate. If you are interested in working with me, feel free to contact me via any methods on the left!</p>
 
-			<div>
-				<h1 id="about"><strong>About</strong></h1>
-				<div id="about-card"></div>
+			  <h3 class="blue">fun facts</h3>
+			  <ul>
+				<li><p>On the side, I'm a hobbyist digital artist and collector of train magazines and books</p></li>
+				<li><p>I am a huge fan of the Philadelphia Eagles - Go Birds 🦅</p></li>
+				<li><p>My favorite bands include Muse, Linkin Park, Green Day, Foo Fighters, and Pendulum</p></li>
+				<li><p>I really like dragons</p></li>
+			  </ul>
+			  
+			  <h1 class="blue" id="skills">skills</h1>
+			  <p>Languages: <span class="green">C#, Java, JavaScript, TypeScript, Python, C, C++, HTML, CSS, Assembly, SQL</span></p>
+			  <p>Frameworks: <span class="green">React, Angular, Node.js, Express, .NET, ASP.NET, Flask, Bootstrap, Tkinter, Scikit-Learn, Matplotlib, Unity, GoDot<span></p>
+			  <p>Tools & Other: <span class="green">Windows, Linux, Git, GitHub, Subversion, Microsoft Azure, MongoDB, Firebase, REST APIs, Swagger, Flood Element, Visual Studio, Visual Studio Code, JetBrains, Bash, Jenkins, JIRA, Confluence</span></p>
+			  <p>Coursework: <span class="green">Data Structures, Machine Organization & Assembly Language, Software Engineering, Automata Theory, Logic for Programming, Algorithms, Operating Systems, Parallel Computing, Databases, Computer Vision, Cybersecurity, Secure Software Design, Artificial Intelligence, Data Mining, Machine Learning, Technical Writing, Calculus, Discrete Math, Statistical Methods, Linear Algebra</span></p>
 
-				<h2>My Languages, Frameworks, & Tools</h2>
-				<div id="languages"></div>
+			  <h1 class="blue" id="exp">professional experience</h1>
+			  <div id="exps"></div>
 
-				<h1 id="projects"><strong>Projects</strong></h1>
-				<p class="normal-text">
-					These are the main computer-science-related projects I've worked on, most of them independently. More projects are available on
-					<a href="https://sbrugel.com/img/github.png">GitHub.</a> Click an image to view a bigger version!<br /><br />
-					<!-- If you're looking for simulator-related things I've made, -->
-					<!-- <a href="https://sbrugel.com/game-content.html">this is the temporary page for that.</a> -->
-				</p>
-
-				<div id="projects-cards"></div>
-
-				<h1 id="exp"><strong>Experience</strong></h1>
-				<div id="experiences"></div>
+			  <h1 class="blue" id="projects">projects</h1>
+			  <p class="orange"><em>Click on an image to view the repository for that project. More projects are available on my <a href="https://github.com/sbrugel" class="orange"><u>GitHub</u></a></em></p>
+			  <div id="projs"></div>
 			</div>
 		</div>
 	</body>
-
 	<script>
-		const abouts = [
-			{
-				img: "https://sbrugel.com/img/me.png",
-				text: [
-					`Hi there! I'm Simon, a senior computer science undergrad at the University of Delaware. My specialty is software engineering and full-stack development,
-					though I've also worked in systems programming, data science/machine learning, and human-computer interaction.`,
-					`This website serves as my portfolio. Here, you'll find my computer science experiences and numerous side projects. Maybe I'll add some cool things I find, too!`,
-					`Outside of comp sci, I'm a hobbyist digital artist and music producer.`,
-				],
-				facts: [
-					"I'm a train nerd with a large collection of railroad magazines and books",
-					"I survived Kingda Ka",
-					"Go Birds 🦅",
-					"I'm super into simulation, RPG, and roguelike games",
-					"I like to hike, kayak, and bike",
-					"This text changes every time you refresh the page",
-					"My favorite bands are Pendulum, Linkin Park, Foo Fighters, Green Day, and Muse",
-					"I really like dragons",
-				],
-			},
-		];
-
-		abouts
-			.map(function (about, index) {
-				function generateImage() {
-					const experiencePicDiv = document.createElement("div");
-					experiencePicDiv.style.cssText = `display: flex; justify-content: center; align-items: center; margin: 5px; width: 30%; border: 5px solid #3287a8; border-radius: 20px;`;
-					const experienceImage = document.createElement("img");
-					experienceImage.src = about.img;
-					experienceImage.style.cssText = `max-width: 90%;`;
-					experiencePicDiv.appendChild(experienceImage);
-					return experiencePicDiv;
-				}
-
-				function generateAbout() {
-					const experienceAboutDiv = document.createElement("div");
-					experienceAboutDiv.style.cssText = `display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 5px; width: 70%;border: 5px solid #3287a8; border-radius: 20px;`;
-					for (const line of about.text) {
-						const experienceAbout = document.createElement("p");
-						experienceAbout.textContent = line;
-						experienceAbout.className = "center";
-						experienceAboutDiv.appendChild(experienceAbout);
-					}
-					const fact = document.createElement("p");
-					const factWrapper = document.createElement("em");
-
-					const factHeader = document.createElement("strong");
-					factHeader.textContent = "FUN FACT: ";
-					factWrapper.appendChild(factHeader);
-
-					const factText = document.createElement("span");
-					factText.textContent = about.facts[Math.floor(Math.random() * about.facts.length)];
-					factWrapper.appendChild(factText);
-
-					fact.appendChild(factWrapper);
-
-					experienceAboutDiv.appendChild(fact);
-					return experienceAboutDiv;
-				}
-
-				const parent = document.createElement("div");
-				parent.style.cssText = `
-				padding-top: 10px;
-				padding-bottom: 10px;
-				padding-left: 20px;
-				padding-right: 20px;
-				margin-left: 10vw;
-				margin-right: 10vw;
-				display: flex;
-					`;
-				parent.className = "experiences";
-
-				parent.appendChild(generateImage());
-				parent.appendChild(generateAbout());
-				return parent;
-			})
-			.forEach(function (element) {
-				document.getElementById("about-card").appendChild(element);
-			});
-
-		const languages = [
-			{
-				name: "Java",
-				description:
-					"Java was the first programming language I learned back in 2015, with my journey starting with the infamous Hello World program.",
-				img: "https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg",
-				color1: "#f8981d",
-				color2: "#5382a1",
-			},
-			{
-				name: "Python",
-				description:
-					"I've utilized Python for all sorts of things, such as games, lightweight utility applications, image processing, and machine learning.",
-				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
-				color1: "#366c9c",
-				color2: "#f5d856",
-			},
-			{
-				name: "C#",
-				description:
-					"Using .NET/Windows Forms, with C# I've made tons of GUI utilities from flash card set makers and desktop journal keeping, to custom-built game mod installers and games in Unity.",
-				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/1200px-Logo_C_sharp.svg.png",
-				color1: "#a27add",
-				color2: "#360092",
-			},
-			{
-				name: "HTML",
-				description: "Well, considering HTML (plus CSS) makes up this page's source... I don't believe this language needs much introduction :)",
-				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png",
-				color1: "#e34f26",
-				color2: "#ef652a",
-			},
-			{
-				name: "CSS",
-				description:
-					"This website has gone through many iterations over the last 6 years, and with each revamp, I have learned many new things about CSS and styling.",
-				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
-				color1: "#214ce5",
-				color2: "#2465f1",
-			},
-			{
-				name: "JavaScript",
-				description:
-					"JavaScript was my foot in the door for web development. Beginning with web-based 3D games and Discord bots, I would later go on and use it in tandem with other libraries like React to make complex web apps.",
-				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png",
-				color1: "#f0dc4e",
-				color2: "#f0dc4e",
-			},
-			{
-				name: "TypeScript",
-				description:
-					"TypeScript has massively grown on me over the years. I've used it for many projects - both personal and professional - such as Discord bots, web apps, and regression testing.",
-				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20221110153201",
-				color1: "#2d79c7",
-				color2: "#2d79c7",
-			},
-			{
-				name: "React",
-				description:
-					"React is a framework I have several years of experience with, using it mostly in professional environments. TS + React is my go-to combo for application development.",
-				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png",
-				color1: "#61dbfb",
-				color2: "#61dbfb",
-			},
-			{
-				name: "C",
-				description:
-					"I used C for some Raspberry Pi projects, and later on in an OS class to demonstrate concepts such as threads, synchronization, scheduling, and Banker's algorithm.",
-				img: "https://seeklogo.com/images/C/c-programming-language-logo-9B32D017B1-seeklogo.com.png",
-				color1: "#a9b9cb",
-				color2: "#7f8b99",
-			},
-			{
-				name: "C++",
-				description:
-					"I used C++ to learn data structures, as well as in some other projects, including an implementation of Yahtzee and a process scheduling simulation.",
-				img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
-				color1: "#659bd3",
-				color2: "#004283",
-			},
-			{
-				name: "Assembly",
-				description:
-					"I learned the basics of Assembly language through a sophomore-year machine organization class at college. It was an interesting experience, to say the least!",
-				img: "https://gitconnected.com/public/images/tutorials/assembly-language",
-				color1: "#0000bf",
-				color2: "#0505c0",
-			},
-			{
-				name: "Coursework",
-				description:
-					"Data Structures, Assembly & Machine Organization, Software Engineering, Automata Theory, Logic for Programming, Algorithms, Operating Systems, Parallel Computing, Database Systems, Computer Vision, Artificial Intelligence, Data Mining, Machine Learning, Technical Writing, Calculus, Discrete Math, Statistics, Linear Algebra",
-				img: "https://www.udel.edu/content/dam/udelImages/dar/IHUDD/DAR-IHUDD2021-YouDee-IGsticker.png",
-				color1: "#2a6aa5",
-				color2: "#fadf40",
-			},
-			{
-				name: "Other",
-				description:
-					"SQL, Bootstrap, .NET, ASP.NET, Unity, Windows, Linux, Git, GitHub, Subversion, MongoDB, REST APIs, Swagger, Flood Element, Visual Studio, Visual Studio Code, JetBrains, Bash, Jenkins",
-				img: "https://upload.wikimedia.org/wikipedia/en/b/bb/Emoji_hammer.png",
-				color1: "#aab8b9",
-				color2: "#aab8b9",
-			},
-		];
-
-		languages
-			.map(function (language, index) {
-				function generateImage() {
-					const languagePicDiv = document.createElement("div");
-					languagePicDiv.style.cssText = `display: flex; justify-content: center; align-items: center; max-width: 15%; margin: 5px; border: 5px solid ${language.color1}; border-radius: 20px; padding: 5px; aspect-ratio: 1/1; `;
-					const languageImage = document.createElement("img");
-					languageImage.src = language.img;
-					languageImage.style.cssText = `max-width: 125px; aspect-ratio: 1/1; `;
-					languagePicDiv.className = "hide-on-small-window";
-					languagePicDiv.appendChild(languageImage);
-					return languagePicDiv;
-				}
-
-				function generateAbout() {
-					function createHeader() {
-						const languageHeader = document.createElement("h3");
-						languageHeader.textContent = language.name;
-						return languageHeader;
-					}
-
-					function createText() {
-						const languageAbout = document.createElement("p");
-						if (language.name == "Coursework" || language.name == "Other") {
-							const wrapper = document.createElement("u");
-							const boldHeader = document.createElement("strong");
-							boldHeader.textContent = language.name + ":";
-							wrapper.appendChild(boldHeader);
-							languageAbout.appendChild(wrapper);
-						}
-						const spanText = document.createElement("span");
-						spanText.textContent = language.name == "Coursework" || language.name == "Other" ? " " + language.description : language.description;
-						languageAbout.appendChild(spanText);
-						return languageAbout;
-					}
-
-					const languageAboutDiv = document.createElement("div");
-					languageAboutDiv.style.cssText = `display: flex; justify-content: center; align-items: center; margin: 5px; border: 5px solid ${language.color2}; border-radius: 20px; padding: 5px;`;
-
-					if (index % 2 == 0) {
-						// languageAboutDiv.appendChild(createHeader());
-						languageAboutDiv.appendChild(createText());
-					} else {
-						languageAboutDiv.appendChild(createText());
-						// languageAboutDiv.appendChild(createHeader());
-					}
-
-					return languageAboutDiv;
-				}
-
-				const parent = document.createElement("div");
-				parent.style.cssText = `
-				padding-top: 10px;
-				padding-bottom: 10px;
-				padding-left: 20px;
-				padding-right: 20px;
-				margin-left: 10vw;
-				margin-right: 10vw;
-					`;
-				parent.className = "languages";
-
-				if (index % 2 == 0) {
-					parent.appendChild(generateImage());
-					parent.appendChild(generateAbout());
-				} else {
-					parent.appendChild(generateAbout());
-					parent.appendChild(generateImage());
-				}
-				return parent;
-			})
-			.forEach(function (element) {
-				document.getElementById("languages").appendChild(element);
-			});
-
 		const projects = [
 			{
-				name: "Sage",
-				date: "December 2021 - current",
-				img: "https://sbrugel.com/img/sage.png",
-				description:
-					"An all-in-one Discord bot used to manage the University of Delaware CIS department's official Discord server, which has over 3,000 students and 25+ professors.",
-				source: "https://github.com/ud-cis-discord/SageV2",
+				"name": "sage",
+				"img": "/img/sage.png",
+				"link": "https://github.com/ud-cis-discord/SageV2",
+				"stack": "typescript, jenkins, jekyll, shell",
+				"desc": "See above for more info - Initially used by about 200 students and a couple of faculty, I ensured that the system could handle a growth in members of 1900%+, now utilized by 4,000+ students and 35+ faculty. The experience exposed me not just to numerous coding systems, but also to DevOps and CI/CD and automatic documentation."
 			},
 			{
-				name: "Speedy Solvers",
-				date: "March 2024",
-				img: "https://i.imgur.com/hic6rKX.png",
-				description:
-					"2024 HenHacks Hackathon submission.  Full-stack web app aiming to learning math engaging and exciting for all ages through speedrunning math problem sets.",
-				source: "https://github.com/sbrugel/SpeedySolvers",
+				"name": "train activity detector",
+				"img": "/img/railcam.gif",
+				"link": "",
+				"stack": "python, opencv, computer vision",
+				"desc": "A program which takes in a YouTube livestream of train cameras, processing the stream data in real time to detect and extract clips of trains in motion."
 			},
 			{
-				name: "UD CIS Scheduler",
-				date: "October 2023 - December 2023",
-				img: "https://i.imgur.com/Xs2b1eR.png",
-				description:
-					"CISC275 Final Project. This frontend React app allows students to plan out their computer science degrees. Along with coding, I served as my 4-person team's manager and scrum master.",
-				source: "https://github.com/Simon-B-s-Group/ud-cis-scheduler",
-				demo: "https://simon-b-s-group.github.io/ud-cis-scheduler/",
+				"name": "speedy solvers",
+				"img": "/img/speedysolvers.png",
+				"link": "https://github.com/sbrugel/SpeedySolvers",
+				"stack": "javascript, react, express, mongo",
+				"desc": "Developed in 24 hours for the 2024 HenHacks Hackathon, I worked with a team of four friends to develop a full-stack educational web application. Speedy Solvers aims to make math education more engaging and exciting for all ages by presenting the challenge of speed-running user-generated problem sets."
 			},
 			{
-				name: "A* Maze Solver",
-				date: "November 2023",
-				img: "https://i.imgur.com/QGV2WkG.gif",
-				description:
-					"Using Pygame for visuals, this is a maze solver which always returns the optimal solution (if one is available), using the reliable A* search algorithm.",
-				source: "https://github.com/sbrugel/python-ai-stuff",
+				"name": "maze solver",
+				"img": "/img/maze.gif",
+				"link": "https://github.com/sbrugel/cisc361-project",
+				"stack": "python, artificial intelligence",
+				"desc": "My first artificial intelligence project, I wrote a program to visualize the process of the A* search algorithm, which always returns the optimal solution of a maze."
 			},
 			{
-				name: "Visual Studio Code - Text List to Array",
-				date: "October 2023",
-				img: "https://i.imgur.com/BsK2JGy.gif",
-				description:
-					"This extension adds a command which converts comma or newline separated lists to array declarations, similar to what is seen in Python and JS/TS.",
-				source: "https://github.com/sbrugel/vsc-text-list-to-array",
+				"name": "computer science degree planner",
+				"img": "/img/scheduler.png",
+				"link": "https://github.com/sbrugel/SpeedySolvers",
+				"stack": "typescript, react, project management",
+				"desc": "Not only was I involved in coding, but I also served as the team manager and scrum master for this university project, done entirely in an Agile development environment."
 			},
 			{
-				name: "Deterministic Finite Automata Sim",
-				date: "September 2023",
-				img: "https://i.imgur.com/4IqTiqr.png",
-				description:
-					"This CLI app simulates a deterministic finite state machine. Based on inputted states and transitions, the program runs numerous test strings on it, outputting if they are in the FSM's language or not.",
-				source: "https://github.com/sbrugel/go-de",
+				"name": "operating system simulation",
+				"img": "/img/os.png",
+				"link": "https://github.com/sbrugel/cisc361-project",
+				"stack": "c++",
+				"desc": "Using C++ and various OS development principles, I worked on simulation of job scheduling, resource management, and deadlock avoidance."
 			},
 			{
-				name: "Operating System Sim",
-				date: "April 2023 - May 2023",
-				img: "https://i.imgur.com/iMclaO5.png",
-				description:
-					"CISC361 Final Project. An operating system simulation of job scheduling, resource management, and deadlock avoidance, written in C++.",
-				source: "https://github.com/sbrugel/cisc361-project",
+				"name": "desktop journal",
+				"img": "/img/journal.png",
+				"link": "https://github.com/sbrugel/journal-manager",
+				"stack": "c#, winforms",
+				"desc": "One of my very first large scale projects. This offline journal manager allows users to write entries, save them, and search through them. I implemented extra features over its development including a tag system and basic rich text formatting using HTML-like tags."
 			},
 			{
-				name: "GO-DE",
-				date: "April 2023",
-				img: "https://d112y698adiu2z.cloudfront.net/photos/production/software_photos/002/467/678/datas/gallery.jpg",
-				description:
-					"2023 HenHacks Hackathon submission. A full-stack, social-media like site where registered users are given an expansive list of interesting places in Delaware to mark as visited and share with friends.",
-				source: "https://github.com/sbrugel/go-de",
+				"name": "septa train tracker",
+				"img": "/img/septa.png",
+				"link": "https://github.com/sbrugel/cisc361-project",
+				"stack": "typescript, networking, server management",
+				"desc": "I made this Discord bot so I could easily check the status of SEPTA trains on my route, displaying train delays, last recorded location, consist information, and regional rail line alerts. Getting it hosted on my Raspberry Pi was a fun challenge that taught me a lot about networking and server management."
 			},
-			{
-				name: "Who's that Pokemon?",
-				date: "April 2023",
-				img: "https://i.imgur.com/c5lCljF.png",
-				description:
-					"A React app which aims to replicate the segment of the same name in the Pokemon anime. Players are given a silhouette of a Pokemon, and are asked to identify it.",
-				source: "https://github.com/sbrugel/whos-that-pokemon",
-				demo: "http://sbrugel.com/whos-that-pokemon/",
-			},
-			{
-				name: "LaTeX On Screen Keyboard",
-				date: "February 2023",
-				img: "https://i.imgur.com/SIzCxyt.gif",
-				description:
-					"A program written in Python which aims to make typing LaTeX commands a lot less cumbersome. Based on a map which links LaTeX commands to symbols, buttons are dynamically added onto the screen; when pressed, they insert LaTeX commands onto the window's textbox.",
-				source: "https://github.com/sbrugel/latex-osk",
-			},
-			{
-				name: "Counting Bot",
-				date: "January 2023",
-				img: "https://i.imgur.com/yolrb01.png",
-				description:
-					"A TypeScript Discord bot that tracks a specified channel and ensures the only messages that get sent are numbers increasing sequentially, message after message.",
-				source: "https://github.com/sbrugel/counting-bot",
-			},
-			{
-				name: "Python Games",
-				date: "December 2022 - January 2023",
-				img: "https://i.imgur.com/jq4I322.gif",
-				description:
-					"Games I made in Python using Pygame. Features dynamic main menus/options menus for each game, which intake data from JSON files to setup the GUIs, such as buttons to select games and game options.",
-				source: "https://github.com/sbrugel/python-games",
-			},
-			{
-				name: "Yahtzee",
-				date: "November 2022",
-				img: "https://i.imgur.com/QEaFumB.png",
-				description:
-					"This is a C++ re-creation of Yahtzee, a dice game created by Milton Bradley. Features 2-4 player local play, following the rules of the original game.",
-				source: "https://github.com/sbrugel/yahtzee",
-			},
-			{
-				name: "SEPTA Delay History",
-				date: "October 2022 - November 2022",
-				img: "https://i.imgur.com/ctimWLY.png",
-				description: "Full-stack React app that shows delay statistics over single days or 7/30/180 day intervals for SEPTA rail services.",
-				source: "https://github.com/sbrugel/septa-delay-history",
-			},
-			{
-				name: "Flash Card Maker",
-				date: "September 2022 - October 2022",
-				img: "https://i.imgur.com/9I62k7j.gif",
-				description:
-					"A Windows Forms application that allows the user to create sets of flash cards for studying, save them on their system, and review them in another window, being able to shuffle the card order at any time.",
-				source: "https://github.com/sbrugel/flash-card-generator",
-			},
-			{
-				name: "Journal Manager",
-				date: "February 2022 - October 2022",
-				img: "https://user-images.githubusercontent.com/58154576/155890966-a8ebd0fa-722c-41ca-a932-4b8af269a122.png",
-				description:
-					"A Windows Forms application that allows the user to write journal entries, save them locally, and view them later. Has many other features, including entry tagging, searching, and text formatting using a tag system.",
-				source: "https://github.com/sbrugel/journal-manager",
-			},
-			{
-				name: "SEPTA Checker",
-				date: "August 2021 - October 2022",
-				img: "https://i.imgur.com/oIUC28v.png",
-				description:
-					"A Discord bot that fetches from the SEPTA API every 2 minutes and returns delays, last recorded location, train consist information, and alerts for user-inputted train numbers.",
-				source: "https://github.com/sbrugel/septa-checker-v2",
-			},
-			{
-				name: "Final Grade Calculator",
-				date: "May 2022",
-				img: "https://i.imgur.com/9sebZd8.png",
-				description:
-					"Based on known grades/weights and the weight of an unknown grade, this Python script calculates the unknown grade needed to get a target final grade, as well as the highest/lowest possible grades that can be achieved.",
-				source: "https://github.com/sbrugel/final-grade-calculator",
-			},
-			{
-				name: "img2pi",
-				date: "March 2022",
-				img: "https://sbrugel.com/img/img2pi.png",
-				description: "C and Python scripts. Displays a jpg/png image on a Raspberry Pi's sense hat.",
-				source: "https://github.com/sbrugel/img2pi",
-			},
-		];
+		]
 
-		projects
-			.map(function (project, index) {
-				function generateLeftAbout() {
-					const projectLeftDiv = document.createElement("div");
-					projectLeftDiv.style.cssText = `display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; margin: 5px; border: 5px solid #3287a8; border-radius: 20px; padding: 5px; `;
-					const projectName = document.createElement("h3");
-					projectName.textContent = project.name;
-					projectName.className = "project-header";
-					const projectDate = document.createElement("p");
-					projectDate.textContent = project.date;
-					projectDate.className = "project-header";
-					projectLeftDiv.appendChild(projectName);
-					projectLeftDiv.appendChild(document.createElement("br"));
-					projectLeftDiv.appendChild(projectDate);
-					return projectLeftDiv;
-				}
-
-				function generateImage() {
-					const projectPicDiv = document.createElement("div");
-					projectPicDiv.style.cssText = `display: flex; justify-content: center; align-items: center; width: 50%; margin: 5px; border: 5px solid #3287a8; border-radius: 20px; padding: 5px; aspect-ratio: 1/1;`;
-					const projectImage = document.createElement("img");
-					projectImage.src = project.img;
-					projectImage.style.cssText = `max-width: 90%;`;
-					projectImage.addEventListener("mouseover", function () {
-						projectImage.style.cursor = "pointer";
-					});
-					projectImage.addEventListener("click", function () {
-						const imageUrl = projectImage.src;
-						window.location.href = imageUrl;
-					});
-					projectPicDiv.appendChild(projectImage);
-					projectPicDiv.className = "hide-on-small-window";
-					return projectPicDiv;
-				}
-
-				function generateRightAbout() {
-					const projectRightDiv = document.createElement("div");
-					projectRightDiv.style.cssText = `display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; margin: 5px; border: 5px solid #3287a8; border-radius: 20px; padding: 5px; `;
-					const projectAbout = document.createElement("p");
-					projectAbout.textContent = project.description;
-					projectAbout.className = "center";
-					const projectSrc = document.createElement("p");
-					const projectSrcText = document.createElement("a");
-					projectSrcText.textContent = "View source";
-					projectSrcText.href = project.source;
-					projectSrc.appendChild(projectSrcText);
-					projectRightDiv.appendChild(projectAbout);
-					projectRightDiv.appendChild(projectSrc);
-					if (project.demo) {
-						const projectDemo = document.createElement("p");
-						const projectDemoText = document.createElement("a");
-						projectDemoText.textContent = "Try it out!";
-						projectDemoText.href = project.demo;
-						projectDemo.appendChild(projectDemoText);
-						projectRightDiv.appendChild(projectDemo);
-					}
-					return projectRightDiv;
-				}
-
-				const parent = document.createElement("div");
-				parent.style.cssText = `
-				padding-top: 10px;
-				padding-bottom: 10px;
-				padding-left: 20px;
-				padding-right: 20px;
-				margin-left: 10vw;
-				margin-right: 10vw;
-					`;
-				parent.className = "languages";
-
-				parent.appendChild(generateLeftAbout());
-				parent.appendChild(generateImage());
-				parent.appendChild(generateRightAbout());
-				return parent;
-			})
-			.forEach(function (element) {
-				document.getElementById("projects-cards").appendChild(element);
-			});
-
-		const experiences = [
+		const exps = [
 			{
-				link: "https://myparadigm.com/",
-				img: "https://i.imgur.com/RmEF6sa.jpeg",
-				position: "Software Developer Intern",
-				held: "May 2023 - August 2023 (Madison, WI - Remote)",
-				details:
-					"Using JS/React and C#/ASP.NET, I worked with an Agile team on a full-stack web application for creating quotes and orders used by over 100,000 users. I also used TypeScript/Flood Element to revamp a load testing system, allowing for more accurate simulations of web apps under heavy traffic, and collaborated with a team to investigate applications of AI in software, beginning development of an internal chatbot via Azure OpenAI.",
+				img: "/img/paradigm.jpg",
+				name: "paradigm",
+				title: "software developer intern",
+				dates: "may 2024 - august 2024",
+				desc: [
+					"During my second summer with Paradigm, I collaborated with an Agile team to develop a full-stack web app for creating quotes and orders, used by over 100,000 users. I was responsible for integrating the app with third party apps through Microsoft Azure cloud publish-subscribe event functionality, and the development/deployment of web-based documentation through Azure, which includes an AI chatbot trained on API endpoints to further assist users."
+				]
 			},
 			{
-				link: "https://qs2500.com/",
-				img: "https://i.imgur.com/fzJtPYj.jpeg",
-				position: "Computer Science Intern",
-				held: "May 2022 - October 2022 (Glen Mills, PA - Remote)",
-				details:
+				img: "/img/paradigm.jpg",
+				name: "paradigm",
+				title: "software developer intern",
+				dates: "may 2023 - august 2023",
+				desc: [
+					"My first summer interning here involved me developing a load testing system to more effectively stress test applications under heavy traffic, overhauling a locally built auto-documentation system for more intuitive navigation of API functionality, and investigating applications of AI in company products with a small team, beginning development of an internal GPT-powered chatbot."
+				]
+			},
+			{
+				img: "/img/qs.jpg",
+				name: "quantum strategies",
+				title: "computer science intern",
+				dates: "may 2022 - august 2022",
+				desc: [
 					"For my first internship, I used JS/React in an Agile work environment to work on numerous frontend/backend fixes for an online employee interaction center. Near the end of my time here, I wrote the foundational code for a full-stack performance management application.",
+				]
 			},
 			{
-				link: "https://www.cis.udel.edu/",
-				img: "https://www.udel.edu/content/dam/udelImages/dar/IHUDD/DAR-IHUDD2021-YouDee-IGsticker.png",
-				position: "Teaching Assistant",
-				held: "February 2023 - Current (Newark, DE)",
-				details:
-					"CISC181 (Intro to Computer Science II), CISC275 (Software Engineering), and CISC304 (Logic for Programming). My duties include assisting students with course material through weekly office hours/labs, and grading cousework in a timely fashion while providing feedback.",
+				img: "/img/ud.png",
+				name: "university of delaware",
+				title: "teaching assistant",
+				dates: "february 2023 - current",
+				desc: [
+					"I have TA'd numerous courses, covering material from introductory computer science concepts, to agile software engineering and project management, to theory in logic programming. I hold office hours to provide students with assistance on course material, grade homeworks and exams in a timely manner with detailed feedback, and proctor exams to ensure student integrity.",
+				]
 			},
 			{
-				link: "https://www.cis.udel.edu/",
-				img: "https://www.udel.edu/content/dam/udelImages/dar/IHUDD/DAR-IHUDD2021-YouDee-IGsticker.png",
-				position: "Research Assistant @ Sensify Lab",
-				held: "April 2022 - Current (Newark, DE)",
-				details:
-					"I've worked on two projects at this lab: Modular Music, where I've made C#/Unity and Python scripts/user interfaces for visualizing and playing back interactions with a physical prototype used in community libraries, and I also leverage machine learning with nanocomposites-based wearable sensors to analyze human movements and detect abnormalities.",
+				img: "/img/sensify.png",
+				name: "sensify lab",
+				title: "research assistant",
+				dates: "april 2022 - current",
+				desc: [
+					"Under the direction of Dr. Matthew Mauriello, I've worked on two projects: Modular Music, where I've written C#/Unity and Python scripts/user interfaces to visualize and playback interactions with an electronic music box used in community libraries and classrooms, and Sensing Footwear, where I leveraged machine learning with nanocomposites-based wearable sensors to analyze human movements and detect abnormalities.",
+				]
 			},
 			{
-				link: "https://www.cis.udel.edu/",
-				img: "https://www.udel.edu/content/dam/udelImages/dar/IHUDD/DAR-IHUDD2021-YouDee-IGsticker.png",
-				position: "CISC Discord Manager",
-				held: "December 2021 - Current (Newark, DE)",
-				details:
-					"Since freshman year, I've worked with a team of undergraduates to develop a Discord bot for the UD CIS Discord server, providing effective and safe communication for 3000+ students and 25+ professors (see 'Sage' under Projects). I'm also responsible for interviewing candidates and guiding new members around the system through documentation and team meetings.",
+				img: "/img/ud.png",
+				name: "university of delaware",
+				title: "server manager",
+				dates: "december 2021 - current",
+				desc: [
+					"Since freshman year, I have worked with a team of undergraduates to not only develop a Discord bot for the UD Computer Science Department official Discord Server, providing effective and safe student-professor communication for 4,000+ students and 35+ faculty (see 'Sage' under projects), but also interview candidates to fill team roles and guide new members through documentation and meetings.",
+				]
 			},
-		];
+		]
 
-		experiences
-			.map(function (experience, index) {
-				function generateImage() {
-					const experiencePicDiv = document.createElement("div");
-					experiencePicDiv.style.cssText = `display: flex; justify-content: center; align-items: center; margin: 5px; width: 30%; border: 5px solid #3287a8; border-radius: 20px;`;
-					const experienceImage = document.createElement("img");
-					experienceImage.addEventListener("mouseover", function () {
-						experienceImage.style.cursor = "pointer";
-					});
-					experienceImage.addEventListener("click", function () {
-						window.location.href = experience.link;
-					});
-					experienceImage.src = experience.img;
-					experienceImage.style.cssText = `max-width: 90%;`;
-					experiencePicDiv.appendChild(experienceImage);
-					return experiencePicDiv;
-				}
+		exps.map((exp) => {
+			const div = document.createElement("div");
+			div.classList.add("two-column");
 
-				function generateAbout() {
-					const experienceAboutDiv = document.createElement("div");
-					experienceAboutDiv.style.cssText = `display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 5px; width: 70%;border: 5px solid #3287a8; border-radius: 20px;`;
-					const experiencePosition = document.createElement("h3");
-					experiencePosition.textContent = experience.position;
-					experiencePosition.className = "project-header";
+			const leftdiv = document.createElement("div");
+			leftdiv.style.width = "30%";
+			const img = document.createElement("img");
+			img.style.maxWidth = "75%";
+			img.src = exp.img;
+			img.alt = exp.name;
+			leftdiv.appendChild(img);
 
-					const experienceHeld = document.createElement("p");
-					const experienceHeldText = document.createElement("em");
-					experienceHeldText.textContent = experience.held;
-					experienceHeld.appendChild(experienceHeldText);
-
-					const experienceAbout = document.createElement("p");
-					experienceAbout.textContent = experience.details;
-					experienceAbout.className = "center";
-
-					experienceAboutDiv.appendChild(experiencePosition);
-					experienceAboutDiv.appendChild(experienceHeld);
-					experienceAboutDiv.appendChild(experienceAbout);
-					return experienceAboutDiv;
-				}
-
-				const parent = document.createElement("div");
-				parent.style.cssText = `
-				padding-top: 10px;
-				padding-bottom: 10px;
-				padding-left: 20px;
-				padding-right: 20px;
-				margin-left: 10vw;
-				margin-right: 10vw;
-				display: flex;
-					`;
-				parent.className = "experiences";
-
-				parent.appendChild(generateImage());
-				parent.appendChild(generateAbout());
-				return parent;
-			})
-			.forEach(function (element) {
-				document.getElementById("experiences").appendChild(element);
+			const rightdiv = document.createElement("div");
+			rightdiv.style.width = "70%";
+			const h2 = document.createElement("h2");
+			h2.classList.add("green");
+			h2.textContent = exp.name;
+			const p = document.createElement("h3");
+			p.classList.add("blue");
+			p.textContent = exp.title;
+			const p2 = document.createElement("h3");
+			p2.classList.add("orange");
+			p2.textContent = exp.dates;
+			rightdiv.appendChild(h2);
+			rightdiv.appendChild(p);
+			rightdiv.appendChild(p2);
+			exp.desc.map((d) => {
+				const p = document.createElement("p");
+				p.textContent = d;
+				rightdiv.appendChild(p);
 			});
 
-		// document.getElementById("fact").innerHTML =
-		//   facts[Math.floor(Math.random() * facts.length)];
+			div.appendChild(leftdiv);
+			div.appendChild(rightdiv);
+
+			document.querySelector("#exps").appendChild(div);
+		});
+
+		projects.map((proj) => {
+			const div = document.createElement("div");
+			div.classList.add("two-column");
+
+			const leftdiv = document.createElement("div");
+			leftdiv.style.width = "30%";
+			const img = document.createElement("img");
+			img.style.maxWidth = "75%";
+			img.src = proj.img;
+			img.alt = proj.name;
+			const a = document.createElement("a");
+			a.href = proj.link;
+			a.appendChild(img);
+			leftdiv.appendChild(a);
+
+			const rightdiv = document.createElement("div");
+			rightdiv.style.width = "70%";
+			const h2 = document.createElement("h2");
+			h2.classList.add("green");
+			h2.textContent = proj.name;
+			rightdiv.appendChild(h2);
+			const p = document.createElement("h3");
+			p.classList.add("blue");
+			p.textContent = proj.stack;
+			rightdiv.appendChild(p);
+			const p2 = document.createElement("p");
+			p2.textContent = proj.desc;
+			rightdiv.appendChild(p2);
+
+			div.appendChild(leftdiv);
+			div.appendChild(rightdiv);
+
+			document.querySelector("#projs").appendChild(div);
+		})
 	</script>
 </html>
