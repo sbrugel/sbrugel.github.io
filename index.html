@@ -80,7 +80,6 @@
 			{
 				"name": "fractal movie maker",
 				"img": "/img/fractal.gif",
-				"link": "",
 				"stack": "c, cuda, parallel programming",
 				"desc": "Using C and general purpose GPU programming with CUDA, I developed a parallelized program to compute fractals of increasing zoom levels."
 			},
@@ -243,12 +242,14 @@
 			rightdiv.appendChild(p2);
 			const pLink = document.createElement("p");
 			const aLink = document.createElement("a");
-			aLink.classList.add("orange");
-			aLink.style.textDecoration = "underline";
-			aLink.href = proj.link;
-			aLink.textContent = "View Source";
-			pLink.appendChild(aLink);
-			rightdiv.appendChild(pLink);
+			if (proj.link) {
+				aLink.classList.add("orange");
+				aLink.style.textDecoration = "underline";
+				aLink.href = proj.link;
+				aLink.textContent = "View Source";
+				pLink.appendChild(aLink);
+				rightdiv.appendChild(pLink);
+			}
 
 			div.appendChild(leftdiv);
 			div.appendChild(rightdiv);
