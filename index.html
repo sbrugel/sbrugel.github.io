@@ -16,39 +16,40 @@
 			<div class="left-column">
 			  <img src="/img/me.png" alt="me!" style="width:40%; border:5px solid #98c379;" />
 			  <h1 class="green">sbrugel</h1>
-			  <p><a href="#about" class="blue">about me</a></p>
+			  <p><a href="#" class="blue">about me</a></p>
 			  <p><a href="#skills" class="blue">skills</a></p>
 			  <p><a href="#exp" class="blue">experience</a></p>
 			  <p><a href="#projects" class="blue">projects</a></p>
-			  <h5><a href="https://www.linkedin.com/in/sbrugel/" class="orange">linkedin</a></h5>
-			  <h5><a href="https://github.com/sbrugel" class="orange">github</a></h5>
-			  <h5><a href="mailto:sbrugel62@gmail.com" class="orange"">email</a></h5>
+			  <p>. . .</p>
+			  <p><a href="https://www.linkedin.com/in/sbrugel/" class="orange">linkedin</a></p>
+			  <p><a href="https://drive.google.com/file/d/1KyscsFPFmyNcfNWVb42WGeG2Ou3fu6Qc/view?usp=sharing" class="orange">resume</a></p>
+			  <p><a href="https://github.com/sbrugel" class="orange">github</a></p>
+			  <p><a href="mailto:sbrugel62@gmail.com" class="orange"">email</a></p>
 			</div>
 			<div class="right-column">
-			  <h1 class="blue" id="about">about me</h1>
+			  <h1 class="blue" id="about"><u>about me</u></h1>
 			  <p>Hello and welcome! I'm Simon Brugel, a senior computer science undergraduate at the University of Delaware. This website serves as my portfolio, where you'll see my main industry/academic experiences and side projects.</p>
 			  <p>My specialty is software engineering, though I have experience in other fields including artificial intelligence/data science, human-computer interaction, systems programming, and DevOps. I'm also open to exploring new fields and applications, and as a very technically-minded person, I can pick up new technologies easily.</p>
-			  <p>Currently, I am seeking full-time employment in software engineering, data science, or related fields for after I graduate. If you are interested in working with me, feel free to contact me via any methods on the left!</p>
-
-			  <h3 class="blue">fun facts</h3>
+			  <p>Currently, I am seeking full-time employment in software engineering, data science, or related fields for after I graduate. Feel free to contact me through any methods on the left!</p>
+			  <h3 class="blue"><u>fun facts</u></h3>
 			  <ul>
-				<li><p>On the side, I'm a hobbyist digital artist and collector of train magazines and books</p></li>
+				<li><p>I'm a hobbyist digital artist and collector of train magazines/books</p></li>
 				<li><p>I am a huge fan of the Philadelphia Eagles - Go Birds 🦅</p></li>
-				<li><p>My favorite bands include Muse, Linkin Park, Green Day, Foo Fighters, and Pendulum</p></li>
+				<li><p>My favorite bands include Muse, Linkin Park, Green Day, Foo Fighters, and Pendulum. In recent times, I started <a href="https://www.discogs.com/user/sbrugel/collection" class="blue"><u>collecting CDs</u></a> too!</p></li>
 				<li><p>I really like dragons</p></li>
 			  </ul>
-			  
-			  <h1 class="blue" id="skills">skills</h1>
-			  <p>Languages: <span class="green">C#, Java, JavaScript, TypeScript, Python, C, C++, HTML, CSS, Assembly, SQL</span></p>
-			  <p>Frameworks: <span class="green">React, Angular, Node.js, Express, .NET, ASP.NET, Flask, Bootstrap, Tkinter, Scikit-Learn, Matplotlib, Unity, GoDot, CUDA<span></p>
-			  <p>Tools & Other: <span class="green">Windows, Linux, Git, GitHub, Subversion, Microsoft Azure, MongoDB, Firebase, REST APIs, Swagger, Flood Element, Visual Studio, Visual Studio Code, JetBrains, Bash, Jenkins, JIRA, Confluence</span></p>
-			  <p>Coursework: <span class="green">Data Structures, Machine Organization & Assembly Language, Software Engineering, Automata Theory, Logic for Programming, Algorithms, Operating Systems, Parallel Computing, Databases, Computer Vision, Cybersecurity, Secure Software Design, Artificial Intelligence, Data Mining, Machine Learning, Technical Writing, Calculus, Discrete Math, Statistical Methods, Linear Algebra</span></p>
-
-			  <h1 class="blue" id="exp">professional experience</h1>
+			  <hr />
+			  <h1 class="blue" id="skills"><u>skills</u></h1>
+			  <p><strong>Languages:</strong> <span class="green">C#, Java, JavaScript, TypeScript, Python, C, C++, HTML, CSS, Assembly, SQL</span></p>
+			  <p><strong>Frameworks:</strong> <span class="green">React, Angular, Node.js, Express, .NET, ASP.NET, Flask, Bootstrap, Tkinter, Scikit-Learn, Matplotlib, Unity, GoDot, CUDA<span></p>
+			  <p><strong>Tools & Other:</strong> <span class="green">Windows, Linux, Git, GitHub, Subversion, Microsoft Azure, MongoDB, Firebase, REST APIs, Swagger, Flood Element, Visual Studio, Visual Studio Code, JetBrains, Bash, Jenkins, JIRA, Confluence</span></p>
+			  <p><strong>Coursework:</strong> <span class="green">Data Structures, Machine Organization & Assembly Language, Software Engineering, Automata Theory, Logic for Programming, Algorithms, Operating Systems, Parallel Computing, Databases, Computer Vision, Cybersecurity, Secure Software Design, Artificial Intelligence, Data Mining, Machine Learning, Technical Writing, Calculus, Discrete Math, Statistical Methods, Linear Algebra</span></p>
+			  <hr />
+			  <h1 class="blue" id="exp"><u>professional experience</u></h1>
 			  <div id="exps"></div>
-
-			  <h1 class="blue" id="projects">projects</h1>
-			  <p class="orange"><em>Click on an image to view the repository for that project. More projects are available on my <a href="https://github.com/sbrugel" class="orange"><u>GitHub</u></a></em></p>
+			  <hr />
+			  <h1 class="blue" id="projects"><u>projects</u></h1>
+			  <p class="orange"><em>These are just my main projects; more are available on my <a href="https://github.com/sbrugel" class="orange"><u>GitHub</u></a></em></p>
 			  <div id="projs"></div>
 			</div>
 		</div>
@@ -225,10 +226,7 @@
 			img.style.maxWidth = "75%";
 			img.src = proj.img;
 			img.alt = proj.name;
-			const a = document.createElement("a");
-			a.href = proj.link;
-			a.appendChild(img);
-			leftdiv.appendChild(a);
+			leftdiv.appendChild(img);
 
 			const rightdiv = document.createElement("div");
 			rightdiv.style.width = "70%";
@@ -243,6 +241,14 @@
 			const p2 = document.createElement("p");
 			p2.textContent = proj.desc;
 			rightdiv.appendChild(p2);
+			const pLink = document.createElement("p");
+			const aLink = document.createElement("a");
+			aLink.classList.add("orange");
+			aLink.style.textDecoration = "underline";
+			aLink.href = proj.link;
+			aLink.textContent = "View Source";
+			pLink.appendChild(aLink);
+			rightdiv.appendChild(pLink);
 
 			div.appendChild(leftdiv);
 			div.appendChild(rightdiv);

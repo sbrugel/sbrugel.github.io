@@ -1,4 +1,8 @@
 /* full page styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #282c34;
   font-family: "Ubuntu Mono", monospace;
