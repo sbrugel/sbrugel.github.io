@@ -34,12 +34,13 @@
 			  <h3 class="blue"><u>fun facts</u></h3>
 			  <ul>
 				<li><p>I'm a hobbyist digital artist and collector of train magazines/books</p></li>
-				<li><p>I am a huge fan of the Philadelphia Eagles - Go Birds 🦅</p></li>
-				<li><p>My favorite bands include Muse, Linkin Park, Green Day, Foo Fighters, and Pendulum. In recent times, I started <a href="https://www.discogs.com/user/sbrugel/collection" class="blue"><u>collecting CDs</u></a> too!</p></li>
 				<li><p>I really like dragons</p></li>
+				<li><p>My favorite bands include Muse, Linkin Park, Green Day, Foo Fighters, and Pendulum</li>
+				<li><p>This is an open source site - check out the <a href="https://github.com/sbrugel/sbrugel.github.io" class="blue"><u>GitHub repo!</u></a></p></li>
 			  </ul>
 			  <hr />
 			  <h1 class="blue" id="skills"><u>skills</u></h1>
+			  <p><strong>Certifications:</strong> <a href="https://www.credly.com/badges/57d51bc0-103e-4be0-bf76-45993d501f8d/public_url" class="blue"><u>AWS Certified Cloud Practitioner</u></a> (Jan. 2025)</p>
 			  <p><strong>Languages:</strong> <span class="green">C#, Java, JavaScript, TypeScript, Python, C, C++, HTML, CSS, Assembly, SQL</span></p>
 			  <p><strong>Frameworks:</strong> <span class="green">React, Angular, Node.js, Express, .NET, ASP.NET, Flask, Bootstrap, Tkinter, Scikit-Learn, Matplotlib, Unity, GoDot, CUDA<span></p>
 			  <p><strong>Tools & Other:</strong> <span class="green">Windows, Linux, Git, GitHub, Subversion, Microsoft Azure, MongoDB, Firebase, REST APIs, Swagger, Flood Element, Visual Studio, Visual Studio Code, JetBrains, Bash, Jenkins, JIRA, Confluence</span></p>
@@ -60,15 +61,23 @@
 				"name": "sage",
 				"img": "/img/sage.png",
 				"link": "https://github.com/ud-cis-discord/SageV2",
-				"stack": "typescript, jenkins, jekyll, shell",
-				"desc": "See above for more info - Initially used by about 200 students and a couple of faculty, I ensured that the system could handle a growth in members of 1900%+, now utilized by 4,000+ students and 35+ faculty. The experience exposed me not just to numerous coding systems, but also to DevOps and CI/CD and automatic documentation."
+				"stack": "typescript, jenkins, jekyll, shell, project management",
+				"desc": "Sage is a Discord bot for the UD CIS Discord to enhance student-professor communication for computer science courses. Initially used by about 200 students and a couple of faculty, I ensured that the system could handle a growth in members of 1900%+, now utilized by 4,000+ students and 35+ faculty. The experience exposed me not just to numerous coding systems, but also to DevOps, CI/CD, automatic documentation, and team/project management."
+			},
+			{
+				"name": "lore holder",
+				"img": "/img/lore.jpeg",
+				"link": "https://github.com/sbrugel/lore-holder",
+				"try": "https://lore-holder.web.app/",
+				"stack": "angular, firebase",
+				"desc": "I learned Angular, Firebase, and SCSS from scratch to create a full-stack web app for managing worldbuilding project information, featuring single sign-on through Google OAuth, secure document storage in a NoSQL database, and a user-friendly, responsive interface crafted using Angular Material UI. This project serves as a proof of my ability to learn new frameworks and technologies easily, and apply them to larger-scale endeavors."
 			},
 			{
 				"name": "train activity detector",
 				"img": "/img/railcam.gif",
 				"link": "https://github.com/sbrugel/train-activity-detector",
 				"stack": "python, opencv, computer vision",
-				"desc": "A program which takes in a YouTube livestream of train cameras, processing the stream data in real time to detect and extract clips of trains in motion."
+				"desc": "I used skills learned in my university's Computer Vision class to develop a program which takes in a YouTube livestream of train cameras, processing the stream data in real time to detect and extract clips of trains in motion."
 			},
 			{
 				"name": "speedy solvers",
@@ -154,7 +163,7 @@
 				title: "teaching assistant",
 				dates: "february 2023 - current",
 				desc: [
-					"I have TA'd numerous courses, covering material from introductory computer science concepts, to Agile software engineering and project management, to theory in logic programming. I hold office hours to provide students with assistance on course material, grade homeworks and exams in a timely manner with detailed feedback, and proctor exams to ensure student integrity.",
+					"I assist professors with teaching students material from various computer science classes, including Intro to CS, Software Engineering, Logic in Programming, and Database Systems. I hold office hours to provide students with assistance on course material, grade homeworks and exams in a timely manner with detailed feedback, and proctor exams to ensure student integrity.",
 				]
 			},
 			{
@@ -169,10 +178,10 @@
 			{
 				img: "/img/ud.png",
 				name: "university of delaware",
-				title: "server manager",
+				title: "software engineer & server administrator",
 				dates: "december 2021 - current",
 				desc: [
-					"Since freshman year, I have worked with a team of undergraduates to not only develop a Discord bot for the UD Computer Science Department official Discord Server, providing effective and safe student-professor communication for 4,000+ students and 35+ faculty (see 'Sage' under projects), but also interview candidates to fill team roles and guide new members through documentation and meetings.",
+					"Since freshman year, I have worked with a team of undergraduates to not only write code and maintain CI/CD pipelines for a Discord bot for the UD Computer Science Department official Discord Server, providing effective and safe student-professor communication for 4,000+ students and 35+ faculty (see 'Sage' under projects), but also interview candidates to fill team roles and guide new members through documentation and meetings.",
 				]
 			},
 		]
@@ -240,15 +249,25 @@
 			const p2 = document.createElement("p");
 			p2.textContent = proj.desc;
 			rightdiv.appendChild(p2);
-			const pLink = document.createElement("p");
-			const aLink = document.createElement("a");
 			if (proj.link) {
+				const pLink = document.createElement("p");
+				const aLink = document.createElement("a");
 				aLink.classList.add("orange");
 				aLink.style.textDecoration = "underline";
 				aLink.href = proj.link;
 				aLink.textContent = "View Source";
 				pLink.appendChild(aLink);
 				rightdiv.appendChild(pLink);
+			}
+			if (proj.try) {
+				const pTry = document.createElement("p");
+				const aTry = document.createElement("a");
+				aTry.classList.add("orange");
+				aTry.style.textDecoration = "underline";
+				aTry.href = proj.try;
+				aTry.textContent = "View Live Site";
+				pTry.appendChild(aTry);
+				rightdiv.appendChild(pTry);
 			}
 
 			div.appendChild(leftdiv);
