@@ -78,6 +78,10 @@ a:hover {
   color: black;
 }
 
+a.green:hover {
+  background-color: #98c379;
+}
+
 a.blue:hover {
   background-color: #5798cd;
 }
